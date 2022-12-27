@@ -1,7 +1,7 @@
 
 import { LockClosedIcon } from '@heroicons/react/20/solid'
 import { Link } from 'react-router-dom'
-import Logo from '../../img/logo.jpg'
+// import Logo from '../../img/logo.jpg'
 
 export default function Login() {
   return (
@@ -19,7 +19,7 @@ export default function Login() {
           <div>
             <img
               className="mx-auto h-[100px] w-auto"
-              src={Logo}
+              src='/img/logo.jpg'
               alt="logo"
             />
             <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">
@@ -27,7 +27,7 @@ export default function Login() {
             </h2>
             <p className="mt-2 text-center text-sm text-gray-600">
               Or{' '}
-              <Link to="/" className="font-medium text-indigo-600 hover:text-indigo-500">
+              <Link to="/" className="font-medium text-gray-400 hover:text-gray-500">
               go back to the homepage
               </Link>
             </p>
@@ -79,7 +79,7 @@ export default function Login() {
               </div>
 
               <div className="text-sm">
-                <Link to="#" className="font-medium text-indigo-600 hover:text-indigo-500">
+                <Link to="#" className="font-medium text-gray-400 hover:text-gray-500">
                   Forgot your password?
                 </Link>
               </div>
@@ -88,10 +88,10 @@ export default function Login() {
             <div>
               <button
                 type="submit"
-                className="group relative flex w-full justify-center rounded-md border border-transparent bg-[#2A303A] py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                className="group relative flex w-full justify-center rounded-md border border-transparent bg-[#2A303A] py-2 px-4 text-sm font-medium text-white hover:bg-black focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
               >
                 <span className="absolute inset-y-0 left-0 flex items-center pl-3">
-                  <LockClosedIcon className="h-5 w-5 text-indigo-500 group-hover:text-indigo-400" aria-hidden="true" />
+                  <LockClosedIcon className="h-5 w-5 text-[#32989D] group-hover:text-[#32989D]" aria-hidden="true" />
                 </span>
                 Sign in
               </button>

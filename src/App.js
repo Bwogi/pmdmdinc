@@ -17,6 +17,7 @@ import Contact from "./pages/Contact/Contact";
 // import Events from "./pages/Events/Events";
 // import Logo from "./components/Logo/Logo";
 import Partners from "./components/Partners/Partners";
+import Product from "./pages/Product/Product";
 
 const App = () => {
   // we are not logged in yet
@@ -32,9 +33,6 @@ const App = () => {
   const Layout = () => {
     return (
       <div>
-        {/* <div className="my-5">
-          <Logo />
-        </div> */}
         <Navbar />
         <div>
           <Outlet />
@@ -62,19 +60,20 @@ const App = () => {
           element: <About />,
         },
         {
-          path: "/products",
+          path: "/products/:id",
           element: <Products />,
+        },
+        {
+          path: "/product/:id",
+          element: <Product />,
         },
         {
           path: "/contact",
           element: <Contact />,
         },
-        // {
-        //   path: "/events",
-        //   element: <Events />,
-        // },
+
         {
-          path: "/psrtners",
+          path: "/partners",
           element: <Partners />,
         },
       ],
