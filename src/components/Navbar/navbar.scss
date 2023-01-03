@@ -1,0 +1,56 @@
+.navbar{
+    height: 80px;
+    .wrapper{  
+        padding: 10px 30px;                 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .left{
+            flex:1;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            .item{
+                display: flex;
+                align-items: center;
+                font-size: 18px;
+            }
+        }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+        .center{
+            flex:1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img{
+                width: 80px;
+                height: 80px;
+                border-radius: 10px;
+            }
+        }
+        .right{
+            flex:1;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            .icons{
+                display: flex;
+                gap: 30px;
+                .cartIcon{
+                    position: relative;
+                    span{
+                        background: lightblue;
+                        border-radius: 50%;
+                        position:absolute;
+                        padding: 5px;
+                        top:-15px;
+                        left:20px;
+                    }
+                }
+            }
+
+        }
+    }
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   

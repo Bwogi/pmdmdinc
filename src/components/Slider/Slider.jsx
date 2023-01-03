@@ -1,28 +1,40 @@
-import React from 'react'
-import { Carousel } from "antd";
+import React, {useState} from 'react'
+import './slider.scss'
+import { EastOutlined, WestOutlined } from '@mui/icons-material';
 
+export default function Slider() {
+    const [currentSlide, setCurrentSlide] = useState(0);
 
-const Slider = () => {
+    const data = [
+        "https://www.ode-labs.net/pmdmdImages/v1.jpg",
+        "https://www.ode-labs.net/pmdmdImages/v2.jpg",
+        "https://www.ode-labs.net/pmdmdImages/v3.jpg",
+        "https://www.ode-labs.net/pmdmdImages/v4.jpg"
+    ];
+
+    const prevSlide = () => {
+        setCurrentSlide(currentSlide === 0 ? 2 : (prev) => prev - 1);
+    }
+    const nextSlide = () => {
+        setCurrentSlide(currentSlide === 2 ? 0 : (prev) => prev + 1);
+        
+    }
   return (
-    <div>
-    <div className='w-[1146px] h-[500px] bg-orange-400 rounded-xl overflow-hidden'>
-      <Carousel autoplay>
-        <div>
-          <img src='/img/v1.jpg' alt="" />
-        </div>
-        <div>
-          <img src='/img/v2.jpg' alt="" />
-        </div>
-        <div>
-          <img src='/img/v3.jpg' alt="" />
-        </div>
-        <div>
-          <img src='/img/v4.jpg' alt="" />
-        </div>
-      </Carousel>
+      <div className='slider'>
+          <div className="container" style={{transform:`translateX(-${currentSlide * 100}vw)`}}>
+              <img src={data[0]} alt="" />
+              <img src={data[1]} alt="" />
+              <img src={data[2]} alt="" />
+              <img src={data[3]} alt="" />
+          </div>
+          <div className="icons">
+              <div className="icon" onClick={prevSlide}>
+              <WestOutlined />
+              </div>
+              <div className="icon" onClick={nextSlide}>
+              <EastOutlined />
+              </div>
+          </div>
     </div>
-  </div>
   )
 }
-
-export default Slider
