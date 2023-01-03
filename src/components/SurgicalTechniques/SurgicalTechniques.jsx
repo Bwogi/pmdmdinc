@@ -65,7 +65,7 @@ const features = [
               </div>
             ))}
           </div>
-          <div><img src="/img/technique.png" alt="" /></div>
+          {/* <div><img src="/img/technique.png" alt="" /></div> */}
         </div>
       </div>
     )
