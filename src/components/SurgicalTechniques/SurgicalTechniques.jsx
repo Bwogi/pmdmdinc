@@ -1,3 +1,5 @@
+import SurgicalTechniquesTable from "../SurgicalTechniquesTable/SurgicalTechniquesTable"
+// import sgt from "../sgt/sgt"
 
 const features = [
     {
@@ -11,7 +13,7 @@ const features = [
     {
       name: 'Park Technique shows how the Parks Pectus Set is used for Pectus Excavatum Repair',
       description:
-        'This video demonstrates the Park Technique for Pectus Excavatum Repair - Hyung Joo Park',
+        'This video demonstrates the Park                                                                                                                         Technique for Pectus Excavatum Repair - Hyung Joo Park',
       imageSrc: '/img/video2.jpg',
       imageAlt: '',
       videolink:'https://www.youtube.com/watch?v=7KGHovGOgew&t=190s'
@@ -66,6 +68,8 @@ const features = [
             ))}
           </div>
           {/* <div><img src="/img/technique.png" alt="" /></div> */}
+          <SurgicalTechniquesTable />
+          <sgt />
         </div>
       </div>
     )

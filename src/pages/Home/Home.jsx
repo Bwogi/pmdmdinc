@@ -10,10 +10,11 @@ import Partners from '../Partners/Partners'
 // import {Link} from 'react-router-dom'
 import Featured from '../../components/Featured/Featured'
 import NewHeader from '../../components/NewHeader/NewHeader'
-import Contact from '../../components/Contact/Contact'
-import Products from '../../components/Products/Products'
+// import Contact from '../../components/Contact/Contact'
+// import Products from '../../components/Products/Products'
 import SurgicalTechniques from '../../components/SurgicalTechniques/SurgicalTechniques'
-import Blog from '../../components/Blog/Blog'
+import Contact1 from '../../components/Contact1/Contact1'
+// import Blog from '../../components/Blog/Blog'
 // import Hero from '../../components/Hero/Hero'
 
 const Home = () => {
@@ -39,12 +40,13 @@ const Home = () => {
           <div id='techniques'>
             <SurgicalTechniques />
           </div>
-          <div id='catalogue'>
+          {/* <div id='catalogue'>
             <Products />
-      </div>
+      </div> */}
       {/* <div id='blog'><Blog /></div> */}
           <div id='contact'>
-            <Contact />      
+        {/* <Contact />   */}
+        <Contact1 />
           </div>
          
       </div>

@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import { Switch } from '@headlessui/react'
 // import Header from '../../components/Header/Header'
+import emailjs from '@emailjs/browser';
+import React, { useRef } from 'react';
+
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -11,8 +14,20 @@ function classNames(...classes) {
 
 export default function Contact() {
   const [agreed, setAgreed] = useState(false)
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_rv17dht', 'template_rk7qn8p', form.current, 'YOUR_PUBLIC_KEY')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
   return (
-    <div id='coontact'>
+    <div id='contact'>
        {/* <Header title1="Contact Us" title2="" title3='title3' /> */}
       <div className="relative bg-white">
       <div className="absolute inset-0">
@@ -65,69 +80,8 @@ export default function Contact() {
         </div>
         <div className="bg-white py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
           <div className="mx-auto max-w-lg lg:max-w-none">
-            {/* <form action="#" method="POST" className="grid grid-cols-1 gap-y-6">
-              <div>
-                <label htmlFor="full-name" className="sr-only">
-                  Full name
-                </label>
-                <input
-                  type="text"
-                  name="full-name"
-                  id="full-name"
-                  autoComplete="name"
-                  className="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-                  placeholder="Full name"
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="sr-only">
-                  Email
-                </label>
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  autoComplete="email"
-                  className="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-                  placeholder="Email"
-                />
-              </div>
-              <div>
-                <label htmlFor="phone" className="sr-only">
-                  Phone
-                </label>
-                <input
-                  type="text"
-                  name="phone"
-                  id="phone"
-                  autoComplete="tel"
-                  className="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-                  placeholder="Phone"
-                />
-              </div>
-              <div>
-                <label htmlFor="message" className="sr-only">
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={4}
-                  className="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-                  placeholder="Message"
-                  defaultValue={''}
-                />
-              </div>
-              <div>
-                <button
-                  type="submit"
-                  className="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-3 px-6 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-                >
-                  Submit
-                </button>
-              </div>
-            </form> */}
-               <form action="#" method="POST" className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+            
+               <form ref={form} onSubmit={sendEmail} className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
             <div>
               <label htmlFor="first-name" className="block text-sm font-medium text-gray-700">
                 First name
