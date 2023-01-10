@@ -208,7 +208,7 @@ export default function NewHeader() {
                 <a href="https://youtu.be/7KGHovGOgew"  target='_blank'>
                 <button
                   type="button"
-                  className="relative block w-full overflow-hidden rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
+                  className="relative block w-full overflow-hidden rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 shadow-3xl hover:bg-gray-50"
                 >
                   <span className="sr-only">Watch our video to learn more</span>
                   <img
