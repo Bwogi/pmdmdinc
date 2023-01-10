@@ -1,11 +1,11 @@
 const features = [
     { name: 'Origin', description: 'Developed by  primemedinc.com' },
-    { name: 'Features', description: "It provides both titanium and stainless bar options. Pectus bar's rounded and smooth ends prevent tissue damages. " },
-    { name: 'Benefits', description: 'Minimally invasive technique with excellent result. Prevent bar displacement with excellent stability. Best cosmetic result. Reducing operating time. Minimal blood loss. Fast recovery.' },
+    { name: 'Features', description: "Both titanium and stainless bar options are visible. Pectus bar ends are rounded and smooth to prevent tissue damage. " },
+    { name: 'Benefits', description: 'Excellent clinical results. Prevent bar displacement with outstanding stability. Best cosmetic results. Reduce operating time. Minimal blood loss. Fast recovery.' },
    
-    { name: 'Includes', description: 'This system consists of unique and special devices like the Claw Fixator and Hinge Plate used in surgical procedures of chest wall deformities' },
-    { name: 'Considerations', description: "It provides both titanium and stainless bar options. Titanium is provided to patients with nickel allergies." },
-     { name: 'Act Now!!!', description: 'A Huge discount is available for this top of the entire systems set. ' },
+    { name: 'Includes', description: 'This system contains unique devices like the Claw Fixator, Hinge Plate and nuts and bolts.' },
+    { name: 'Considerations', description: "Titanium bars are provided for patients with metal allergies." },
+     { name: 'Other Considerations', description: 'Hinge plates can be placed medial to the sternum with ease. ' },
   ]
   
   export default function Featured() {
@@ -15,9 +15,9 @@ const features = [
                 <div>
                     <h1 className="text-green-800">Featured Product</h1>
                     <h2 className="text-3xl font-bold tracking-tight text-gray-600 sm:text-4xl">Park's Pectus System Set</h2>
-                    <h3 className="text-2xl font-bold tracking-tight text-gray-400 sm:text-3xl">The set's Technical Specifications</h3>
+                    <h3 className="text-2xl font-bold tracking-tight text-gray-400 sm:text-3xl">Technical Specifications</h3>
             <p className="mt-4 text-gray-500">
-            This entire system set is used in a minimally invasive surgical procedures to correct all chest wall deformities.
+            Used in minimally invasive surgical procedures to correct chest wall deformities.
             </p>
   
             <dl className="mt-5 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
@@ -29,7 +29,7 @@ const features = [
               ))}
                     </dl>
                     <div className="flex justify-end ">
-                        <button className="border border-1 px-6 py-2 rounded-md bg-green-800 text-white"><a href="#contact">Place your order now</a></button>
+                        <button className="border border-1 px-6 py-2 mt-5 rounded-md bg-green-800 text-white"><a href="#contact">Place your order here</a></button>
                     </div>
           </div>
           <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
