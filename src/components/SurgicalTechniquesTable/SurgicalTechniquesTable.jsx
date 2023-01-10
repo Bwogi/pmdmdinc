@@ -1,16 +1,137 @@
-import { Link } from "react-router-dom"
+// import { Link } from "react-router-dom"
 
 const people = [
     {
-      name: 'Magic String Park Technique',
+      title: 'Magic String Park Technique',
       sub: 'Park Procedure for Pectus Carinatum Repair',
-      department: 'Optimization',
-      desc: 'The Magic String technique is a modified sandwich technique',
-      role: 'Member',
+      desc1: 'The Magic String technique is a modified sandwich technique.',
+      desc2: 'This is to relieve focal parasternal protrusions after pectus bar repair of PE,',
+      desc3: 'which are often emerging in asymmetric deformities.',
       image:
-        'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    },
-    // More people...
+      '/img/table1.jpg',
+      thevideo:  'https://www.youtube.com/watch?v=19JLb0tJEIc',
+  },
+  {
+    title: 'Flare buster Park Technique',
+    sub: 'Park Procedure for Pectus Carinatum Repair',
+    desc1: 'The Magic String technique is a modified sandwich technique.',
+    desc2: 'This is to relieve focal parasternal protrusions after pectus bar repair of PE,',
+    desc3: 'which are often emerging in asymmetric deformities.',
+    image:
+    '/img/table1.jpg',
+    thevideo:  'https://www.youtube.com/watch?v=19JLb0tJEIc',
+  },
+  {
+    title: 'The Live OR - Case 1',
+    sub: 'Park Procedure for Pectus Carinatum Repair',
+    desc1: 'The Magic String technique is a modified sandwich technique.',
+    desc2: 'This is to relieve focal parasternal protrusions after pectus bar repair of PE,',
+    desc3: 'which are often emerging in asymmetric deformities.',
+    image:
+    '/img/table1.jpg',
+    thevideo:  'https://www.youtube.com/watch?v=19JLb0tJEIc',
+  },
+  {
+    title: 'The Live OR - Case 2',
+    sub: 'Park Procedure for Pectus Carinatum Repair',
+    desc1: 'The Magic String technique is a modified sandwich technique.',
+    desc2: 'This is to relieve focal parasternal protrusions after pectus bar repair of PE,',
+    desc3: 'which are often emerging in asymmetric deformities.',
+    image:
+    '/img/table1.jpg',
+    thevideo:  'https://www.youtube.com/watch?v=19JLb0tJEIc',
+  },
+  {
+    title: 'The Live OR - Case 3',
+    sub: 'Park Procedure for Pectus Carinatum Repair',
+    desc1: 'The Magic String technique is a modified sandwich technique.',
+    desc2: 'This is to relieve focal parasternal protrusions after pectus bar repair of PE,',
+    desc3: 'which are often emerging in asymmetric deformities.',
+    image:
+    '/img/table1.jpg',
+    thevideo:  'https://www.youtube.com/watch?v=19JLb0tJEIc',
+  },
+  {
+    title: 'The Live OR - Case 4',
+    sub: 'Park Procedure for Pectus Carinatum Repair',
+    desc1: 'The Magic String technique is a modified sandwich technique.',
+    desc2: 'This is to relieve focal parasternal protrusions after pectus bar repair of PE,',
+    desc3: 'which are often emerging in asymmetric deformities.',
+    image:
+    '/img/table1.jpg',
+    thevideo:  'https://www.youtube.com/watch?v=19JLb0tJEIc',
+  },
+  {
+    title: 'The Live OR - Case 5 ',
+    sub: 'Park Procedure for Pectus Carinatum Repair',
+    desc1: 'The Magic String technique is a modified sandwich technique.',
+    desc2: 'This is to relieve focal parasternal protrusions after pectus bar repair of PE,',
+    desc3: 'which are often emerging in asymmetric deformities.',
+    image:
+    '/img/table1.jpg',
+    thevideo:  'https://www.youtube.com/watch?v=19JLb0tJEIc',
+  },
+  {
+    title: 'The Live OR - Case 6',
+    sub: 'Park Procedure for Pectus Carinatum Repair',
+    desc1: 'The Magic String technique is a modified sandwich technique.',
+    desc2: 'This is to relieve focal parasternal protrusions after pectus bar repair of PE,',
+    desc3: 'which are often emerging in asymmetric deformities.',
+    image:
+    '/img/table1.jpg',
+    thevideo:  'https://www.youtube.com/watch?v=19JLb0tJEIc',
+  },
+  {
+    title: 'Magic String Park Technique',
+    sub: 'Park Procedure for Pectus Carinatum Repair',
+    desc1: 'The Magic String technique is a modified sandwich technique.',
+    desc2: 'This is to relieve focal parasternal protrusions after pectus bar repair of PE,',
+    desc3: 'which are often emerging in asymmetric deformities.',
+    image:
+    '/img/table1.jpg',
+    thevideo:  'https://www.youtube.com/watch?v=19JLb0tJEIc',
+  },
+  {
+    title: 'Magic String Park Technique',
+    sub: 'Park Procedure for Pectus Carinatum Repair',
+    desc1: 'The Magic String technique is a modified sandwich technique.',
+    desc2: 'This is to relieve focal parasternal protrusions after pectus bar repair of PE,',
+    desc3: 'which are often emerging in asymmetric deformities.',
+    image:
+    '/img/table1.jpg',
+    thevideo:  'https://www.youtube.com/watch?v=19JLb0tJEIc',
+  },
+  {
+    title: 'Magic String Park Technique',
+    sub: 'Park Procedure for Pectus Carinatum Repair',
+    desc1: 'The Magic String technique is a modified sandwich technique.',
+    desc2: 'This is to relieve focal parasternal protrusions after pectus bar repair of PE,',
+    desc3: 'which are often emerging in asymmetric deformities.',
+    image:
+    '/img/table1.jpg',
+    thevideo:  'https://www.youtube.com/watch?v=19JLb0tJEIc',
+  },
+  {
+    title: 'Magic String Park Technique',
+    sub: 'Park Procedure for Pectus Carinatum Repair',
+    desc1: 'The Magic String technique is a modified sandwich technique.',
+    desc2: 'This is to relieve focal parasternal protrusions after pectus bar repair of PE,',
+    desc3: 'which are often emerging in asymmetric deformities.',
+    image:
+    '/img/table1.jpg',
+    thevideo:  'https://www.youtube.com/watch?v=19JLb0tJEIc',
+  },
+  {
+    title: 'Magic String Park Technique',
+    sub: 'Park Procedure for Pectus Carinatum Repair',
+    desc1: 'The Magic String technique is a modified sandwich technique.',
+    desc2: 'This is to relieve focal parasternal protrusions after pectus bar repair of PE,',
+    desc3: 'which are often emerging in asymmetric deformities.',
+    image:
+    '/img/table1.jpg',
+    thevideo:  'https://www.youtube.com/watch?v=19JLb0tJEIc',
+  },
+   
   ]
   
   export default function SurgicalTechniquesTable() {
@@ -47,12 +168,12 @@ const people = [
                       <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
                         Condition
                       </th>
-                      <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                      {/* <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
                         Role
                       </th>
                       <th scope="col" className="relative py-3.5 pl-3 pr-4 sm:pr-6">
                         <span className="sr-only">Edit</span>
-                      </th>
+                      </th> */}
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-200 bg-white">
@@ -61,29 +182,30 @@ const people = [
                         <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm sm:pl-6">
                           <div className="flex items-center">
                             <div className="h-10 w-10 flex-shrink-0">
-                              <img className="h-10 w-10 rounded-full" src={person.image} alt="" />
+                              <a href={person.thevideo} target='_blank' rel="noreferrer"><img className="h-10 w-10 rounded-full" src={person.image} alt="" /></a>
                             </div>
                             <div className="ml-4">
-                              <div className="font-medium text-gray-900">{person.name}</div>
+                              <div className="font-medium text-gray-900">{person.title}</div>
                               <div className="text-gray-500">{person.sub}</div>
                             </div>
                           </div>
                         </td>
                         <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                          <div className="text-gray-900">{person.title}</div>
-                          <div className="text-gray-500">{person.department}</div>
+                          <div className="text-gray-900"><a href={person.thevideo}>{person.desc1}</a> </div>
+                          <div className="text-gray-500">{person.desc2}</div>
+                          <div className="text-gray-500">{person.desc3}</div>
                         </td>
                         <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
                           <span className="inline-flex rounded-full bg-green-100 px-2 text-xs font-semibold leading-5 text-green-800">
                             Pectus Carinum
                           </span>
                         </td>
-                        <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{person.role}</td>
+                        {/* <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{person.role}</td>
                         <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
                           <Link to="#" className="text-indigo-600 hover:text-indigo-900">
                             Edit<span className="sr-only">, {person.name}</span>
                           </Link>
-                        </td>
+                        </td> */}
                       </tr>
                     ))}
                   </tbody>

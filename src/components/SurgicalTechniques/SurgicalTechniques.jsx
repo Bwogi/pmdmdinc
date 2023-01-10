@@ -3,17 +3,17 @@ import SurgicalTechniquesTable from "../SurgicalTechniquesTable/SurgicalTechniqu
 
 const features = [
     {
-      name: 'Park Technique shows how the Parks Pectus Set is used for Pectus Carinatum Repair',
-            description:
+      name: "Park's Pectus Set is used to repair Pectus Carinatum Repair",
+      description:
               'This video demonstrates the Park Technique for Pectus Carinatum Repair - Sandwich Technique by Hyung Joo Park',
       imageSrc: '/img/video1.jpg',
-    imageAlt: 'This video demonstrates the Park Technique for Pectus Carinatum Repair',
+    imageAlt: 'This video demonstrates Park Technique for Pectus Carinatum Repair',
       videolink:'https://www.youtube.com/watch?v=7KGHovGOgew&t=190s'
     },
     {
-      name: 'Park Technique shows how the Parks Pectus Set is used for Pectus Excavatum Repair',
+      name: "Park's Pectus Set is used for Pectus Excavatum Repair",
       description:
-        'This video demonstrates the Park                                                                                                                         Technique for Pectus Excavatum Repair - Hyung Joo Park',
+        'This video demonstrates Park Technique for Pectus Excavatum Repair - Hyung Joo Park',
       imageSrc: '/img/video2.jpg',
       imageAlt: '',
       videolink:'https://www.youtube.com/watch?v=7KGHovGOgew&t=190s'
@@ -32,7 +32,7 @@ const features = [
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-600 sm:text-4xl">Surgical Techniques using Park's System Set</h2>
             <p className="mt-4 text-gray-500">
-              Park's Pectus system set is so easy to use yet so advanced enough to apply the latest and most modern techniques used in surgical theatres today. This section demonstrates how the Park's Pectus System Set is used in the correction of various chest wall deformities.
+              Park's Pectus system set is easy to use yet advanced. You can apply the latest and most modern techniques used in surgical theatres. 
             </p>
           </div>
   
@@ -48,8 +48,8 @@ const features = [
                     'mt-6 lg:mt-0 lg:row-start-1 lg:col-span-5 xl:col-span-4'
                   )}
                 >
-                  <h3 className="text-lg font-medium text-gray-900">{feature.name}</h3>
-                  <p className="mt-2 text-sm text-gray-500">{feature.description}</p>
+                  <h3 className="text-lg font-medium text-gray-900 text-center">{feature.name}</h3>
+                  <p className="mt-2 text-sm text-gray-500 text-center">{feature.description}</p>
                   <div className="flex justify-center my-4 ">
                     {/* <button className="border border-1 px-6 py-2 rounded-md bg-green-800 text-white"><Link to="#contact">Buy the Set Now</Link></button> */}
                   </div>
@@ -61,8 +61,9 @@ const features = [
                   )}
                 >
                   <div className="aspect-w-5 aspect-h-2 overflow-hidden rounded-lg bg-gray-100">
-                    {/* <Link to={feature.videolink}><img src={feature.imageSrc} alt={feature.imageAlt} className="object-cover object-center" /></Link>  */}
+                    <a href={feature.videolink}><img src={feature.imageSrc} alt={feature.imageAlt} className="object-cover object-center" /></a> 
                   </div>
+                  
                 </div>
               </div>
             ))}

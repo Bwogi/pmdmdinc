@@ -205,7 +205,7 @@ export default function NewHeader() {
                 <rect x={118} width={404} height={784} fill="url(#4f4f415c-a0e9-44c2-9601-6ded5a34a13e)" />
               </svg>
               <div className="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md">
-                <a href="https://youtu.be/7KGHovGOgew"  target='_blank'>
+                <a href="https://youtu.be/7KGHovGOgew"  target='_blank' rel="noreferrer">
                 <button
                   type="button"
                   className="relative block w-full overflow-hidden rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 shadow-3xl hover:bg-gray-50"
