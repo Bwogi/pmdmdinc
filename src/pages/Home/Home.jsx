@@ -35,7 +35,7 @@ const Home = () => {
           </div> */}
       
           <div id='partners'> 
-            <Partners />
+            {/* <Partners /> */}
           </div>
           <div id='techniques'>
             <SurgicalTechniques />
