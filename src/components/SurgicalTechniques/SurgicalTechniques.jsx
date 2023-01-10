@@ -51,7 +51,7 @@ const features = [
                   <h3 className="text-lg font-medium text-gray-900">{feature.name}</h3>
                   <p className="mt-2 text-sm text-gray-500">{feature.description}</p>
                   <div className="flex justify-center my-4 ">
-                    <button className="border border-1 px-6 py-2 rounded-md bg-green-800 text-white"><a href="#contact">Buy the Set Now</a></button>
+                    {/* <button className="border border-1 px-6 py-2 rounded-md bg-green-800 text-white"><Link to="#contact">Buy the Set Now</Link></button> */}
                   </div>
                 </div>
                 <div
@@ -61,7 +61,7 @@ const features = [
                   )}
                 >
                   <div className="aspect-w-5 aspect-h-2 overflow-hidden rounded-lg bg-gray-100">
-                    <a href={feature.videolink}><img src={feature.imageSrc} alt={feature.imageAlt} className="object-cover object-center" /></a> 
+                    {/* <Link to={feature.videolink}><img src={feature.imageSrc} alt={feature.imageAlt} className="object-cover object-center" /></Link>  */}
                   </div>
                 </div>
               </div>
@@ -69,7 +69,6 @@ const features = [
           </div>
           {/* <div><img src="/img/technique.png" alt="" /></div> */}
           <SurgicalTechniquesTable />
-          <sgt />
         </div>
       </div>
     )

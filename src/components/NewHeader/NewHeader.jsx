@@ -149,7 +149,7 @@ export default function NewHeader() {
                 </span>
               </h1>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-              We are a distributor of <span className='font-bold'>Pediatric Medical Devices</span>.<br /> We pride ourselves in distributing the best technologies available in the marketplace. We provide the state-of-the-art chest wall deformity correction equipment and supplies.
+              We distribute <span className='font-bold'>Pediatric Medical Devices</span>.<br /> We pride ourselves in delivering the best technologies available in the marketplace. We provide state-of-the-art chest wall deformity correction equipment and supplies.
               </p>
               <div className="mt-8 sm:mx-auto sm:max-w-lg sm:text-center lg:mx-0 lg:text-left">
                 <p className="text-xs text-gray-400">Sign up for latest updates on the latest medical device technology.</p>
