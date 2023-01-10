@@ -165,9 +165,9 @@ const people = [
                       <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
                         Description
                       </th>
-                      <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                      {/* <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
                         Condition
-                      </th>
+                      </th> */}
                       {/* <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
                         Role
                       </th>
@@ -187,6 +187,9 @@ const people = [
                             <div className="ml-4">
                               <div className="font-medium text-gray-900">{person.title}</div>
                               <div className="text-gray-500">{person.sub}</div>
+                              <div className="inline-flex rounded-full bg-green-100 px-2 text-xs font-semibold leading-5 text-green-800">
+                            Pectus Carinum
+                          </div>
                             </div>
                           </div>
                         </td>
@@ -195,11 +198,11 @@ const people = [
                           <div className="text-gray-500">{person.desc2}</div>
                           <div className="text-gray-500">{person.desc3}</div>
                         </td>
-                        <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+                        {/* <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
                           <span className="inline-flex rounded-full bg-green-100 px-2 text-xs font-semibold leading-5 text-green-800">
                             Pectus Carinum
                           </span>
-                        </td>
+                        </td> */}
                         {/* <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{person.role}</td>
                         <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
                           <Link to="#" className="text-indigo-600 hover:text-indigo-900">
