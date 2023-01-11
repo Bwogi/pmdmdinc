@@ -8,7 +8,7 @@ const features = [
               'This video demonstrates the Park Technique for Pectus Carinatum Repair - Sandwich Technique by Hyung Joo Park',
       imageSrc: '/img/video1.jpg',
     imageAlt: 'This video demonstrates Park Technique for Pectus Carinatum Repair',
-      videolink:'https://www.youtube.com/watch?v=7KGHovGOgew&t=190s'
+      videolink:'https://www.youtube.com/watch?v=VceHqbTo7rk'
     },
     {
       name: "Park's Pectus Set is used for Pectus Excavatum Repair",
@@ -61,7 +61,7 @@ const features = [
                   )}
                 >
                   <div className="aspect-w-5 aspect-h-2 overflow-hidden rounded-lg bg-gray-100">
-                    <a href={feature.videolink}><img src={feature.imageSrc} alt={feature.imageAlt} className="object-cover object-center" /></a> 
+                    <a href={feature.videolink} target="_blank" rel="noreferrer"><img src={feature.imageSrc} alt={feature.imageAlt} className="object-cover object-center" /></a> 
                   </div>
                   
                 </div>
