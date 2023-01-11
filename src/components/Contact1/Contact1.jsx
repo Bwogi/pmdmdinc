@@ -24,7 +24,7 @@ export default function Contact1() {
                         </div>
                         <div className="ml-3 text-base text-gray-500">
                         <p>+1 (209) 684-5576</p>
-                        <p className="mt-1">Mon - Fri 8am to 6pm PST</p>
+                        <p className="mt-1">Mon - Fri 8am to 5pm PST</p>
                         </div>
                     </div>
                     <div className="mt-6 flex">
@@ -52,7 +52,7 @@ export default function Contact1() {
                         </div>
                         <div className="ml-3 text-base text-gray-500">
                         <p>+1 (209) 684-5576</p>
-                        <p className="mt-1">Mon - Fri 8am to 6pm PST</p>
+                        <p className="mt-1">Mon - Fri 8am to 5pm PST</p>
                         </div>
                     </div>
                     <div className="mt-6 flex">
