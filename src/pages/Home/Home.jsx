@@ -11,7 +11,7 @@ import React from 'react'
 import Featured from '../../components/Featured/Featured'
 import NewHeader from '../../components/NewHeader/NewHeader'
 // import Contact from '../../components/Contact/Contact'
-// import Products from '../../components/Products/Products'
+import Products from '../../components/Products/Products'
 import SurgicalTechniques from '../../components/SurgicalTechniques/SurgicalTechniques'
 import Contact1 from '../../components/Contact1/Contact1'
 // import Blog from '../../components/Blog/Blog'
@@ -40,9 +40,9 @@ const Home = () => {
           <div id='techniques'>
             <SurgicalTechniques />
           </div>
-          {/* <div id='catalogue'>
+          <div id='product-list'>
             <Products />
-      </div> */}
+      </div>
       {/* <div id='blog'><Blog /></div> */}
           <div id='contact'>
         {/* <Contact />   */}

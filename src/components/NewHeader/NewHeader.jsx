@@ -10,7 +10,7 @@ const navigation = [
     { name: 'Surgical Techniques', href: '#techniques' },
     // { name: 'Product Catalogue', href: '#catalogue' },
     // { name: 'Blog', href: '#blog' },
-  // { name: 'Partners', href: '#partners' },
+  { name: 'Product List', href: '#product-list' },
   { name: 'Contact', href: '#contact' },
 ]
 

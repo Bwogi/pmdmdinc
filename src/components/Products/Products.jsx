@@ -12,7 +12,7 @@ const Products = () => {
       
       <div className=' mb-20'>
         <div className='flex justify-center flex-col text-center'>
-          <h1 className="text-green-800">Product Catalogue</h1>
+          <h1 className="text-green-800">Product List</h1>
           {/* <h2 className="text-3xl font-bold tracking-tight text-gray-600 sm:text-4xl">Park's Pectus System</h2> */}
         </div>
       
