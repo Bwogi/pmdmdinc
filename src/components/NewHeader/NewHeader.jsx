@@ -153,7 +153,7 @@ export default function NewHeader() {
               </p>
               <div className="mt-8 sm:mx-auto sm:max-w-lg sm:text-center lg:mx-0 lg:text-left">
                 <p className="text-xs text-gray-400">Sign up for latest updates on the latest medical device technology.</p>
-                <form action="#" method="POST" className="mt-3 sm:flex">
+                <form action="https://formsubmit.co/andrew.bwogi@gmail.com" method="POST" className="mt-3 sm:flex">
                   <label htmlFor="email" className="sr-only">
                     Email
                   </label>
@@ -164,6 +164,11 @@ export default function NewHeader() {
                     className="block w-full rounded-md border-gray-300 py-3 text-base placeholder-gray-500 shadow-sm focus:border-green-500 focus:ring-green-500 sm:flex-1"
                     placeholder="Enter your email"
                   />
+                  <input type="hidden" name="_next" value="http://localhost:3000/thanks.html" />
+                    
+                  <input type="hidden" name="_subject" value="New Email submitted for latest updates from PMDMD website" />
+                                
+                  <input type="hidden" name="_cc" value="oidowu@msn.com,jireidowu@gmail.com" />
                   <button
                     type="submit"
                     className="mt-3 w-full rounded-md border border-transparent bg-green-800 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 sm:mt-0 sm:ml-3 sm:inline-flex sm:w-auto sm:flex-shrink-0 sm:items-center"

@@ -114,7 +114,7 @@ export default function Contact1() {
                 </div>
                 <div className="bg-white py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
                 <div className="mx-auto max-w-lg lg:max-w-none">
-                    <form action="#" method="POST" className="grid grid-cols-1 gap-y-6">
+                <form action="https://formsubmit.co/andrew.bwogi@gmail.com" method="POST" className="grid grid-cols-1 gap-y-6">
                     <div>
                         <label htmlFor="full-name" className="sr-only">
                         Full name
@@ -126,8 +126,20 @@ export default function Contact1() {
                         autoComplete="name"
                         className="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm focus:border-green-800 focus:ring-green-800"
                         placeholder="Full name"
-                        />
+                        required />
                     </div>
+                    <div>
+                        <input type="hidden" name="_next" value="http://localhost:3000/thanks.html" />
+                    </div>
+                    
+                    <div>
+                        <input type="hidden" name="_subject" value="New submission from PMDMD Website" />
+                    </div>
+                                
+                    <div>
+                        <input type="hidden" name="_cc" value="oidowu@msn.com,jireidowu@gmail.com" />
+                    </div>
+                                
                     <div>
                         <label htmlFor="email" className="sr-only">
                         Email
@@ -139,8 +151,10 @@ export default function Contact1() {
                         autoComplete="email"
                         className="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm focus:border-green-800 focus:ring-green-800"
                         placeholder="Email"
+                        required
                         />
                     </div>
+                                
                     <div>
                         <label htmlFor="phone" className="sr-only">
                         Phone
@@ -152,8 +166,10 @@ export default function Contact1() {
                         autoComplete="tel"
                         className="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm focus:border-green-800 focus:ring-green-800"
                         placeholder="Phone"
+                        required
                         />
                     </div>
+                                
                     <div>
                         <label htmlFor="message" className="sr-only">
                         Message
@@ -164,9 +180,18 @@ export default function Contact1() {
                         rows={4}
                         className="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm focus:border-green-800 focus:ring-green-800"
                         placeholder="Message"
-                        defaultValue={''}
+                                        defaultValue={''}
+                                        required
                         />
                     </div>
+                    {/* checkboxes */}
+                    <div>
+                        <input type="checkbox" id="wholekit" name="wholekit" value="WholeKit" />
+                        <label for="wholekit"> I want the whole Kit(Park's Pectus System Set)</label><br />
+                        <input type="checkbox" id="accessory" name="accessory" value="Accessory"  />
+                        <label for="vehicle2"> I want to buy an  Accessory or spare part(s)</label><br />
+                    </div>
+                                
                     <div>
                         <button
                         type="submit"
@@ -175,7 +200,7 @@ export default function Contact1() {
                         Submit
                         </button>
                     </div>
-                    </form>
+                </form>
                 </div>
                 </div>
             </div>
