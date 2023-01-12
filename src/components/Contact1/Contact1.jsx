@@ -1,8 +1,25 @@
 
 import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
 import { Link } from 'react-router-dom'
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 export default function Contact1() {
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('service_rv17dht', 'template_r04xusa', form.current, 'N-mLmSDWIHSghOvx3')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+    };
+  
+
     return (
         <>
             
@@ -10,7 +27,7 @@ export default function Contact1() {
             <div className="mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
                 <div className="mx-auto max-w-lg md:grid md:max-w-none md:grid-cols-2 md:gap-8">
                         <div>
-                        <h1 className='text-green-800'>Contact Us</h1>
+                        <h1 className='text-green-800'>Contact Us<                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              /h1>
                     <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl sm:tracking-tight">Sales Support</h2>
                     <div className="mt-3">
                     <p className="text-lg text-gray-500">
@@ -114,31 +131,21 @@ export default function Contact1() {
                 </div>
                 <div className="bg-white py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
                 <div className="mx-auto max-w-lg lg:max-w-none">
-                <form action="https://formsubmit.co/andrew.bwogi@gmail.com" method="POST" className="grid grid-cols-1 gap-y-6">
+                <form className="grid grid-cols-1 gap-y-6">
                     <div>
-                        <label htmlFor="full-name" className="sr-only">
+                        <label htmlFor="name" className="sr-only">
                         Full name
                         </label>
                         <input
                         type="text"
-                        name="full-name"
-                        id="full-name"
+                        name="name"
+                        id="name"
                         autoComplete="name"
                         className="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm focus:border-green-800 focus:ring-green-800"
                         placeholder="Full name"
                         required />
                     </div>
-                    <div>
-                        <input type="hidden" name="_next" value="http://localhost:3000/thanks.html" />
-                    </div>
-                    
-                    <div>
-                        <input type="hidden" name="_subject" value="New submission from PMDMD Website" />
-                    </div>
-                                
-                    <div>
-                        <input type="hidden" name="_cc" value="oidowu@msn.com,jireidowu@gmail.com" />
-                    </div>
+                 
                                 
                     <div>
                         <label htmlFor="email" className="sr-only">
@@ -154,6 +161,7 @@ export default function Contact1() {
                         required
                         />
                     </div>
+
                                 
                     <div>
                         <label htmlFor="phone" className="sr-only">
@@ -166,6 +174,21 @@ export default function Contact1() {
                         autoComplete="tel"
                         className="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm focus:border-green-800 focus:ring-green-800"
                         placeholder="Phone"
+                        required
+                        />
+                    \</div>
+                                
+                    <div>
+                        <label htmlFor="email" className="sr-only">
+                        Subject
+                        </label>
+                        <input
+                        id="subject"
+                        name="subject"
+                        type="text"
+                        autoComplete="subject"
+                        className="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm focus:border-green-800 focus:ring-green-800"
+                        placeholder="Subject"
                         required
                         />
                     </div>
@@ -186,7 +209,7 @@ export default function Contact1() {
                     </div>
                     {/* checkboxes */}
                     <div>
-                        <input type="checkbox" id="wholekit" name="wholekit" value="WholeKit" />
+                        <input type="checkbox" id="wholekit" name="wholekit" value="wholekit" />
                         <label for="wholekit"> I want the whole Kit(Park's Pectus System Set)</label><br />
                         <input type="checkbox" id="accessory" name="accessory" value="Accessory"  />
                         <label for="vehicle2"> I want to buy an  Accessory or spare part(s)</label><br />
