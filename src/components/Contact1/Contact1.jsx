@@ -176,7 +176,7 @@ export default function Contact1() {
                         placeholder="Phone"
                         required
                         />
-                    \</div>
+                    </div>
                                 
                     <div>
                         <label htmlFor="email" className="sr-only">

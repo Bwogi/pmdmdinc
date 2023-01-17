@@ -139,10 +139,7 @@ const people = [
       <div className="px-4 sm:px-6 lg:px-8 mt-[50px]">
         <div className="sm:flex sm:items-center">
           <div className="sm:flex-auto text-center">
-            {/* <h1 className="text-xl font-semibold text-gray-900">Users</h1> */}
-            {/* <p className="mt-2 text-sm text-gray-700">
-              A list of all the users in your account including their name, title, email and role.
-            </p> */}
+          
                     <h1 className="text-2xl font-bold  text-gray-600 text-center">More Surgical Techniques using Park's Pectus System Set </h1>
                     <h1 className="text-xl  text-gray-400 text-center">The videos below continue to demonstrate the versatility of the Park's Pectus System Set</h1>
                   

@@ -8,6 +8,7 @@ import React from 'react'
 // import Contact from '../Contact/Contact'
 // import ImageIndex from  '../../img/img_index.jpg'
 // import {Link} from 'react-router-dom'
+import STVideos from '../../components/STVideos/STVideos'
 import Featured from '../../components/Featured/Featured'
 import NewHeader from '../../components/NewHeader/NewHeader'
 // import Contact from '../../components/Contact/Contact'
@@ -39,7 +40,10 @@ const Home = () => {
           </div>
           <div id='techniques'>
             <SurgicalTechniques />
-          </div>
+      </div>
+      <div>
+        <STVideos />
+      </div>
           <div id='product-list'>
             <Products />
       </div>

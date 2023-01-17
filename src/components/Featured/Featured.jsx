@@ -13,7 +13,7 @@ const features = [
         <div className="bg-white" id='featured'>
         <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-y-16 gap-x-8 py-2 px-4 sm:px-6 sm:py-16 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
                 <div>
-                    <h1 className="text-green-800">Featured Product</h1>
+                    <h1 className="text-[#C49A69]">Featured Product</h1>
                     <h2 className="text-3xl font-bold tracking-tight text-gray-600 sm:text-4xl">Park's Pectus System Set</h2>
                     <h3 className="text-2xl font-bold tracking-tight text-gray-400 sm:text-3xl">Technical Specifications</h3>
             <p className="mt-4 text-gray-500">
@@ -29,7 +29,7 @@ const features = [
               ))}
                     </dl>
                     <div className="flex justify-end ">
-                        <button className="border border-1 px-6 py-2 mt-5 rounded-md bg-green-800 text-white"><a href="#contact">Place your order here</a></button>
+                        <button className="border border-1 px-6 py-2 mt-5 rounded-md bg-[#C49A69] text-white"><a href="#contact">Place your order here</a></button>
                     </div>
           </div>
           <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">

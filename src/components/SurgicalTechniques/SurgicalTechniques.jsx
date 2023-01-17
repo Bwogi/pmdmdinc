@@ -1,4 +1,4 @@
-import SurgicalTechniquesTable from "../SurgicalTechniquesTable/SurgicalTechniquesTable"
+// import SurgicalTechniquesTable from "../SurgicalTechniquesTable/SurgicalTechniquesTable"
 // import sgt from "../sgt/sgt"
 
 const features = [
@@ -35,7 +35,7 @@ const features = [
               Park's Pectus system set is easy to use yet advanced. You can apply the latest and most modern techniques used in surgical theatres. 
             </p>
           </div>
-  
+   
           <div className="mt-16 space-y-16">
             {features.map((feature, featureIdx) => (
               <div
@@ -69,7 +69,7 @@ const features = [
             ))}
           </div>
           {/* <div><img src="/img/technique.png" alt="" /></div> */}
-          <SurgicalTechniquesTable />
+          {/* <SurgicalTechniquesTable /> */}
         </div>
       </div>
     )
