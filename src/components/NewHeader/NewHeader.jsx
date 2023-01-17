@@ -29,6 +29,7 @@ export default function NewHeader() {
       }, (error) => {
           console.log(error.text);
       });
+      e.target.reset();
     
   };
 
