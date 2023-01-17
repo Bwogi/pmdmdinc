@@ -50,7 +50,7 @@ export default function Contact1() {
                         <EnvelopeIcon className="h-6 w-6 text-[#C49A69]" aria-hidden="true" />
                         </div>
                         <div className="ml-3 text-base text-gray-500">
-                        <p>support@pmdmdinc.com</p>
+                        <p>info@pmdmdllc.com</p>
                         </div>
                     </div>
                     </div>
@@ -78,7 +78,7 @@ export default function Contact1() {
                         <EnvelopeIcon className="h-6 w-6 text-green-800" aria-hidden="true" />
                         </div>
                         <div className="ml-3 text-base text-gray-500">
-                        <p>support@pmdmdinc.com</p>
+                        <p>info@pmdmdllc.com</p>
                         </div>
                     </div>
                     </div>
@@ -117,7 +117,7 @@ export default function Contact1() {
                         <dt className="sr-only">Email</dt>
                         <dd className="flex">
                         <EnvelopeIcon className="h-6 w-6 flex-shrink-0 text-gray-400" aria-hidden="true" />
-                        <span className="ml-3">support@pmdmdinc.com</span>
+                        <span className="ml-3">info@pmdmdllc.com</span>
                         </dd>
                     </div>
                     </dl>
@@ -211,7 +211,8 @@ export default function Contact1() {
                                         required
                         />
                     </div>
-                    {/* checkboxes */}
+                                {/* checkboxes */}
+                                
                     <div>
                         <input type="checkbox" id="check" name="wholekit" value="wholekit" />
                         <label for="wholekit" className='text-gray-500'> I want the whole Kit(Park's Pectus System Set)</label><br />
