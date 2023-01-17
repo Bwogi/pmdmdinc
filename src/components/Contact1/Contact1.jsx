@@ -1,6 +1,6 @@
 
 import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
@@ -26,14 +26,15 @@ export default function Contact1() {
             <div className="bg-white">
             <div className="mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
                 <div className="mx-auto max-w-lg md:grid md:max-w-none md:grid-cols-2 md:gap-8">
-                        <div>
-                        <h1 className='text-[#C49A69]'>Contact Us<                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              /h1>
-                    <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl sm:tracking-tight">Sales Support</h2>
-                    <div className="mt-3">
-                    <p className="text-lg text-gray-500">
-                    Please get in touch with our expert support team for all your sales support questions. The team is ready to answer all your questions. 
-                    </p>
-                    </div>
+                    <div>
+                        <h1 className='text-[#C49A69]'>Contact Us</h1>
+                            
+                        <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl sm:tracking-tight">Sales Support</h2>
+                        <div className="mt-3">
+                            <p className="text-lg text-gray-500">
+                                Please get in touch with our expert support team for all your sales support questions. The team is ready to answer all your questions. 
+                            </p>
+                        </div>
                     <div className="mt-9">
                     <div className="flex">
                         <div className="flex-shrink-0">
@@ -120,18 +121,21 @@ export default function Contact1() {
                         </dd>
                     </div>
                     </dl>
-                    <p className="mt-6 text-base text-gray-500">
+                    {/* <p className="mt-6 text-base text-gray-500">
                     Looking for careers?{' '}
                     <Link to="#" className="font-medium text-gray-700 underline">
                         View all job openings
                     </Link>
                     .
-                    </p>
+                    </p> */}
+                    <div className='mt-10 w-[150px] h-[150px] ml-10'>
+                        <img src="/img/logo.jpg" alt="logo" />
+                    </div>
                 </div>
                 </div>
                 <div className="bg-white py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
                 <div className="mx-auto max-w-lg lg:max-w-none">
-                <form className="grid grid-cols-1 gap-y-6">
+                <form className="grid grid-cols-1 gap-y-6" onSubmit={sendEmail}>
                     <div>
                         <label htmlFor="name" className="sr-only">
                         Full name
@@ -209,16 +213,16 @@ export default function Contact1() {
                     </div>
                     {/* checkboxes */}
                     <div>
-                        <input type="checkbox" id="wholekit" name="wholekit" value="wholekit" />
-                        <label for="wholekit"> I want the whole Kit(Park's Pectus System Set)</label><br />
-                        <input type="checkbox" id="accessory" name="accessory" value="Accessory"  />
-                        <label for="vehicle2"> I want to buy an  Accessory or spare part(s)</label><br />
+                        <input type="checkbox" id="check" name="wholekit" value="wholekit" />
+                        <label for="wholekit" className='text-gray-500'> I want the whole Kit(Park's Pectus System Set)</label><br />
+                        <input type="checkbox" id="check" name="accessory" value="Accessory"  />
+                        <label for="accessory" className='text-gray-500'> I want to buy an  Accessory or spare part(s)</label><br />
                     </div>
                                 
                     <div>
                         <button
                         type="submit"
-                        className="inline-flex w-full items-center justify-center rounded-md border border-transparent bg-[#384A6B] px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2"
+                        className="inline-flex w-full items-center justify-center rounded-md border border-transparent bg-gray-700 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2"
                         >
                         Submit
                         </button>
