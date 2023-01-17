@@ -125,7 +125,7 @@ export default function Contact1() {
                     </div>
                     <div className="bg-white py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
                         <div className="mx-auto max-w-lg lg:max-w-none">
-                            <form className="grid grid-cols-1 gap-y-6" onSubmit={sendEmail}>
+                            <form className="grid grid-cols-1 gap-y-6" ref={form} onSubmit={sendEmail}>
                                 <div>
                                     <label htmlFor="name" className="sr-only">
                                     Full name
