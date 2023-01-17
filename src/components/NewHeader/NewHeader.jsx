@@ -94,7 +94,7 @@ export default function NewHeader() {
               <span className="inline-flex rounded-md shadow-md ring-1 ring-black ring-opacity-5">
                 <Link
                   to="/login"
-                  className="inline-flex items-center rounded-md border border-transparent bg-white px-4 py-2 text-base font-medium text-green-800 hover:bg-gray-50"
+                  className="inline-flex items-center rounded-md border border-transparent bg-white px-4 py-2 text-base font-medium text-[#C49A69] hover:bg-gray-50"
                 >
                   Log in
                 </Link>
@@ -157,7 +157,7 @@ export default function NewHeader() {
           <div className="lg:grid lg:grid-cols-12 lg:gap-8">
             <div className="sm:text-center md:mx-auto md:max-w-2xl lg:col-span-6 lg:text-left">
               <h1>
-                <span className="block text-base font-semibold text-green-900 sm:text-lg lg:text-base xl:text-lg">
+                <span className="block text-base font-semibold text-[#C49A69] sm:text-lg lg:text-base xl:text-lg">
                   Introducing
                 </span>
                 <span className="mt-1 block text-4xl font-bold tracking-tight sm:text-3xl xl:text-4xl">
@@ -189,7 +189,7 @@ export default function NewHeader() {
                   <input type="hidden" name="_cc" value="oidowu@msn.com,jireidowu@gmail.com" /> */}
                   <button
                     type="submit"
-                    className="mt-3 w-full rounded-md border border-transparent bg-[#C49A69] px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 sm:mt-0 sm:ml-3 sm:inline-flex sm:w-auto sm:flex-shrink-0 sm:items-center"
+                    className="mt-3 w-full rounded-md border border-transparent bg-[#384A6B] px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 sm:mt-0 sm:ml-3 sm:inline-flex sm:w-auto sm:flex-shrink-0 sm:items-center"
                   >
                     Notify me
                   </button>

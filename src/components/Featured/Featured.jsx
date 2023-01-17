@@ -29,7 +29,7 @@ const features = [
               ))}
                     </dl>
                     <div className="flex justify-end ">
-                        <button className="border border-1 px-6 py-2 mt-5 rounded-md bg-[#C49A69] text-white"><a href="#contact">Place your order here</a></button>
+                        <button className="border border-1 px-6 py-2 mt-5 rounded-md bg-[#384A6B] text-white"><a href="#contact">Place your order here</a></button>
                     </div>
           </div>
           <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">

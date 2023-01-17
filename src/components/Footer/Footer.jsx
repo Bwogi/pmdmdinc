@@ -1,11 +1,10 @@
 const navigation = {
     main: [
       { name: 'About', href: '#' },
-      { name: 'Blog', href: '#' },
-      { name: 'Jobs', href: '#' },
-      { name: 'Press', href: '#' },
-      { name: 'Accessibility', href: '#' },
-      { name: 'Partners', href: '#' },
+      { name: 'Features', href: '#featured' },
+      { name: 'Surgical Techniques', href: '#techniques' },
+      { name: 'Product List', href: '#product-list' },
+      { name: 'Contact', href: '#contact' },
     ],
     social: [
       {
@@ -87,13 +86,13 @@ const navigation = {
           </nav>
           <div className="mt-8 flex justify-center space-x-6">
             {navigation.social.map((item) => (
-              <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
+              <a key={item.name} href={item.href} className="text-[#384A6B] hover:text-gray-500">
                 <span className="sr-only">{item.name}</span>
                 <item.icon className="h-6 w-6" aria-hidden="true" />
               </a>
             ))}
           </div>
-          <p className="mt-8 text-center text-base text-gray-400">&copy; 2020 Your Company, Inc. All rights reserved.</p>
+          <p className="mt-8 text-center text-base text-gray-400">&copy; 2023 Pediatric Medical Device Marketing and Distribution LLC. All rights reserved.</p>
         </div>
       </footer>
     )

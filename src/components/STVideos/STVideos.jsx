@@ -58,9 +58,12 @@ export default function Index() {
         <div className="mx-4 md:w-2/3 lg:w-auto md:mx-6 xl:ml-20  flex flex-col justify-start items-start">
           <h1 className="text-xl md:text-2xl xl:text-4xl font-semibold leading-6 xl:leading-10 text-gray-600">Park's Pectus System <span className="text-[#C49A69]">Videos</span>.</h1>
           <p className="mt-4 text-base leading-normal text-gray-600">See how this state-of-the-art Pectus system is used in chest wall deformity correction.  </p>
-          {/* <button className="w-full md:w-auto text-center mt-6 bg-[#C49A69] hover:-translate-y-1 ease-in-out transition duration-300 rounded">
-            <p className="text-base py-4 px-6 font-medium leading-none text-white">Find your industry</p>
-          </button> */}
+          <a href="#contact">
+          <button className="w-full md:w-auto text-center mt-6 bg-[#384A6B] hover:-translate-y-1 ease-in-out transition duration-300 rounded">
+            <p className="text-base py-4 px-6 font-medium leading-none text-white">Place your order here</p>
+          </button> 
+          </a>
+          
         </div>
         <div className="mainDiv pl-4 md:pl-6 ">
           <div className="h-5 mt-6 mb-4 md:mt-0 lg:mb-0 flex justify-end items-end space-x-6 ">
