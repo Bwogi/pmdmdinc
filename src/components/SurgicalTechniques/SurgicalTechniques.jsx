@@ -3,7 +3,7 @@
 
 const features = [
     {
-      name: "Park's Pectus Set is used to repair Pectus Carinatum Repair",
+      name: "Park Technique for Pectus Carinatum Repair.",
       description:
               'This video demonstrates the Park Technique for Pectus Carinatum Repair - Sandwich Technique by Hyung Joo Park',
       imageSrc: '/img/carinatum.jpg',
@@ -11,7 +11,7 @@ const features = [
       videolink:'https://www.youtube.com/watch?v=VceHqbTo7rk'
     },
     {
-      name: "Park's Pectus Set is used for Pectus Excavatum Repair",
+      name: "Park Technique for Pectus Excavatum Repair.",
       description:
         'This video demonstrates Park Technique for Pectus Excavatum Repair - Hyung Joo Park',
       imageSrc: '/img/excavatum.jpg',
