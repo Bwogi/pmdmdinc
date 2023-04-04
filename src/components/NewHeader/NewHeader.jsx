@@ -72,7 +72,7 @@ export default function NewHeader() {
                   <span className="sr-only">Pediatric Medical Device Marketing and Distribution LLC.</span>
                   <img
                     className="h-8 w-auto sm:h-10 rounded-md"
-                    src="/img/logo.jpg"
+                    src="/img/pmdmdLogo.png"
                     alt=""
                   />
                 </Link>
@@ -121,7 +121,7 @@ export default function NewHeader() {
                   <div>
                     <img
                       className="h-8 w-auto rounded-md"
-                      src="/img/logo.jpg"
+                      src="/img/pmdmdLogo.png"
                       alt=""
                     />
                   </div>

@@ -73,7 +73,7 @@ export default function Contact() {
               </p>
               <div className='flex justify-center items-center h-[300px] w-[300px]'>
                 <Link to='/'>
-                <img src="/img/logo.jpg" alt="logo" className='h-[200px] w-[200px] rounded-xl' />
+                <img src="/img/pmdmdLogo.png" alt="logo" className='h-[200px] w-[200px] rounded-xl' />
                 </Link>
               </div>
           </div>

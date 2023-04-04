@@ -118,8 +118,8 @@ export default function Contact1() {
                                     </dd>
                                 </div>
                             </dl>
-                            <div className='mt-10 w-[150px] h-[150px] ml-10'>
-                                <img src="/img/logo.jpg" alt="logo" />
+                            <div className='mt-10 w-[150px] h-[150px]  ml-10'>
+                                <img className='rounded-xl' src="/img/pmdmdLogo.png" alt="logo" />
                             </div>
                         </div>
                     </div>
