@@ -15,11 +15,11 @@ const Accessories = () => {
           {/* <h1 className="text-green-800">Product List</h1> */}
           <div className="sm:flex-auto text-center">
             <h1 className="text-4xl font-bold  text-gray-600 text-center">
-              Park's Pectus System Set Accessories{" "}
+              Park's Pectus System Set In-Plants{" "}
             </h1>
             <h1 className="text-xl  text-gray-400 text-center mt-5">
-              This is a list of all the accessories for the Park's Pectus System
-              Set that are available for you to order. <br />
+              This is a list of Park's Pectus System Set In-plants that are
+              available for you to order. <br />
               Please do indicate the Category number, Description and thisckness
               of the accessory type you want to order.
             </h1>

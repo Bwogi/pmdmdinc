@@ -69,7 +69,7 @@ const App = () => {
           element: <About />,
         },
         {
-          path: "/accessories",
+          path: "/product-details",
           element: <Accessories />,
         },
         {
