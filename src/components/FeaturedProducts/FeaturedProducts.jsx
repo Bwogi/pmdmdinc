@@ -38,7 +38,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function FeaturedProducts() {
+export default function moFeaturedProducts() {
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-2xl px-4 py-5 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-8">
@@ -78,10 +78,10 @@ export default function FeaturedProducts() {
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <Link
-                    to="#"
+                    to="/parks-system-set"
                     className="rounded-md bg-green-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-800"
                   >
-                    More details...
+                    Product details...
                   </Link>
                   <a
                     href="#featured-products"
