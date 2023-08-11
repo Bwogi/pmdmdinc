@@ -56,13 +56,27 @@ export default function Featured() {
               </div>
             ))}
           </dl>
-          <div className="flex justify-start ">
+          <div className="mt-10 flex items-center gap-x-6">
+            <Link
+              to="/surgical-techniques"
+              className="rounded-md bg-green-900 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-geen-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-800"
+            >
+              Surgical Techniques
+            </Link>
+            <a
+              href="#featured-products"
+              className="text-sm font-semibold leading-6 text-gray-900 ring-1 ring-green-400 px-3.5 py-2.5"
+            >
+              Order Now <span aria-hidden="true">→</span>
+            </a>
+          </div>
+          {/* <div className="flex justify-start ">
             <button className="border border-1 px-6 py-5 mt-5 rounded-md bg-gray-400 hover:bg-gray-500 text-white">
               <Link to="/surgical-techniques">
                 Surgical Techniques using Park's System Set
               </Link>
             </button>
-          </div>
+          </div> */}
         </div>
         <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
           <img
