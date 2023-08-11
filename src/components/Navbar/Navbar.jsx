@@ -52,11 +52,13 @@ export default function Navbar() {
                     fill="currentColor"
                   />
                 </svg> */}
-                <img
-                  className="h-8 w-auto sm:h-10 rounded-md"
-                  src="/img/pmdmdLogo.png"
-                  alt=""
-                />
+                <Link to="/">
+                  <img
+                    className="h-8 w-auto sm:h-10 rounded-md"
+                    src="/img/pmdmdLogo.png"
+                    alt=""
+                  />
+                </Link>
               </div>
               <div
                 className="md:hidden cursor-pointer"
@@ -354,7 +356,7 @@ export default function Navbar() {
             <ul className="flex flex-col space-y-4">
               <li className="border-b border-gray-200 dark:border-gray-700 dark:text-gray-700 pb-4 px-1 flex items-center justify-between">
                 <Link
-                  to="#"
+                  to="/"
                   className="dark:text-white focus:outline-none focus:ring-1 focus:ring-gray-400 text-base text-gray-800"
                 >
                   {" "}
@@ -424,7 +426,7 @@ export default function Navbar() {
               </li>
               <li className="border-b border-gray-200 dark:border-gray-700 dark:text-gray-700 pb-4 px-1 flex items-center justify-between">
                 <Link
-                  to="#"
+                  to="/products"
                   className="dark:text-white focus:outline-none focus:ring-1 focus:ring-gray-400 text-base text-gray-800 hover:underline"
                 >
                   {" "}
@@ -459,11 +461,11 @@ export default function Navbar() {
               </li>
               <li className="border-b border-gray-200 dark:border-gray-700 dark:text-gray-700 pb-4 px-1 flex items-center justify-between">
                 <Link
-                  to="#"
+                  to="/accessories"
                   className="dark:text-white focus:outline-none focus:ring-1 focus:ring-gray-400 text-base text-gray-800 hover:underline"
                 >
                   {" "}
-                  Categories{" "}
+                  Accessories{" "}
                 </Link>
                 <button
                   aria-label="Add"
@@ -494,7 +496,7 @@ export default function Navbar() {
               </li>
               <li className="border-b border-gray-200 dark:border-gray-700 dark:text-gray-700 pb-4 px-1 flex items-center justify-between">
                 <Link
-                  to="#"
+                  to="/contact"
                   className="dark:text-white focus:outline-none focus:ring-1 focus:ring-gray-400 text-base text-gray-800 hover:underline"
                 >
                   {" "}
