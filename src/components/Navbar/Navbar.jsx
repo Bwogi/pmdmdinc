@@ -28,11 +28,13 @@ export default function Navbar() {
                     fill="currentColor"
                   />
                 </svg> */}
-                <img
-                  className="h-8 w-auto sm:h-10 rounded-md"
-                  src="/img/pmdmdLogo.png"
-                  alt=""
-                />
+                <Link to="/">
+                  <img
+                    className="h-8 w-auto sm:h-10 rounded-md"
+                    src="/img/pmdmdLogo.png"
+                    alt=""
+                  />
+                </Link>
               </div>
               <div
                 className="hidden md:block lg:hidden cursor-pointer"
@@ -78,11 +80,13 @@ export default function Navbar() {
                     fill="currentColor"
                   />
                 </svg> */}
-                <img
-                  className="h-8 w-auto sm:h-10 rounded-md"
-                  src="/img/pmdmdLogo.png"
-                  alt=""
-                />
+                <Link to="/">
+                  <img
+                    className="h-8 w-auto sm:h-10 rounded-md"
+                    src="/img/pmdmdLogo.png"
+                    alt=""
+                  />
+                </Link>
               </div>
             </div>
             <div className="hidden md:block">
@@ -317,11 +321,13 @@ export default function Navbar() {
                     fill="currentColor"
                   />
                 </svg> */}
-                <img
-                  className="h-8 w-auto sm:h-10 rounded-md"
-                  src="/img/pmdmdLogo.png"
-                  alt=""
-                />
+                <Link to="/">
+                  <img
+                    className="h-8 w-auto sm:h-10 rounded-md"
+                    src="/img/pmdmdLogo.png"
+                    alt=""
+                  />
+                </Link>
               </div>
               <button
                 aria-label="close menu"
