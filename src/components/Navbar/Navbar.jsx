@@ -109,7 +109,7 @@ export default function Navbar() {
                     About{" "}
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link
                     to="/products"
                     className="dark:text-white cursor-pointer dark:hover:text-gray-300 px-2 py-1 rounded-md text-base text-right text-gray-800 focus:outline-none focus:ring-1  focus:ring-green-300  hover:underline"
@@ -117,7 +117,7 @@ export default function Navbar() {
                     {" "}
                     Products{" "}
                   </Link>
-                </li>
+                </li> */}
                 <li>
                   <Link
                     to="/accessories"
