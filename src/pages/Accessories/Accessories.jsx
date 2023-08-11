@@ -4,22 +4,24 @@ import React from "react";
 // import TableImage from '../../components/TableImage/TableImage'
 // import {Link} from 'react-router-dom'
 
-const Products = () => {
+const Accessories = () => {
   // const title3 = 'When you submit your Purchase Order by clicking the button below, we will prepare and send you a customised Price List '
   return (
     <div>
       {/* <Header intro ="Our Products" title1="Our Catalogue" title2="Park's Pectus System" title3={title3} /> */}
 
-      <div className=" mb-20">
+      <div className=" mb-20 mt-20">
         <div className="flex justify-center flex-col text-center">
           {/* <h1 className="text-green-800">Product List</h1> */}
           <div className="sm:flex-auto text-center">
-            <h1 className="text-2xl font-bold  text-gray-600 text-center">
-              Accessories{" "}
+            <h1 className="text-4xl font-bold  text-gray-600 text-center">
+              Park's Pectus System Set Accessories{" "}
             </h1>
-            <h1 className="text-xl  text-gray-400 text-center">
-              This is a product list of Park's Pectus System Set Accessories
-              that are available for you to order.
+            <h1 className="text-xl  text-gray-400 text-center mt-5">
+              This is a list of all the accessories for the Park's Pectus System
+              Set that are available for you to order. <br />
+              Please do indicate the Category number, Description and thisckness
+              of the accessory type you want to order.
             </h1>
           </div>
           {/* <h2 className="text-3xl font-bold tracking-tight text-gray-600 sm:text-4xl">Park's Pectus System</h2> */}
@@ -47,4 +49,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default Accessories;
