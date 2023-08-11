@@ -1,41 +1,52 @@
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
-import { Fragment } from 'react'
-import { Popover, Transition } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { Link } from 'react-router-dom'
+import { Fragment } from "react";
+import { Popover, Transition } from "@headlessui/react";
+// import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { XMarkIcon } from "@heroicons/react/24/outline";
+// import { Link } from "react-router-dom";
 
 const navigation = [
-  { name: 'About', href: '#about' },
-  { name: 'Features', href: '#featured' },
-    { name: 'Surgical Techniques', href: '#techniques' },
-    // { name: 'Product Catalogue', href: '#catalogue' },
-    // { name: 'Blog', href: '#blog' },
-  { name: 'Product List', href: '#product-list' },
-  { name: 'Contact', href: '#contact' },
-]
+  { name: "About", href: "#about" },
+  { name: "Features", href: "#featured" },
+  { name: "Surgical Techniques", href: "#techniques" },
+  // { name: 'Product Catalogue', href: '#catalogue' },
+  // { name: 'Blog', href: '#blog' },
+  { name: "Product List", href: "#product-list" },
+  { name: "Contact", href: "#contact" },
+];
 
 export default function NewHeader() {
-
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_rv17dht', 'template_rk7qn8p', form.current, 'N-mLmSDWIHSghOvx3')
-      .then((result) => {
+    emailjs
+      .sendForm(
+        "service_rv17dht",
+        "template_rk7qn8p",
+        form.current,
+        "N-mLmSDWIHSghOvx3"
+      )
+      .then(
+        (result) => {
           console.log(result.text);
-      }, (error) => {
+        },
+        (error) => {
           console.log(error.text);
-      });
-      e.target.reset();
-    
+        }
+      );
+    e.target.reset();
   };
 
   return (
     <div className="relative overflow-hidden bg-white">
-      <div className="hidden lg:absolute lg:inset-0 lg:block" aria-hidden="true">
+      <div
+        className="hidden lg:absolute lg:inset-0 lg:block"
+        aria-hidden="true"
+      >
         <svg
           className="absolute top-0 left-1/2 translate-x-64 -translate-y-8 transform"
           width={640}
@@ -52,24 +63,44 @@ export default function NewHeader() {
               height={20}
               patternUnits="userSpaceOnUse"
             >
-              <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
+              <rect
+                x={0}
+                y={0}
+                width={4}
+                height={4}
+                className="text-gray-200"
+                fill="currentColor"
+              />
             </pattern>
           </defs>
-          <rect y={72} width={640} height={640} className="text-gray-50" fill="currentColor" />
-          <rect x={118} width={404} height={784} fill="url(#9ebea6f4-a1f5-4d96-8c4e-4c2abf658047)" />
+          <rect
+            y={72}
+            width={640}
+            height={640}
+            className="text-gray-50"
+            fill="currentColor"
+          />
+          <rect
+            x={118}
+            width={404}
+            height={784}
+            fill="url(#9ebea6f4-a1f5-4d96-8c4e-4c2abf658047)"
+          />
         </svg>
       </div>
 
       <div className="relative pt-6 pb-16 sm:pb-24 lg:pb-32">
         <Popover>
-          <nav
+          {/* <nav
             className="relative mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6"
             aria-label="Global"
           >
             <div className="flex flex-1 items-center">
               <div className="flex w-full items-center justify-between md:w-auto">
                 <Link to="/">
-                  <span className="sr-only">Pediatric Medical Device Marketing and Distribution LLC.</span>
+                  <span className="sr-only">
+                    Pediatric Medical Device Marketing and Distribution LLC.
+                  </span>
                   <img
                     className="h-8 w-auto sm:h-10 rounded-md"
                     src="/img/pmdmdLogo.png"
@@ -85,7 +116,11 @@ export default function NewHeader() {
               </div>
               <div className="hidden md:ml-10 md:block md:space-x-10">
                 {navigation.map((item) => (
-                  <a key={item.name} href={item.href} className="font-medium text-gray-500 hover:text-gray-900">
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className="font-medium text-gray-500 hover:text-gray-900"
+                  >
                     {item.name}
                   </a>
                 ))}
@@ -101,8 +136,7 @@ export default function NewHeader() {
                 </Link>
               </span>
             </div>
-          </nav>
-
+          </nav> */}
           <Transition
             as={Fragment}
             enter="duration-150 ease-out"
@@ -143,34 +177,47 @@ export default function NewHeader() {
                     </a>
                   ))}
                 </div>
-                <Link
+                {/* <Link
                   to="#"
                   className="block w-full bg-gray-50 px-5 py-3 text-center font-medium text-gree-800 hover:bg-gray-100"
                 >
                   Log in
-                </Link>
+                </Link> */}
               </div>
             </Popover.Panel>
           </Transition>
         </Popover>
 
-        <main className="mx-auto mt-16 max-w-7xl px-4 sm:mt-24 sm:px-6 lg:mt-32">
+        <main className="mx-auto mt-8 max-w-7xl px-4 sm:mt-24 sm:px-6 lg:mt-32">
           <div className="lg:grid lg:grid-cols-12 lg:gap-8">
             <div className="sm:text-center md:mx-auto md:max-w-2xl lg:col-span-6 lg:text-left">
               <h1>
                 <span className="block text-base font-semibold text-[#C49A69] sm:text-lg lg:text-base xl:text-lg">
-                  Introducing
+                  {/* <span className="block text-base font-semibold text-white sm:text-lg lg:text-base xl:text-lg"> */}
+                  Welcome to the
+                  {/* Introducing */}
                 </span>
                 <span className="mt-1 block text-4xl font-bold tracking-tight sm:text-3xl xl:text-4xl">
-                  <span className="block text-gray-600">Pediatric Medical Device </span>
-                  <span className="block text-gray-400">Marketing and Distribution LLC.</span>
+                  <span className="block text-gray-600">
+                    Pediatric Medical Device{" "}
+                  </span>
+                  <span className="block text-gray-400">
+                    Marketing and Distribution LLC.
+                  </span>
                 </span>
               </h1>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-              We distribute <span className='font-bold'>Pediatric Medical Devices</span>.<br /> We pride ourselves in delivering the best technologies available in the marketplace. We provide state-of-the-art chest wall deformity correction equipment and supplies.
+                We distribute{" "}
+                <span className="font-bold">Pediatric Medical Devices</span>.
+                <br /> We pride ourselves in delivering the best technologies
+                available in the marketplace. We provide state-of-the-art chest
+                wall deformity correction equipment and supplies.
               </p>
               <div className="mt-8 sm:mx-auto sm:max-w-lg sm:text-center lg:mx-0 lg:text-left">
-                <p className="text-xs text-gray-400">Sign up for latest updates on the latest medical device technology.</p>
+                <p className="text-xs text-gray-400">
+                  Sign up for latest updates on the latest medical device
+                  technology.
+                </p>
                 {/* <form action="https://formsubmit.co/andrew.bwogi@gmail.com" method="POST" className="mt-3 sm:flex"> */}
                 <form ref={form} onSubmit={sendEmail} className="mt-3 sm:flex">
                   <label htmlFor="email" className="sr-only">
@@ -222,44 +269,74 @@ export default function NewHeader() {
                     height={20}
                     patternUnits="userSpaceOnUse"
                   >
-                    <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
+                    <rect
+                      x={0}
+                      y={0}
+                      width={4}
+                      height={4}
+                      className="text-gray-200"
+                      fill="currentColor"
+                    />
                   </pattern>
                 </defs>
-                <rect y={72} width={640} height={640} className="text-gray-50" fill="currentColor" />
-                <rect x={118} width={404} height={784} fill="url(#4f4f415c-a0e9-44c2-9601-6ded5a34a13e)" />
+                <rect
+                  y={72}
+                  width={640}
+                  height={640}
+                  className="text-gray-50"
+                  fill="currentColor"
+                />
+                <rect
+                  x={118}
+                  width={404}
+                  height={784}
+                  fill="url(#4f4f415c-a0e9-44c2-9601-6ded5a34a13e)"
+                />
               </svg>
               <div className="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md">
-                <a href="https://youtu.be/7KGHovGOgew"  target='_blank' rel="noreferrer">
-                <button
-                  type="button"
-                  className="relative block w-full overflow-hidden rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 shadow-3xl hover:bg-gray-50"
+                <a
+                  href="https://youtu.be/7KGHovGOgew"
+                  target="_blank"
+                  rel="noreferrer"
                 >
-                  <span className="sr-only">Watch our video to learn more</span>
-                  <img
-                    className="w-full"
-                    src="/img/medical-device.jpg"
-                    alt=""
-                  />
-                  <span className="absolute inset-0 flex h-full w-full items-center justify-center" aria-hidden="true">
-                    <svg className="h-20 w-20 text-gray-500" fill="currentColor" viewBox="0 0 84 84">
-                      <circle opacity="0.9" cx={42} cy={42} r={42} fill="white" />
-                      <path d="M55.5039 40.3359L37.1094 28.0729C35.7803 27.1869 34 28.1396 34 29.737V54.263C34 55.8604 35.7803 56.8131 37.1094 55.9271L55.5038 43.6641C56.6913 42.8725 56.6913 41.1275 55.5039 40.3359Z" />
-                    </svg>
-                  </span>
-                </button>
+                  <button
+                    type="button"
+                    className="relative block w-full overflow-hidden rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 shadow-3xl hover:bg-gray-50"
+                  >
+                    <span className="sr-only">
+                      Watch our video to learn more
+                    </span>
+                    <img
+                      className="w-full"
+                      src="/img/medical-device.jpg"
+                      alt=""
+                    />
+                    <span
+                      className="absolute inset-0 flex h-full w-full items-center justify-center"
+                      aria-hidden="true"
+                    >
+                      <svg
+                        className="h-20 w-20 text-gray-500"
+                        fill="currentColor"
+                        viewBox="0 0 84 84"
+                      >
+                        <circle
+                          opacity="0.9"
+                          cx={42}
+                          cy={42}
+                          r={42}
+                          fill="white"
+                        />
+                        <path d="M55.5039 40.3359L37.1094 28.0729C35.7803 27.1869 34 28.1396 34 29.737V54.263C34 55.8604 35.7803 56.8131 37.1094 55.9271L55.5038 43.6641C56.6913 42.8725 56.6913 41.1275 55.5039 40.3359Z" />
+                      </svg>
+                    </span>
+                  </button>
                 </a>
-                
               </div>
             </div>
           </div>
         </main>
       </div>
     </div>
-  )
+  );
 }
-
-
-
-
-
-
