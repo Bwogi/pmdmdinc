@@ -79,13 +79,13 @@ export default function FeaturedProducts() {
                 <div className="mt-10 flex items-center gap-x-6">
                   <Link
                     to="#"
-                    className="rounded-md bg-green-800 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-800"
+                    className="rounded-md bg-green-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-800"
                   >
                     More details...
                   </Link>
                   <a
                     href="#featured-products"
-                    className="text-sm font-semibold leading-6 ring-1 px-3.5 py-2.5 text-gray-900"
+                    className="text-sm font-semibold leading-6 ring-1 ring-green-400 px-3.5 py-2.5 text-gray-900"
                   >
                     Order Now <span aria-hidden="true">→</span>
                   </a>
