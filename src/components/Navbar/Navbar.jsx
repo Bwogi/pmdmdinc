@@ -120,11 +120,11 @@ export default function Navbar() {
                 </li> */}
                 <li>
                   <Link
-                    to="/accessories"
+                    to="/product-details"
                     className="dark:text-white dark:hover:text-gray-300 px-2 py-1 rounded-md text-base text-right text-gray-800 focus:outline-none focus:ring-1  focus:ring-green-300  hover:underline"
                   >
                     {" "}
-                    Accessories{" "}
+                    Product Details{" "}
                   </Link>
                 </li>
                 <li>
