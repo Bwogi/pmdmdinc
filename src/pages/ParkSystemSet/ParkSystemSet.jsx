@@ -1,9 +1,9 @@
 import React from "react";
 import Featured from "../../components/Featured/Featured";
-// import SurgicalTechniques from "../../components/SurgicalTechniques/SurgicalTechniques";
-// import STVideos from "../../components/STVideos/STVideos";
+import SurgicalTechniques from "../../components/SurgicalTechniques/SurgicalTechniques";
+import STVideos from "../../components/STVideos/STVideos";
 // import Products from "../../components/Products/Products";
-// import CTANew from "../../components/CTANew/CTANew";
+import CTANew from "../../components/CTANew/CTANew";
 
 const ParkSystemSet = () => {
   return (
@@ -11,16 +11,15 @@ const ParkSystemSet = () => {
       <div>
         <Featured type="Featured" />
       </div>
-      {/* <div>
+      <div>
         <CTANew />
-      </div> */}
-
-      {/* <div id="techniques">
+      </div>
+      <div id="techniques">
         <SurgicalTechniques />
-      </div> */}
-      {/* <div>
+      </div>
+      <div>
         <STVideos />
-      </div> */}
+      </div>
       {/* <div className="mb-[80px]">
         <CTANew />
       </div> */}

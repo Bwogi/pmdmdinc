@@ -42,7 +42,7 @@ export default function HeroNew() {
       <main>
         <div className="relative isolate">
           <svg
-            className="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]"
+            className="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-green-100 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]"
             aria-hidden="true"
           >
             <defs>
@@ -142,7 +142,7 @@ export default function HeroNew() {
                   <input type="hidden" name="_cc" value="oidowu@msn.com,jireidowu@gmail.com" /> */}
                       <button
                         type="submit"
-                        className="mt-3 w-full rounded-md border border-transparent bg-[#384A6B] px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 sm:mt-0 sm:ml-3 sm:inline-flex sm:w-auto sm:flex-shrink-0 sm:items-center"
+                        className="mt-3 w-full rounded-md border border-transparent bg-[#384A6B] px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 sm:mt-0 sm:ml-3 sm:inline-flex sm:w-auto sm:flex-shrink-0 sm:items-center"
                       >
                         Notify me
                       </button>
@@ -158,13 +158,13 @@ export default function HeroNew() {
                   <div className="mt-10 flex items-center gap-x-6">
                     <Link
                       to="/about"
-                      className="rounded-md bg-green-900 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-geen-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-800"
+                      className="mt-3 w-full rounded-md border border-transparent bg-[#384A6B] px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-offset-2 sm:mt-0 sm:ml-3 sm:inline-flex sm:w-auto sm:flex-shrink-0 sm:items-center"
                     >
                       Learn More...
                     </Link>
                     <a
                       href="#featured-products"
-                      className="text-sm font-semibold leading-6 text-gray-900 ring-1 ring-green-400 px-3.5 py-2.5"
+                      className="text-sm font-semibold leading-6  text-gray-900 ring-1 hover:ring-green-400 hover:bg-transparent bg-green-200 ring-green-200 px-6 py-3"
                     >
                       Our Products <span aria-hidden="true">→</span>
                     </a>
