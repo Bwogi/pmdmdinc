@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const features = [
   { name: "Origin", description: "Developed by  primemedinc.com" },
@@ -36,7 +36,7 @@ export default function Featured() {
         <div>
           {/* <h1 className="text-[#C49A69]">Featured Product</h1> */}
           <h2 className="text-3xl font-bold tracking-tight text-gray-600 sm:text-4xl">
-            Park's Pectus System Set
+            Dr. Park's Pectus System Set
           </h2>
           <h3 className="text-2xl font-bold tracking-tight text-gray-400 sm:text-3xl">
             Technical Specifications
@@ -56,7 +56,7 @@ export default function Featured() {
               </div>
             ))}
           </dl>
-          <div className="mt-10 flex items-center gap-x-6">
+          {/* <div className="mt-10 flex items-center gap-x-6">
             <Link
               to="/surgical-techniques"
               className="rounded-md bg-green-900 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-geen-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-800"
@@ -69,7 +69,7 @@ export default function Featured() {
             >
               Order Now <span aria-hidden="true">→</span>
             </a>
-          </div>
+          </div> */}
           {/* <div className="flex justify-start ">
             <button className="border border-1 px-6 py-5 mt-5 rounded-md bg-gray-400 hover:bg-gray-500 text-white">
               <Link to="/surgical-techniques">

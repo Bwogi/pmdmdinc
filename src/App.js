@@ -8,7 +8,7 @@ import {
 import Login from "./pages/Login/Login";
 import Home from "./pages/Home/Home";
 import Register from "./pages/Register/Register";
-import Navbar from "./components/Navbar/Navbar";
+// import Navbar from "./components/Navbar/Navbar";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import Footer from "./components/Footer/Footer";
 import About from "./pages/About/About";
@@ -21,11 +21,13 @@ import Partners from "./pages/Partners/Partners";
 // import Contact from "./components/Contact/Contact";
 import Contact1 from "./components/Contact1/Contact1";
 import ParkSystemSet from "./pages/ParkSystemSet/ParkSystemSet";
-import Accessories from "./pages/Accessories/Accessories";
+// import Accessories from "./pages/Accessories/Accessories";
 import ProductsNew from "./pages/ProductsNew/ProductsNew";
 import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
 import SurgicalTechniques from "./pages/SurgicalTechniques/SurgicalTechniques";
-// import MainNav from './components/Slider/MainNav/MainNav';
+// import NavbarNew from "./components/NavbarNew/NavbarNew";
+import MainNav from "./components/Slider/MainNav/MainNav";
+import ProductDetails from "./pages/ProductDetails/ProductDetails";
 
 const App = () => {
   // we are not logged in yet
@@ -41,8 +43,9 @@ const App = () => {
   const Layout = () => {
     return (
       <div>
-        <Navbar />
-        {/* <MainNav /> */}
+        {/* <Navbar /> */}
+        {/* <NavbarNew /> */}
+        <MainNav />
         <div>
           <Outlet />
         </div>
@@ -70,7 +73,7 @@ const App = () => {
         },
         {
           path: "/product-details",
-          element: <Accessories />,
+          element: <ProductDetails />,
         },
         {
           path: "/parks-system-set",

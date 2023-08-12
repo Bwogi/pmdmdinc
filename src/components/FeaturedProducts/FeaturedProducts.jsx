@@ -78,17 +78,17 @@ export default function moFeaturedProducts() {
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <Link
-                    to="/parks-system-set"
-                    className="rounded-md bg-green-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-800"
+                    to="/product-details"
+                    className="mt-3 w-full rounded-md border border-transparent bg-[#384A6B] px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-offset-2 sm:mt-0 sm:ml-3 sm:inline-flex sm:w-auto sm:flex-shrink-0 sm:items-cente"
                   >
-                    Product details...
+                    Product details
                   </Link>
-                  <a
-                    href="#featured-products"
-                    className="text-sm font-semibold leading-6 ring-1 ring-green-400 px-3.5 py-2.5 text-gray-900"
+                  <Link
+                    to="#"
+                    className="text-sm font-semibold leading-6 ring-1 ring-green-400 hover:bg-green-200 px-3.5 py-2.5 text-gray-900"
                   >
                     Order Now <span aria-hidden="true">→</span>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div

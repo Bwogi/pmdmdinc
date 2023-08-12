@@ -16,9 +16,10 @@ import React from "react";
 // import SurgicalTechniques from "../../components/SurgicalTechniques/SurgicalTechniques";
 // import Contact1 from "../../components/Contact1/Contact1";
 // import SliderNew from "../../components/SliderNew/SliderNew";
-import FeaturedProducts from "../../components/FeaturedProducts/FeaturedProducts";
+// import FeaturedProducts from "../../components/FeaturedProducts/FeaturedProducts";
 import HeroNew from "../../components/HeroNew/HeroNew";
-import CTANew1 from "../../components/CTANew1/CTANew1";
+// import CTANew1 from "../../components/CTANew1/CTANew1";
+import FeatureSectionNew from "../../components/FeatureSectionNew/FeatureSectionNew";
 // import Navigation from "../../components/Navigation/Navigation";
 // import Blog from '../../components/Blog/Blog'
 // import Hero from '../../components/Hero/Hero'
@@ -31,6 +32,7 @@ const Home = () => {
       {/* <Hero /> */}
       {/* <Navigation /> */}
       {/* <SliderNew /> - switched off temporarily */}
+
       <div>
         <HeroNew />
       </div>
@@ -38,9 +40,12 @@ const Home = () => {
       {/* <div id="about">
         <NewHeader />
       </div> */}
-      <div id="featured-products">
-        <FeaturedProducts />
+      <div>
+        <FeatureSectionNew />
       </div>
+      {/* <div id="featured-products">
+        <FeaturedProducts />
+      </div> */}
 
       {/* <Header intro="INTRODUCING xPEDIATRIC MEDICAL DEVICE MARKETING AND DISTRIBUTION LLC" title1="We are a distributor of" title2="Pediatric Medical Devices" title3={title3} /> */}
 
