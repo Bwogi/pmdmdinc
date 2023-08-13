@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Header from "../../components/Header/Header";
+// import Header from "../../components/Header/Header";
 // import FeaturedProducts from "../../components/FeaturedProducts/FeaturedProducts";
 
 const posts = [
@@ -54,10 +54,11 @@ const posts = [
 export default function ProductDetails() {
   return (
     <div>
-      <Header
+      {/* <Header
         title="Product Details"
         description="Introducing our latest products where cutting-edge technology meets sleek design with unrivaled performance and seamless connectivity. Discover a new dimension of possibilities with these amazing products"
-      />
+      /> */}
+      {/* <Header /> */}
       <div className="bg-white py-5 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           {/* <div className="mx-auto max-w-2xl text-center">

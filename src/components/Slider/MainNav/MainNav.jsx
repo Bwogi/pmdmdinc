@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
-import { PlusIcon } from "@heroicons/react/20/solid";
+// import { PlusIcon } from "@heroicons/react/20/solid";
 import { Link } from "react-router-dom";
 
 function classNames(...classes) {
@@ -85,7 +85,7 @@ export default function Example() {
                   <Link to="/contact">
                     <button
                       type="button"
-                      className="mt-3 w-full rounded-md border border-transparent bg-[#384A6B] px-6 py-1 text-base font-medium text-white shadow-sm hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 sm:mt-0 sm:ml-3 sm:inline-flex sm:w-auto sm:flex-shrink-0 sm:items-center"
+                      className="text-sm font-semibold leading-6  text-gray-900 ring-1 hover:ring-green-400 hover:bg-transparent bg-green-200 ring-green-200 px-6 py-1"
                     >
                       {/* <PlusIcon
                       className="-ml-1 mr-2 h-5 w-5"
@@ -128,41 +128,41 @@ export default function Example() {
                       <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                         <Menu.Item>
                           {({ active }) => (
-                            <a
-                              href="#"
+                            <Link
+                              to="#"
                               className={classNames(
                                 active ? "bg-gray-100" : "",
                                 "block px-4 py-2 text-sm text-gray-700"
                               )}
                             >
                               Your Profile
-                            </a>
+                            </Link>
                           )}
                         </Menu.Item>
                         <Menu.Item>
                           {({ active }) => (
-                            <a
-                              href="#"
+                            <Link
+                              to="#"
                               className={classNames(
                                 active ? "bg-gray-100" : "",
                                 "block px-4 py-2 text-sm text-gray-700"
                               )}
                             >
                               Settings
-                            </a>
+                            </Link>
                           )}
                         </Menu.Item>
                         <Menu.Item>
                           {({ active }) => (
-                            <a
-                              href="#"
+                            <Link
+                              to="#"
                               className={classNames(
                                 active ? "bg-gray-100" : "",
                                 "block px-4 py-2 text-sm text-gray-700"
                               )}
                             >
                               Sign out
-                            </a>
+                            </Link>
                           )}
                         </Menu.Item>
                       </Menu.Items>
