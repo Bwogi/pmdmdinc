@@ -3,122 +3,155 @@ import "swiper/css/bundle";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
-import "swiper/css/navigation"
+import "swiper/css/navigation";
 
-import SwiperCore, {
-  Navigation
-} from 'swiper';
+import SwiperCore, { Navigation } from "swiper";
 
 SwiperCore.use([Navigation]);
 
-
 const techniques = [
-    {
-      title: 'Magic String Park Technique',
-      sub: 'This technique relieves focal parasternal protrusions after pectus bar repair of PE, which are often emerging in asymmetric deformities. ',
-      image: "/img/video-sub1.jpg",
-      watch:  'https://www.youtube.com/watch?v=19JLb0tJEIc',
-    },
-    {
-        title: 'Flare buster Park Technique',
-        sub: 'This technique relieves lower costal flaring following pectus bar repair of PE to make the chest wall anatomically correct.',
-        image: "/img/video-sub2.jpg",
-        watch:  'https://www.youtube.com/watch?v=OzhnzequyFs',
-    },
-    {
-        title: 'Pectus Carinatum Repair - Hook Puller',
-        sub: 'Park Technique for Pectus Carinatum Repair Hook Puller',
-        image: "/img/video-sub3.jpg",
-        watch:  'https://www.youtube.com/watch?v=E0xH6ro9RU4',
-    },
-    {
-        title: 'Pectus Carinatum Repair - Easy Compressor',
-        sub: 'Park Technique: Carinatum Sandwich Technique Easy Compressor',
-        image: "/img/video-sub4.jpg",
-        watch:  'https://www.youtube.com/watch?v=fHBpWnOpqyM',
-    },
-    {
-        title: 'Pectus Excavatum Repair - Easy Crane',
-        sub: 'Park Technique for Pectus Excavatum Repair, Easy Crane',
-        image: "/img/video-sub5.jpg",
-        watch:  'https://www.youtube.com/watch?v=uAZlgtyU6nA',
-      },
-   
-  ] 
+  {
+    title: "Magic String Park Technique",
+    sub: "This technique relieves focal parasternal protrusions after pectus bar repair of PE, which are often emerging in asymmetric deformities. ",
+    image: "/img/video-sub1.jpg",
+    watch: "https://www.youtube.com/watch?v=19JLb0tJEIc",
+  },
+  {
+    title: "Flare buster Park Technique",
+    sub: "This technique relieves lower costal flaring following pectus bar repair of PE to make the chest wall anatomically correct.",
+    image: "/img/video-sub2.jpg",
+    watch: "https://www.youtube.com/watch?v=OzhnzequyFs",
+  },
+  {
+    title: "Pectus Carinatum Repair - Hook Puller",
+    sub: "Park Technique for Pectus Carinatum Repair Hook Puller",
+    image: "/img/video-sub3.jpg",
+    watch: "https://www.youtube.com/watch?v=E0xH6ro9RU4",
+  },
+  {
+    title: "Pectus Carinatum Repair - Easy Compressor",
+    sub: "Park Technique: Carinatum Sandwich Technique Easy Compressor",
+    image: "/img/video-sub4.jpg",
+    watch: "https://www.youtube.com/watch?v=fHBpWnOpqyM",
+  },
+  {
+    title: "Pectus Excavatum Repair - Easy Crane",
+    sub: "Park Technique for Pectus Excavatum Repair, Easy Crane",
+    image: "/img/video-sub5.jpg",
+    watch: "https://www.youtube.com/watch?v=uAZlgtyU6nA",
+  },
+];
 
 export default function Index() {
   return (
-      <div className>
-           <div className="sm:flex-auto text-center">
-            <h1 className="text-2xl font-bold  text-gray-600 text-center">More Surgical Techniques using Park's Pectus System Set </h1>
-            <h1 className="text-xl  text-gray-400 text-center">The videos below continue to demonstrate the versatility of the Park's Pectus System Set</h1>
-        </div>
-          <div className="py-12 flex lg:flex-row flex-col items-start lg:items-center justify-between ">
-              
+    <div className>
+      <div className="sm:flex-auto text-center">
+        <h1 className="text-2xl font-bold  text-gray-600 text-center">
+          More Surgical Techniques using Park's Pectus System Set{" "}
+        </h1>
+        <h1 className="text-xl  text-gray-400 text-center">
+          The videos below continue to demonstrate the versatility of the Park's
+          Pectus System Set
+        </h1>
+      </div>
+      <div className="py-12 flex lg:flex-row flex-col items-start lg:items-center justify-between ">
         <div className="mx-4 md:w-2/3 lg:w-auto md:mx-6 xl:ml-20  flex flex-col justify-start items-start">
-          <h1 className="text-xl md:text-2xl xl:text-4xl font-semibold leading-6 xl:leading-10 text-gray-600">Park's Pectus System <span className="text-[#C49A69]">Videos</span>.</h1>
-          <p className="mt-4 text-base leading-normal text-gray-600">See how this state-of-the-art Pectus system is used in chest wall deformity correction.  </p>
+          <h1 className="text-xl md:text-2xl xl:text-4xl font-semibold leading-6 xl:leading-10 text-gray-600">
+            Park's Pectus System <span className="text-green-400">Videos</span>.
+          </h1>
+          <p className="mt-4 text-base leading-normal text-gray-600">
+            See how this state-of-the-art Pectus system is used in chest wall
+            deformity correction.{" "}
+          </p>
           <a href="#contact">
-          <button className="w-full md:w-auto text-center mt-6 bg-[#384A6B] hover:-translate-y-1 ease-in-out transition duration-300 rounded">
-            <p className="text-base py-4 px-6 font-medium leading-none text-white">Place your order here</p>
-          </button> 
+            <button className="w-full md:w-auto text-center mt-6 bg-[#384A6B] hover:-translate-y-1 ease-in-out transition duration-300 rounded">
+              <p className="text-base py-4 px-6 font-medium leading-none text-white">
+                Place your order here
+              </p>
+            </button>
           </a>
-          
         </div>
         <div className="mainDiv pl-4 md:pl-6 ">
           <div className="h-5 mt-6 mb-4 md:mt-0 lg:mb-0 flex justify-end items-end space-x-6 ">
-            <button aria-label="back"  className=" swiper-button-prev">
-              <img className src="https://tuk-cdn.s3.amazonaws.com/can-uploader/content_9_svg1.svg" alt="back" />
+            <button aria-label="back" className=" swiper-button-prev">
+              <img
+                className
+                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/content_9_svg1.svg"
+                alt="back"
+              />
             </button>
-            <button aria-label="next"  className=" swiper-button-next">
-              <img className=" transform rotate-180" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/content_9_svg1.svg" alt="next" />
+            <button aria-label="next" className=" swiper-button-next">
+              <img
+                className=" transform rotate-180"
+                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/content_9_svg1.svg"
+                alt="next"
+              />
             </button>
           </div>
           <Swiper
-            slidesPerView={'auto'} slidesPerGroupSkip={3} grabCursor={true} loopFillGroupWithBlank={true} loop={true}
-          navigation={{
-            prevEl: '.swiper-button-prev',
-            nextEl: '.swiper-button-next',
-          }}
-
-          breakpoints={{
-            // when window width is >= 320px
-            "320": {
-            slidesPerView: "auto",
-            spaceBetween: 24,
-            },
-            // when window width is >= 480px
-            "480": {
-            slidesPerView: "auto",
-            spaceBetween: 24,
-            },
-            // when window width is >= 640px
-            "640": {
-            slidesPerView: "auto",
-            spaceBetween: 24,
-            },
-            "1024": {
+            slidesPerView={"auto"}
+            slidesPerGroupSkip={3}
+            grabCursor={true}
+            loopFillGroupWithBlank={true}
+            loop={true}
+            navigation={{
+              prevEl: ".swiper-button-prev",
+              nextEl: ".swiper-button-next",
+            }}
+            breakpoints={{
+              // when window width is >= 320px
+              320: {
                 slidesPerView: "auto",
-            spaceBetween: 32,
-            },
-            "1336": {
-            slidesPerView: 3,
-            spaceBetween: 32
-            }
-          }}
-           className="swiper mySwiper">
+                spaceBetween: 24,
+              },
+              // when window width is >= 480px
+              480: {
+                slidesPerView: "auto",
+                spaceBetween: 24,
+              },
+              // when window width is >= 640px
+              640: {
+                slidesPerView: "auto",
+                spaceBetween: 24,
+              },
+              1024: {
+                slidesPerView: "auto",
+                spaceBetween: 32,
+              },
+              1336: {
+                slidesPerView: 3,
+                spaceBetween: 32,
+              },
+            }}
+            className="swiper mySwiper"
+          >
             {techniques.map((technique, techniqueIdx) => (
               <SwiperSlide className="swiper-slide shadow-xl mb-10 mt-5  rounded-xl ">
                 <div className="flex flex-col  space-y-4">
                   <div className="rounded-t-xl  group cursor-pointer relative flex justify-center items-center">
-                    <a href={technique.watch} target="_blank" rel="noreferrer"><img className="rounded-t-xl  " src={technique.image} alt={technique.title} /></a> 
+                    <a href={technique.watch} target="_blank" rel="noreferrer">
+                      <img
+                        className="rounded-t-xl  "
+                        src={technique.image}
+                        alt={technique.title}
+                      />
+                    </a>
                   </div>
                   <div className="px-4 py-6 rounded-b-xl w-full flex justify-between  flex-col items-start ">
-                    <p className="text-xs leading-none text-gray-600 text-left">{technique.sub} </p>
-                                  <p className="mt-3 text-base font-semibold leading-none text-gray-800"><a href={technique.watch} target="_blank" rel="noreferrer">{technique.title}</a> </p>
-                                  
-                                  <button className="mt-6 hover:-translate-y-1 transition duration-500 ease-in-out flex justify-start items-center space-x-3">
-                                      
+                    <p className="text-xs leading-none text-gray-600 text-left">
+                      {technique.sub}{" "}
+                    </p>
+                    <p className="mt-3 text-base font-semibold leading-none text-gray-800">
+                      <a
+                        href={technique.watch}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {technique.title}
+                      </a>{" "}
+                    </p>
+
+                    <button className="mt-6 hover:-translate-y-1 transition duration-500 ease-in-out flex justify-start items-center space-x-3">
                       {/* <p className="text-sm leading-none text-green-800">Find out more</p> */}
                       {/* <div className="w-4 ">
                         <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/content_9_svg-2.svg" alt="arrow" />
@@ -127,13 +160,13 @@ export default function Index() {
                   </div>
                 </div>
               </SwiperSlide>
-                ))}
-            </Swiper>
-          </div>
+            ))}
+          </Swiper>
         </div>
+      </div>
 
-        <style>
-{`
+      <style>
+        {`
 .mainDiv {
 position: relative;
 width: 100%
@@ -259,11 +292,7 @@ width: 30%;
 
 
 `}
-
-</style>
+      </style>
     </div>
-
-
-
-  )
+  );
 }

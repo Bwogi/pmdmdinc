@@ -12,7 +12,7 @@ export default function CTANew() {
         <div className=" flex items-center gap-x-6 lg:mt-0 lg:flex-shrink-0">
           <a href="">
             <button className="border border-1 px-6 py-6 mt-5 rounded-md bg-[#384A6B] text-white">
-              <a href="#contact">Place your order here</a>
+              <a href="#contact">Order Now</a>
             </button>
           </a>
 

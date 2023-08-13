@@ -158,9 +158,9 @@ export default function HeroNew() {
                   <div className="mt-10 flex items-center gap-x-6">
                     <Link
                       to="/about"
-                      className="mt-3 w-full rounded-md border border-transparent bg-[#384A6B] px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-offset-2 sm:mt-0 sm:ml-3 sm:inline-flex sm:w-auto sm:flex-shrink-0 sm:items-center"
+                      className="text-sm font-semibold leading-6  text-gray-900 ring-1 hover:ring-gray-400 hover:bg-transparent bg-gray-200 ring-gray-200 px-6 py-3"
                     >
-                      Learn More...
+                      Learn More
                     </Link>
                     <a
                       href="/product-details"
