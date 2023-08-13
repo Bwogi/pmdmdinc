@@ -15,10 +15,10 @@ const Accessories = () => {
           {/* <h1 className="text-green-800">Product List</h1> */}
           <div className="sm:flex-auto text-center">
             <h1 className="text-4xl font-bold  text-gray-600 text-center">
-              Park's Pectus System Set In-Plants{" "}
+              Dr. Park's Pectus System Set In-Plants{" "}
             </h1>
             <h1 className="text-xl  text-gray-400 text-center mt-5">
-              This is a list of Park's Pectus System Set In-plants that are
+              This is a list of Dr. Park's Pectus System Set In-plants that are
               available for you to order. <br />
               Please do indicate the Category number, Description and thisckness
               of the accessory type you want to order.
@@ -40,7 +40,11 @@ const Accessories = () => {
       >
         {/* <Table /> */}
         {/* <TableImage /> */}
-        <img className="w-[60%]" src="/img/products.jpg" alt="" />
+        {/* <img className="w-[60%]" src="/img/products.jpg" alt="" /> */}
+        <img className="w-[60%]" src="/img/InPlants01.jpg" alt="" />
+        <img className="w-[60%]" src="/img/InPlants02.jpg" alt="" />
+        <img className="w-[60%]" src="/img/InPlants03.jpg" alt="" />
+        <img className="w-[60%]" src="/img/InPlants04.jpg" alt="" />
         <div className="flex justify-center mb-20">
           {/* <Link to='/contact'><button className='border border-gray-600 px-6 py-2 rounded-xl text-white bg-gray-600 hover:bg-[#3BB3BD] hover:border-[#3BB3BD]' >Send your Purchase order and or Enquiries here</button></Link> */}
         </div>

@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 const navigation = {
   main: [
     { name: "About", href: "#" },
-    { name: "Products", href: "/products" },
-    { name: "Accessories", href: "/accessories" },
+    { name: "Product Details", href: "/product-details" },
     { name: "Privacy Policy", href: "/privacy-policy" },
     { name: "Contact", href: "/contact" },
   ],
@@ -94,14 +93,14 @@ export default function Footer() {
         </nav>
         <div className="mt-8 flex justify-center space-x-6">
           {navigation.social.map((item) => (
-            <a
+            <Link
               key={item.name}
-              href={item.href}
+              to={item.href}
               className="text-[#384A6B] hover:text-gray-500"
             >
               <span className="sr-only">{item.name}</span>
               <item.icon className="h-6 w-6" aria-hidden="true" />
-            </a>
+            </Link>
           ))}
         </div>
         <p className="mt-8 text-center text-base text-gray-400">

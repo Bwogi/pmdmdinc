@@ -11,7 +11,7 @@ import React from "react";
 // import STVideos from "../../components/STVideos/STVideos";
 // import Featured from "../../components/Featured/Featured";
 // import NewHeader from "../../components/NewHeader/NewHeader";
-// import Contact from '../../components/Contact/Contact'
+// import Contact from "../../components/Contact/Contact";
 // import Products from "../../components/Products/Products";
 // import SurgicalTechniques from "../../components/SurgicalTechniques/SurgicalTechniques";
 // import Contact1 from "../../components/Contact1/Contact1";
@@ -19,10 +19,11 @@ import React from "react";
 // import FeaturedProducts from "../../components/FeaturedProducts/FeaturedProducts";
 import HeroNew from "../../components/HeroNew/HeroNew";
 // import CTANew1 from "../../components/CTANew1/CTANew1";
-import FeatureSectionNew from "../../components/FeatureSectionNew/FeatureSectionNew";
+// import FeatureSectionNew from "../../components/FeatureSectionNew/FeatureSectionNew";
 // import Navigation from "../../components/Navigation/Navigation";
 // import Blog from '../../components/Blog/Blog'
 // import Hero from '../../components/Hero/Hero'
+import FeaturedProducts from "../../components/FeaturedProducts/FeaturedProducts";
 
 const Home = () => {
   // const title3 = 'We are a distributor of Pediatric Medical Devices. We pride ourselves in distributing the best technologies available in the marketplace.  We provide the state-of-the-art chest wall deformity correction equipment and supplies.';
@@ -40,9 +41,10 @@ const Home = () => {
       {/* <div id="about">
         <NewHeader />
       </div> */}
-      <div>
+      <FeaturedProducts />
+      {/* <div>
         <FeatureSectionNew />
-      </div>
+      </div> */}
       {/* <div id="featured-products">
         <FeaturedProducts />
       </div> */}
@@ -69,7 +71,7 @@ const Home = () => {
       </div> */}
       {/* <div id='blog'><Blog /></div> */}
       {/* <div id="contact"> */}
-      {/* <Contact />   */}
+      {/* <Contact /> */}
       {/* <Contact1 /> */}
       {/* </div> */}
     </div>

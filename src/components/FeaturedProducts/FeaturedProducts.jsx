@@ -22,7 +22,8 @@ const features = [
     imageSrc: "/img/product-feature-07-detail-01.jpg",
     imageAlt:
       "White canvas laptop sleeve with gray felt interior, silver zipper, and tan leather zipper pull.",
-    link: "/parks-system-set",
+    detailsLink: "/parks-system-set",
+    orderLink: "/parks-system-set",
   },
   {
     name: "Pectus Vacuum Device",
@@ -30,7 +31,17 @@ const features = [
       "We design every detail with the best materials and finishes. This laptop sleeve features durable canvas with double-stitched construction, a felt interior, and a high quality zipper that hold up to daily use.",
     imageSrc: "/img/product-feature-07-detail-02.jpg",
     imageAlt: "Detail of zipper pull with tan leather and silver rivet.",
-    link: "#b",
+    detailsLink: "#b",
+    orderLink: "#b",
+  },
+  {
+    name: "Dr. Park's Pectus System Set In-Plants",
+    description:
+      "We design every detail with the best materials and finishes. This laptop sleeve features durable canvas with double-stitched construction, a felt interior, and a high quality zipper that hold up to daily use.",
+    imageSrc: "/img/product-feature-07-detail-03.jpg",
+    imageAlt: "Detail of zipper pull with tan leather and silver rivet.",
+    detailsLink: "/in-plants",
+    orderLink: "/in-plants",
   },
 ];
 
@@ -78,13 +89,13 @@ export default function moFeaturedProducts() {
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <Link
-                    to="/product-details"
+                    to={feature.detailsLink}
                     className="mt-3 w-full rounded-md border border-transparent bg-[#384A6B] px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-offset-2 sm:mt-0 sm:ml-3 sm:inline-flex sm:w-auto sm:flex-shrink-0 sm:items-cente"
                   >
-                    Product details
+                    More details
                   </Link>
                   <Link
-                    to="#"
+                    to={feature.orderLink}
                     className="text-sm font-semibold leading-6 ring-1 ring-green-400 hover:bg-green-200 px-3.5 py-2.5 text-gray-900"
                   >
                     Order Now <span aria-hidden="true">→</span>

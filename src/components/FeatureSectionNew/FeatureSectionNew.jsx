@@ -29,7 +29,7 @@ const collections = [
   },
   {
     name: "Park's Pectus System In-Plants",
-    href: "#",
+    href: "/in-plants",
     imageSrc: "/img/featured03.jpg",
     imageAlt:
       "Person sitting at a wooden desk with paper note organizer, pencil and tablet.",
@@ -90,7 +90,7 @@ export default function FeatureSectionNew() {
           <div className="mt-4 sm:mt-6">
             <Link
               to="/product-details"
-              className="inline-block rounded-md border border-transparent bg-indigo-600 px-8 py-3 font-medium text-white hover:bg-indigo-700"
+              className="inline-block rounded-md border border-green-200 hover:text-gray-700 px-8 py-3 font-medium text-white hover:bg-green-200"
             >
               Product Details
             </Link>
@@ -131,10 +131,10 @@ export default function FeatureSectionNew() {
                       See product details
                     </p>
                     <h3 className="mt-1 font-semibold text-white">
-                      <a href={collection.href}>
+                      <Link to={collection.href}>
                         <span className="absolute inset-0" />
                         {collection.name}
-                      </a>
+                      </Link>
                     </h3>
                   </div>
                 </div>
