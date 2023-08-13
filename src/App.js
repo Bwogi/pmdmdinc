@@ -14,7 +14,7 @@ import Footer from "./components/Footer/Footer";
 import About from "./pages/About/About";
 // import Products from "./components/Products/Products";
 // import Contact from './pages/Contact/Contact';
-import Product from "./components/Product/Product";
+// import Product from "./components/Product/Product";
 import Blog from "./pages/Blog/Blog";
 import Store from "./pages/Store/Store";
 import Partners from "./pages/Partners/Partners";
@@ -28,6 +28,7 @@ import SurgicalTechniques from "./pages/SurgicalTechniques/SurgicalTechniques";
 // import NavbarNew from "./components/NavbarNew/NavbarNew";
 import MainNav from "./components/Slider/MainNav/MainNav";
 import ProductDetails from "./pages/ProductDetails/ProductDetails";
+import InPlants from "./pages/InPlants/InPlants";
 
 const App = () => {
   // we are not logged in yet
@@ -92,8 +93,8 @@ const App = () => {
           element: <PrivacyPolicy />,
         },
         {
-          path: "/product/:id",
-          element: <Product />,
+          path: "/in-plants",
+          element: <InPlants />,
         },
         {
           path: "/contact",
