@@ -13,9 +13,9 @@ const ParkSystemSet = () => {
         <Featured type="Featured" />
       </div>
 
-      {/* <div id="techniques">
+      <div>
         <SurgicalTechniques />
-      </div> */}
+      </div>
       <div>
         <STVideos />
       </div>

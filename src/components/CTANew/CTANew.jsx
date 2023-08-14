@@ -1,4 +1,4 @@
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function CTANew() {
   return (
@@ -10,11 +10,11 @@ export default function CTANew() {
           {/* Start your free trial today. */}
         </h2>
         <div className=" flex items-center gap-x-6 lg:mt-0 lg:flex-shrink-0">
-          <a href="">
+          <Link to="">
             <button className="border border-1 px-6 py-6 mt-5 rounded-md bg-[#384A6B] text-white">
-              <a href="#contact">Order Now</a>
+              <Link to="#">Order Now</Link>
             </button>
-          </a>
+          </Link>
 
           {/* <Link
             to="#"

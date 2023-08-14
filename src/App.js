@@ -29,6 +29,7 @@ import SurgicalTechniques from "./pages/SurgicalTechniques/SurgicalTechniques";
 import MainNav from "./components/Slider/MainNav/MainNav";
 import ProductDetails from "./pages/ProductDetails/ProductDetails";
 import InPlants from "./pages/InPlants/InPlants";
+import PecVacDevice from "./pages/PecVacDevice/PecVacDevice";
 
 const App = () => {
   // we are not logged in yet
@@ -75,6 +76,10 @@ const App = () => {
         {
           path: "/product-details",
           element: <ProductDetails />,
+        },
+        {
+          path: "/pectus-vacuum-device",
+          element: <PecVacDevice />,
         },
         {
           path: "/parks-system-set",
