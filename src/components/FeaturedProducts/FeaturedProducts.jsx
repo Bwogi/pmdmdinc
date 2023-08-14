@@ -31,7 +31,7 @@ const features = [
       "We design every detail with the best materials and finishes. This laptop sleeve features durable canvas with double-stitched construction, a felt interior, and a high quality zipper that hold up to daily use.",
     imageSrc: "/img/product-feature-07-detail-02.jpg",
     imageAlt: "Detail of zipper pull with tan leather and silver rivet.",
-    detailsLink: "#b",
+    detailsLink: "/pectus-vacuum-device",
     orderLink: "#b",
   },
   {
