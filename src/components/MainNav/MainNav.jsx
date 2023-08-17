@@ -187,14 +187,14 @@ export default function MainNav() {
               </Disclosure.Button>
               <Disclosure.Button
                 as="Link"
-                href="/product-details"
+                to="/products"
                 className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 sm:pl-5 sm:pr-6"
               >
-                Product Details
+                Products
               </Disclosure.Button>
               <Disclosure.Button
                 as="Link"
-                href="/contact"
+                to="/contact"
                 className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 sm:pl-5 sm:pr-6"
               >
                 Contact
