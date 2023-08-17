@@ -8,7 +8,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Example() {
+export default function MainNav() {
   return (
     <Disclosure as="nav" className="bg-white shadow">
       {({ open }) => (
@@ -56,17 +56,12 @@ export default function Example() {
                   >
                     About
                   </Link>
+
                   <Link
-                    to="/product-details"
+                    to="/products"
                     className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-green-200 hover:text-gray-700"
                   >
-                    Product Details
-                  </Link>
-                  <Link
-                    to="#"
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-green-200 hover:text-gray-700"
-                  >
-                    Store
+                    Our Products
                   </Link>
                   <Link
                     to="/contact"

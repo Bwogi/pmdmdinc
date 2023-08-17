@@ -16,20 +16,20 @@ import About from "./pages/About/About";
 // import Contact from './pages/Contact/Contact';
 // import Product from "./components/Product/Product";
 import Blog from "./pages/Blog/Blog";
-import Store from "./pages/Store/Store";
 import Partners from "./pages/Partners/Partners";
 // import Contact from "./components/Contact/Contact";
 import Contact1 from "./components/Contact1/Contact1";
 import ParkSystemSet from "./pages/ParkSystemSet/ParkSystemSet";
 // import Accessories from "./pages/Accessories/Accessories";
-import ProductsNew from "./pages/ProductsNew/ProductsNew";
+// import ProductsNew from "./pages/ProductsNew/ProductsNew";
 import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
 import SurgicalTechniques from "./pages/SurgicalTechniques/SurgicalTechniques";
 // import NavbarNew from "./components/NavbarNew/NavbarNew";
-import MainNav from "./components/Slider/MainNav/MainNav";
+import MainNav from "./components/MainNav/MainNav";
 import ProductDetails from "./pages/ProductDetails/ProductDetails";
 import InPlants from "./pages/InPlants/InPlants";
 import PecVacDevice from "./pages/PecVacDevice/PecVacDevice";
+import Products from "./pages/Products/Products";
 
 const App = () => {
   // we are not logged in yet
@@ -85,10 +85,7 @@ const App = () => {
           path: "/parks-system-set",
           element: <ParkSystemSet />,
         },
-        {
-          path: "/products",
-          element: <ProductsNew />,
-        },
+
         {
           path: "/surgical-techniques",
           element: <SurgicalTechniques />,
@@ -110,8 +107,8 @@ const App = () => {
           element: <Blog />,
         },
         {
-          path: "/store",
-          element: <Store />,
+          path: "/products",
+          element: <Products />,
         },
         {
           path: "/partners",
