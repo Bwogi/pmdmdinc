@@ -22,13 +22,13 @@ const ParkSystemSet = () => {
       {/* <div className="mb-[80px]">
         <CTANew />
       </div> */}
-      <ProductDetails />
       {/* <div id="product-list">
         <Products />
       </div> */}
       <div>
         <CTANew />
       </div>
+      <ProductDetails />
     </div>
   );
 };

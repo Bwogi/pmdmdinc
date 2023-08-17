@@ -7,10 +7,10 @@ const InPlants = () => {
   return (
     <div>
       <Accessories />
-      <ProductDetails />
       <div>
         <CTANew />
       </div>
+      <ProductDetails />
     </div>
   );
 };

@@ -10,11 +10,12 @@ const PrivacyPolicy = () => {
         <h1 className="text-5xl py-10">Privacy Policy</h1>
       </div> */}
       <p>
-        At PMDMD LLC, we are committed to protecting your privacy and ensuring
-        the security of your personal information. This Privacy Policy outlines
-        how we collect, use, and safeguard your data when you use our mobile app
-        for our medical device. By using our app, you agree to the terms and
-        conditions set forth in this policy.
+        At Pediatric Medical Device Marketing and Distribution LLC, we are
+        committed to protecting your privacy and ensuring the security of your
+        personal information. This Privacy Policy outlines how we collect, use,
+        and safeguard your data when you use our mobile app for our medical
+        device. By using our app, you agree to the terms and conditions set
+        forth in this policy.
       </p>
 
       <h2 className="text-2xl mt-5">Information We Collect</h2>

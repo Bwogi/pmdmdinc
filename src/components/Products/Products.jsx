@@ -1,50 +1,79 @@
-import React from "react";
-// import Header from '../Header/Header'
-// import Table from '../../components/Table/Table'
-// import TableImage from '../../components/TableImage/TableImage'
-// import {Link} from 'react-router-dom'
+/*
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/aspect-ratio'),
+    ],
+  }
+  ```
+*/
+const products = [
+  {
+    id: 1,
+    name: "Park's Pectus System Set",
+    href: "#",
+    price: "$-",
+    description: "Complete Set",
+    imageSrc: "/img/parks-system-set.jpg",
+    imageAlt:
+      "Person using a pen to cross a task off a productivity paper card.",
+  },
+  {
+    id: 2,
+    name: "Pectus Vacuum Device",
+    href: "#",
+    price: "$-",
+    description: "3 sizes available",
+    imageSrc: "/img/pectus-vacuum-device.jpg",
+    imageAlt: "Paper card sitting upright in walnut card holder on desk.",
+  },
+  {
+    id: 3,
+    name: "Dr. Park's Pectus System Set In-Plants",
+    href: "#",
+    price: "-",
+    description: "Order price based on order quantity",
+    imageSrc: "/img/pectus-system-inplants.jpg",
+    imageAlt:
+      "Textured gray felt pouch for paper cards with snap button flap and elastic pen holder loop.",
+  },
+  // More products...
+];
 
-const Products = () => {
-  // const title3 = 'When you submit your Purchase Order by clicking the button below, we will prepare and send you a customised Price List '
+export default function Products() {
   return (
-    <div>
-      {/* <Header intro ="Our Products" title1="Our Catalogue" title2="Park's Pectus System" title3={title3} /> */}
+    <div className="bg-white">
+      <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+        <h2 id="products-heading" className="sr-only">
+          Products
+        </h2>
 
-      <div className=" mb-20">
-        <div className="flex justify-center flex-col text-center">
-          {/* <h1 className="text-green-800">Product List</h1> */}
-          <div className="sm:flex-auto text-center">
-            <h1 className="text-2xl font-bold  text-gray-600 text-center">
-              Accessories{" "}
-            </h1>
-            <h1 className="text-xl  text-gray-400 text-center">
-              This is a product list of Park's Pectus System Set Accessories
-              that are available for you to order.
-            </h1>
-          </div>
-          {/* <h2 className="text-3xl font-bold tracking-tight text-gray-600 sm:text-4xl">Park's Pectus System</h2> */}
-        </div>
-
-        {/* <Link to='/contact'><button className='border border-gray-600 px-6 py-2 rounded-xl text-white bg-gray-600 hover:bg-[#3BB3BD] hover:border-[#3BB3BD]' >Send your Purchase order and or Enquiries here</button></Link> */}
-      </div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          flexDirection: "column",
-          alignItems: "center",
-          gap: 30,
-        }}
-      >
-        {/* <Table /> */}
-        {/* <TableImage /> */}
-        <img className="w-[60%]" src="/img/products.jpg" alt="" />
-        <div className="flex justify-center mb-20">
-          {/* <Link to='/contact'><button className='border border-gray-600 px-6 py-2 rounded-xl text-white bg-gray-600 hover:bg-[#3BB3BD] hover:border-[#3BB3BD]' >Send your Purchase order and or Enquiries here</button></Link> */}
+        <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
+          {products.map((product) => (
+            <a key={product.id} href={product.href} className="group">
+              <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-3 sm:aspect-w-2">
+                <img
+                  src={product.imageSrc}
+                  alt={product.imageAlt}
+                  className="h-full w-full object-cover object-center group-hover:opacity-75"
+                />
+              </div>
+              <div className="mt-4 flex items-center justify-between text-base font-medium text-gray-900">
+                <h3>{product.name}</h3>
+                <p>{product.price}</p>
+              </div>
+              <p className="mt-1 text-sm italic text-gray-500">
+                {product.description}
+              </p>
+            </a>
+          ))}
         </div>
       </div>
     </div>
   );
-};
-
-export default Products;
+}
