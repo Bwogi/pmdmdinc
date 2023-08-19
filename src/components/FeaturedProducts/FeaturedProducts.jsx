@@ -49,7 +49,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function moFeaturedProducts() {
+export default function FeaturedProducts() {
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-2xl px-4 py-5 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-8">

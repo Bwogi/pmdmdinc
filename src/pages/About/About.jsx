@@ -196,7 +196,7 @@ export default About;
 //           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
 //             <div className="flex items-center justify-between">
 //               <a href="#" className="-m-1.5 p-1.5">
-//                 <span className="sr-only">Your Company</span>
+//                 <span className="sr-only">Pediatric Medical Device Marketing and Distribution LLC.</span>
 //                 <img
 //                   className="h-8 w-auto"
 //                   src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
@@ -677,7 +677,7 @@ export default About;
 //               ))}
 //             </div>
 //             <p className="mt-8 text-xs leading-5 text-gray-500 md:order-1 md:mt-0">
-//               &copy; 2020 Your Company, Inc. All rights reserved.
+//               &copy; 2023 Pediatric Medical Device Marketing and Distribution LLC. All rights reserved.
 //             </p>
 //           </div>
 //         </div>

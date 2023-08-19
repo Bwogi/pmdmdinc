@@ -15,6 +15,7 @@ import About from "./pages/About/About";
 // import Products from "./components/Products/Products";
 // import Contact from './pages/Contact/Contact';
 // import Product from "./components/Product/Product";
+import Store from "./pages/Store/Store";
 import Blog from "./pages/Blog/Blog";
 import Partners from "./pages/Partners/Partners";
 // import Contact from "./components/Contact/Contact";
@@ -30,6 +31,9 @@ import ProductDetails from "./pages/ProductDetails/ProductDetails";
 import InPlants from "./pages/InPlants/InPlants";
 import PecVacDevice from "./pages/PecVacDevice/PecVacDevice";
 import Products from "./pages/Products/Products";
+import Product1 from "./components/Product1/Product1";
+import Product2 from "./components/Product2/Product2";
+import Product3 from "./components/Product3/Product3";
 
 const App = () => {
   // we are not logged in yet
@@ -109,6 +113,22 @@ const App = () => {
         {
           path: "/products",
           element: <Products />,
+        },
+        {
+          path: "/product/1",
+          element: <Product1 />,
+        },
+        {
+          path: "/product/2",
+          element: <Product2 />,
+        },
+        {
+          path: "/product/3",
+          element: <Product3 />,
+        },
+        {
+          path: "/store",
+          element: <Store />,
         },
         {
           path: "/partners",

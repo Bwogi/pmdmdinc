@@ -162,12 +162,12 @@ export default function HeroNew() {
                     >
                       Learn More
                     </Link>
-                    <a
-                      href="/products"
+                    <Link
+                      to="/products"
                       className="text-sm font-semibold leading-6  text-gray-900 ring-1 hover:ring-green-400 hover:bg-transparent bg-green-200 ring-green-200 px-6 py-3"
                     >
                       Our Products <span aria-hidden="true">→</span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
