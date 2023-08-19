@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 /*
   This example requires some changes to your config:
   
@@ -16,7 +18,7 @@ const products = [
   {
     id: 1,
     name: "Park's Pectus System Set",
-    href: "#",
+    href: "/product/1",
     price: "$-",
     description: "Complete Set",
     imageSrc: "/img/parks-system-set.jpg",
@@ -26,7 +28,7 @@ const products = [
   {
     id: 2,
     name: "Pectus Vacuum Device",
-    href: "#",
+    href: "/product/2",
     price: "$-",
     description: "3 sizes available",
     imageSrc: "/img/pectus-vacuum-device.jpg",
@@ -35,7 +37,7 @@ const products = [
   {
     id: 3,
     name: "Dr. Park's Pectus System Set In-Plants",
-    href: "#",
+    href: "/product/3",
     price: "-",
     description: "Order price based on order quantity",
     imageSrc: "/img/pectus-system-inplants.jpg",
@@ -55,7 +57,7 @@ export default function Products() {
 
         <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
           {products.map((product) => (
-            <a key={product.id} href={product.href} className="group">
+            <Link key={product.id} to={product.href} className="group">
               <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-3 sm:aspect-w-2">
                 <img
                   src={product.imageSrc}
@@ -70,7 +72,7 @@ export default function Products() {
               <p className="mt-1 text-sm italic text-gray-500">
                 {product.description}
               </p>
-            </a>
+            </Link>
           ))}
         </div>
       </div>

@@ -1,52 +1,51 @@
-
-import { Fragment, useState } from 'react'
-import {Link} from 'react-router-dom'
-import { Dialog, Popover, Transition } from '@headlessui/react'
+import { Fragment, useState } from "react";
+import { Link } from "react-router-dom";
+import { Dialog, Popover, Transition } from "@headlessui/react";
 import {
   Bars3Icon,
   // MagnifyingGlassIcon,
   // QuestionMarkCircleIcon,
   // ShoppingBagIcon,
   XMarkIcon,
-} from '@heroicons/react/24/outline'
+} from "@heroicons/react/24/outline";
 // import { ChevronDownIcon } from '@heroicons/react/20/solid'
 // import Cari1 from '../../img/carinatum1.jpg'
 
 // const currencies = ['CAD', 'USD', 'AUD', 'EUR', 'GBP']
 const navigation = {
   pages: [
-    { name: 'About Us', to: '/' },
-    { name: 'Products', to: '/products/:id' },
+    { name: "About Us", to: "/" },
+    { name: "Products", to: "/products/:id" },
     // { name: 'Partners', to: '/partners' },
-    { name: 'Contact', to: '/contact' },
+    { name: "Contact", to: "/contact" },
   ],
   categories: [
     {
       name: "Pectus Excavatum",
       featured: [
         {
-          name: 'Pectus Excavatum condition',
-          href: 'https://www.youtube.com/watch?v=7KGHovGOgew&t=190s',
-          imageSrc: 'https://www.ode-labs.net/pmdmdImages/excavatum1.jpg',
-          imageAlt: 'Pectus Excavatum',
+          name: "Pectus Excavatum condition",
+          href: "https://www.youtube.com/watch?v=7KGHovGOgew&t=190s",
+          imageSrc: "https://www.ode-labs.net/pmdmdImages/excavatum1.jpg",
+          imageAlt: "Pectus Excavatum",
         },
         {
           name: "",
-          href: 'https://www.youtube.com/watch?v=7KGHovGOgew&t=190s',
-          imageSrc: 'https://www.ode-labs.net/pmdmdImages/excavatum2.jpg',
-          imageAlt: 'Pectus Excavatum',
+          href: "https://www.youtube.com/watch?v=7KGHovGOgew&t=190s",
+          imageSrc: "https://www.ode-labs.net/pmdmdImages/excavatum2.jpg",
+          imageAlt: "Pectus Excavatum",
         },
         {
-          name: 'The Park Technique for Pectus Excavatum Repair explained. *Click any image to watch video',
-          href: 'https://www.youtube.com/watch?v=7KGHovGOgew&t=190s',
-          imageSrc: 'https://www.ode-labs.net/pmdmdImages/excavatum3.jpg',
-          imageAlt: 'Pectus Excavatum',
+          name: "The Park Technique for Pectus Excavatum Repair explained. *Click any image to watch video",
+          href: "https://www.youtube.com/watch?v=7KGHovGOgew&t=190s",
+          imageSrc: "https://www.ode-labs.net/pmdmdImages/excavatum3.jpg",
+          imageAlt: "Pectus Excavatum",
         },
         {
-          name: '',
-          href: 'https://www.youtube.com/watch?v=7KGHovGOgew&t=190s',
-          imageSrc: 'https://www.ode-labs.net/pmdmdImages/excavatum4.jpg',
-          imageAlt: 'Pectus Excavatum',
+          name: "",
+          href: "https://www.youtube.com/watch?v=7KGHovGOgew&t=190s",
+          imageSrc: "https://www.ode-labs.net/pmdmdImages/excavatum4.jpg",
+          imageAlt: "Pectus Excavatum",
         },
       ],
     },
@@ -54,42 +53,40 @@ const navigation = {
       name: "Pectus Carinatum",
       featured: [
         {
-          name: 'Assymetric Pectus Carinatum',
-          href: 'https://www.youtube.com/watch?v=VceHqbTo7rk',
-          imageSrc: 'https://www.ode-labs.net/pmdmdImages/carinatum1.jpg',
-          imageAlt: 'Assymetric Pectus Carinatum',
+          name: "Assymetric Pectus Carinatum",
+          href: "https://www.youtube.com/watch?v=VceHqbTo7rk",
+          imageSrc: "https://www.ode-labs.net/pmdmdImages/carinatum1.jpg",
+          imageAlt: "Assymetric Pectus Carinatum",
         },
         {
-          name: 'The Park Technique for Pectus Carinatum Repair explained. *Click any image to watch video',
-          href: 'https://www.youtube.com/watch?v=VceHqbTo7rk',
-          imageSrc: 'https://www.ode-labs.net/pmdmdImages/carinatum2new.jpg',
-          imageAlt: 'Sandwich Technique - Hyung Joo Park.',
+          name: "The Park Technique for Pectus Carinatum Repair explained. *Click any image to watch video",
+          href: "https://www.youtube.com/watch?v=VceHqbTo7rk",
+          imageSrc: "https://www.ode-labs.net/pmdmdImages/carinatum2new.jpg",
+          imageAlt: "Sandwich Technique - Hyung Joo Park.",
         },
         {
           name: "Before Surgery",
-          href: 'https://www.youtube.com/watch?v=VceHqbTo7rk',
-          imageSrc: 'https://www.ode-labs.net/pmdmdImages/carinatum3new.jpg',
-          imageAlt:
-            'Sandwich Technique - Hyung Joo Park',
+          href: "https://www.youtube.com/watch?v=VceHqbTo7rk",
+          imageSrc: "https://www.ode-labs.net/pmdmdImages/carinatum3new.jpg",
+          imageAlt: "Sandwich Technique - Hyung Joo Park",
         },
         {
-          name: 'After Surgery',
-          href: 'https://www.youtube.com/watch?v=VceHqbTo7rk',
-          imageSrc: 'https://www.ode-labs.net/pmdmdImages/carinatum4new.jpg',
-          imageAlt: 'Sandwich Technique - Hyung Joo Park',
+          name: "After Surgery",
+          href: "https://www.youtube.com/watch?v=VceHqbTo7rk",
+          imageSrc: "https://www.ode-labs.net/pmdmdImages/carinatum4new.jpg",
+          imageAlt: "Sandwich Technique - Hyung Joo Park",
         },
       ],
     },
   ],
-  
-}
+};
 
 // function classNames(...classes) {
 //   return classes.filter(Boolean).join(' ')
 // }
 
 export default function Navbar() {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
 
   return (
     <div className="bg-white">
@@ -132,7 +129,7 @@ export default function Navbar() {
 
                 {/* Links */}
                 {/* <Tab.Group as="div" className="mt-2"> */}
-                  {/* <div className="border-b border-gray-200">
+                {/* <div className="border-b border-gray-200">
                     <Tab.List className="-mb-px flex space-x-8 px-4 flex-col items-center justify-center">
                       {navigation.categories.map((category) => (
                         <Tab
@@ -149,7 +146,7 @@ export default function Navbar() {
                       ))}
                     </Tab.List>
                   </div> */}
-                  {/* <Tab.Panels as={Fragment}>
+                {/* <Tab.Panels as={Fragment}>
                     {navigation.categories.map((category) => (
                       <Tab.Panel key={category.name} className="space-y-12 px-4 py-6">
                         <div className="grid grid-cols-2 gap-x-4 gap-y-10">
@@ -174,13 +171,15 @@ export default function Navbar() {
                 <div className="space-y-6 border-t border-gray-200 py-6 px-4">
                   {navigation.pages.map((page) => (
                     <div key={page.name} className="flow-root">
-                      <Link to={page.to} className="-m-2 block p-2 font-medium text-gray-900">
+                      <Link
+                        to={page.to}
+                        className="-m-2 block p-2 font-medium text-gray-900"
+                      >
                         {page.name}
                       </Link>
                     </div>
                   ))}
                 </div>
-
               </Dialog.Panel>
             </Transition.Child>
           </div>
@@ -192,14 +191,17 @@ export default function Navbar() {
           {/* Top navigation */}
           <div className="bg-gray-900">
             <div className="mx-auto flex h-10 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-              
-              <h1 className='text-transparent'>Pediatric Medical Device Marketing & Distribution LLC.</h1>
+              <h1 className="text-transparent">
+                Pediatric Medical Device Marketing & Distribution LLC.
+              </h1>
 
               <div className="flex items-center space-x-6">
-                <Link to="/login" className="text-sm font-medium text-white hover:text-gray-100">
+                <Link
+                  to="/login"
+                  className="text-sm font-medium text-white hover:text-gray-100"
+                >
                   Login
                 </Link>
-                
               </div>
             </div>
           </div>
@@ -212,10 +214,12 @@ export default function Navbar() {
                   {/* Logo (lg+) */}
                   <div className="hidden lg:flex lg:flex-1 lg:items-center">
                     <Link to="/">
-                      <span className="sr-only">Pediatric Medical Device Marketing & Distribution LLC</span>
+                      <span className="sr-only">
+                        Pediatric Medical Device Marketing & Distribution LLC
+                      </span>
                       <img
                         className="h-[100px] w-auto z-[289]"
-                        src='/img/logo.jpg'
+                        src="/img/logo.jpg"
                         alt="logo"
                       />
                     </Link>
@@ -253,13 +257,19 @@ export default function Navbar() {
                                 >
                                   <Popover.Panel className="absolute inset-x-0 top-full text-sm text-gray-500">
                                     {/* Presentational element used to render the bottom shadow, if we put the shadow on the actual panel it pokes out the top, so we use this shorter element to hide the top of the shadow */}
-                                    <div className="absolute inset-0 top-1/2 bg-white shadow" aria-hidden="true" />
+                                    <div
+                                      className="absolute inset-0 top-1/2 bg-white shadow"
+                                      aria-hidden="true"
+                                    />
 
                                     <div className="relative bg-white">
                                       <div className="mx-auto max-w-7xl px-8">
                                         <div className="grid grid-cols-4 gap-y-10 gap-x-8 py-16">
                                           {category.featured.map((item) => (
-                                            <div key={item.name} className="group relative">
+                                            <div
+                                              key={item.name}
+                                              className="group relative"
+                                            >
                                               <div className="aspect-w-1 aspect-h-1 overflow-hidden rounded-md bg-gray-100 group-hover:opacity-75">
                                                 <img
                                                   src={item.imageSrc}
@@ -267,11 +277,22 @@ export default function Navbar() {
                                                   className="object-cover object-center"
                                                 />
                                               </div>
-                                              <a target='_blank' rel="noreferrer"  href={item.href} className="mt-4 block font-medium text-gray-900">
-                                                <span className="absolute inset-0 z-10" aria-hidden="true" />
+                                              <a
+                                                target="_blank"
+                                                rel="noreferrer"
+                                                href={item.href}
+                                                className="mt-4 block font-medium text-gray-900"
+                                              >
+                                                <span
+                                                  className="absolute inset-0 z-10"
+                                                  aria-hidden="true"
+                                                />
                                                 {item.name}
                                               </a>
-                                              <p aria-hidden="true" className="mt-1">
+                                              <p
+                                                aria-hidden="true"
+                                                className="mt-1"
+                                              >
                                                 {/* Shop now */}
                                               </p>
                                             </div>
@@ -311,7 +332,10 @@ export default function Navbar() {
                     </button>
 
                     {/* Search */}
-                    <Link to="#" className="ml-2 p-2 text-gray-400 hover:text-gray-500">
+                    <Link
+                      to="#"
+                      className="ml-2 p-2 text-gray-400 hover:text-gray-500"
+                    >
                       {/* <span className="sr-only">Search</span> */}
                       {/* <MagnifyingGlassIcon className="h-6 w-6" aria-hidden="true" /> */}
                     </Link>
@@ -319,38 +343,56 @@ export default function Navbar() {
 
                   {/* Logo (lg-) */}
                   <Link to="/" className="lg:hidden">
-                    <span className="sr-only">Pediatric Medical Device Marketing & Distribution LLC</span>
+                    <span className="sr-only">
+                      Pediatric Medical Device Marketing & Distribution LLC
+                    </span>
                     <img
-                      src='/img/logo.jpg'
+                      src="/img/logo.jpg"
                       alt="logo"
                       className="h-[100px] w-auto z-[289]"
                     />
                   </Link>
 
                   <div className="flex flex-1 items-center justify-end">
-                    <Link to="#" className="hidden text-sm font-medium text-gray-700 hover:text-gray-800 lg:block">
+                    <Link
+                      to="#"
+                      className="hidden text-sm font-medium text-gray-700 hover:text-gray-800 lg:block"
+                    >
                       {/* Search */}
                     </Link>
 
                     <div className="flex items-center lg:ml-8">
                       {/* Help */}
-                      <Link to="#" className="p-2 text-gray-400 hover:text-gray-500 lg:hidden">
+                      <Link
+                        to="#"
+                        className="p-2 text-gray-400 hover:text-gray-500 lg:hidden"
+                      >
                         <span className="sr-only text-white">Help</span>
                         {/* <QuestionMarkCircleIcon className="h-6 w-6" aria-hidden="true" /> */}
                       </Link>
-                      <Link to="#" className="hidden text-sm font-medium text-gray-700 hover:text-gray-800 lg:block">
+                      <Link
+                        to="#"
+                        className="hidden text-sm font-medium text-gray-700 hover:text-gray-800 lg:block"
+                      >
                         {/* Help */}
                       </Link>
 
                       {/* Cart */}
                       <div className="ml-4 flow-root lg:ml-8">
-                        <Link to="#" className="group -m-2 flex items-center p-2">
+                        <Link
+                          to="#"
+                          className="group -m-2 flex items-center p-2"
+                        >
                           {/* <ShoppingBagIcon
                             className="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
                             aria-hidden="true"
                           /> */}
-                          <span className="ml-2 text-sm font-medium text-white group-hover:text-white">0</span>
-                          <span className="sr-only text-white">items in cart, view bag</span>
+                          <span className="ml-2 text-sm font-medium text-white group-hover:text-white">
+                            0
+                          </span>
+                          <span className="sr-only text-white">
+                            items in cart, view bag
+                          </span>
                         </Link>
                       </div>
                     </div>
@@ -362,10 +404,8 @@ export default function Navbar() {
         </nav>
       </header>
     </div>
-  )
+  );
 }
-
-
 
 // import { Fragment } from 'react'
 // import { Disclosure, Menu, Transition } from '@headlessui/react'
@@ -376,7 +416,7 @@ export default function Navbar() {
 
 // function classNames(...classes) {
 //   return classes.filter(Boolean).join(' ')
-// }               
+// }
 
 // export default function Navbar() {
 //   return (
@@ -401,12 +441,12 @@ export default function Navbar() {
 //                   {/* <img
 //                     className="block h-8 w-auto lg:hidden"
 //                     src={Logo}
-//                     alt="Your Company"
+//                     alt="Pediatric Medical Device Marketing and Distribution LLC."
 //                   />
 //                   <img
 //                     className="hidden h-8 w-auto lg:block"
 //                     src={Logo}
-//                     alt="Your Company"
+//                     alt="Pediatric Medical Device Marketing and Distribution LLC."
 //                   /> */}
 //                 </div>
 //                 <div className="hidden md:ml-6 md:flex md:space-x-8">
