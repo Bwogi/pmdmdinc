@@ -189,8 +189,8 @@ export default function Footer() {
 //                             <div className="sm:w-auto w-full sm:-mt-1 mt-8 md:ml-0 ml-0">
 //                                 <label className="text-base font-bold leading-4 text-gray-800">Subscribe</label>
 //                                 <div className="mt-4 sm:w-72 w-full relative bg-white">
-//                                     <input type="email" className="w-full pl-4 py-4 pr-8 focus:border-indigo-800 border border-transparent text-base leading-none text-gray-800 placeholder-gray-800 focus:outline-none h-full" placeholder="Email Address" />
-//                                     <button role="button" aria-label="send email address" className="focus:outline-none rounded-full absolute right-0 top-0 mt-5 mr-2 cursor-pointer focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700">
+//                                     <input type="email" className="w-full pl-4 py-4 pr-8 focus:border-green-800 border border-transparent text-base leading-none text-gray-800 placeholder-gray-800 focus:outline-none h-full" placeholder="Email Address" />
+//                                     <button role="button" aria-label="send email address" className="focus:outline-none rounded-full absolute right-0 top-0 mt-5 mr-2 cursor-pointer focus:ring-2 focus:ring-offset-2 focus:ring-green-700">
 //                                         <svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 //                                             <path d="M3.33301 8H12.6663" stroke="#1F2937" strokeLinecap="round" strokeLinejoin="round" />
 //                                             <path d="M10 10.6667L12.6667 8" stroke="#1F2937" strokeLinecap="round" strokeLinejoin="round" />
@@ -381,7 +381,7 @@ export default function Footer() {
 // //                 <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
 // //                   <button
 // //                     type="submit"
-// //                     className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-500 py-2 px-4 text-base font-medium text-white hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-800"
+// //                     className="flex w-full items-center justify-center rounded-md border border-transparent bg-green-500 py-2 px-4 text-base font-medium text-white hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-800"
 // //                   >
 // //                     Subscribe
 // //                   </button>

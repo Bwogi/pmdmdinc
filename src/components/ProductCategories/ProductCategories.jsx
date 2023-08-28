@@ -24,7 +24,7 @@ export default function ProductCategories() {
           </h2>
           <Link
             to="/product-details"
-            className="hidden text-sm font-semibold text-indigo-600 hover:text-indigo-500 sm:block"
+            className="hidden text-sm font-semibold text-green-600 hover:text-green-500 sm:block"
           >
             Product details
             <span aria-hidden="true"> &rarr;</span>
@@ -109,7 +109,7 @@ export default function ProductCategories() {
         <div className="mt-6 sm:hidden">
           <Link
             to="/product-details"
-            className="block text-sm font-semibold text-indigo-600 hover:text-indigo-500"
+            className="block text-sm font-semibold text-green-600 hover:text-green-500"
           >
             Product details
             <span aria-hidden="true"> &rarr;</span>

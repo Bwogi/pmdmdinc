@@ -237,7 +237,7 @@ export default function Navbar() {
                                   <Popover.Button
                                     className={classNames(
                                       open
-                                        ? 'border-indigo-600 text-indigo-600'
+                                        ? 'border-green-600 text-green-600'
                                         : 'border-transparent text-gray-700 hover:text-gray-800',
                                       'relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out'
                                     )}
@@ -428,7 +428,7 @@ export default function Navbar() {
 //               <div className="flex">
 //                 <div className="-ml-2 mr-2 flex items-center md:hidden">
 //                   {/* Mobile menu button */}
-//                   <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+//                   <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-500">
 //                     <span className="sr-only">Open main menu</span>
 //                     {open ? (
 //                       <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -450,7 +450,7 @@ export default function Navbar() {
 //                   /> */}
 //                 </div>
 //                 <div className="hidden md:ml-6 md:flex md:space-x-8">
-//                   {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
+//                   {/* Current: "border-green-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
 //                   <Link
 //                     to="/"
 //                     className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-900"
@@ -487,7 +487,7 @@ export default function Navbar() {
 //                 <div className="flex-shrink-0">
 //                   <button
 //                     type="button"
-//                     className="relative inline-flex items-center rounded-md bg-orange-50 px-4 py-2 text-sm font-medium text-gray-500 shadow-sm hover:bg-white hover:border hover:border-gray-200  hover:bg-orange-50 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+//                     className="relative inline-flex items-center rounded-md bg-orange-50 px-4 py-2 text-sm font-medium text-gray-500 shadow-sm hover:bg-white hover:border hover:border-gray-200  hover:bg-orange-50 focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
 //                   >
 //                     {/* <PlusIcon className="-ml-1 mr-2 h-5 w-5" aria-hidden="true" /> */}
 //                     <Link to='/products'>Our Catalogue</Link>
@@ -496,7 +496,7 @@ export default function Navbar() {
 //                 <div className="hidden md:ml-4 md:flex md:flex-shrink-0 md:items-center">
 //                   <button
 //                     type="button"
-//                     className="rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+//                     className="rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
 //                   >
 //                     <span className="sr-only">View notifications</span>
 //                     <BellIcon className="h-6 w-6" aria-hidden="true" />
@@ -505,7 +505,7 @@ export default function Navbar() {
 //                   {/* Profile dropdown */}
 //                   <Menu as="div" className="relative ml-3">
 //                     <div>
-//                       <Menu.Button className="flex rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+//                       <Menu.Button className="flex rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">
 //                         <span className="sr-only">Open user menu</span>
 //                         <img
 //                           className="h-8 w-8 rounded-full"
@@ -573,11 +573,11 @@ export default function Navbar() {
 
 //           <Disclosure.Panel className="md:hidden">
 //             <div className="space-y-1 pt-2 pb-3">
-//               {/* Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
+//               {/* Current: "bg-green-50 border-green-500 text-green-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
 //               <Disclosure.Button
 //                 as="a"
 //                 to="#"
-//                 className="block border-l-4 border-indigo-500 bg-indigo-50 py-2 pl-3 pr-4 text-base font-medium text-indigo-700 sm:pl-5 sm:pr-6"
+//                 className="block border-l-4 border-green-500 bg-green-50 py-2 pl-3 pr-4 text-base font-medium text-green-700 sm:pl-5 sm:pr-6"
 //               >
 //                 Dashboard
 //               </Disclosure.Button>
@@ -618,7 +618,7 @@ export default function Navbar() {
 //                 </div>
 //                 <button
 //                   type="button"
-//                   className="ml-auto flex-shrink-0 rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+//                   className="ml-auto flex-shrink-0 rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
 //                 >
 //                   <span className="sr-only">View notifications</span>
 //                   <BellIcon className="h-6 w-6" aria-hidden="true" />

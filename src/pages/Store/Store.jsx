@@ -275,7 +275,7 @@ export default function Store() {
                           className={({ selected }) =>
                             classNames(
                               selected
-                                ? "border-indigo-600 text-indigo-600"
+                                ? "border-green-600 text-green-600"
                                 : "border-transparent text-gray-900",
                               "flex-1 whitespace-nowrap border-b-2 px-1 py-4 text-base font-medium"
                             )
@@ -429,7 +429,7 @@ export default function Store() {
                             <Popover.Button
                               className={classNames(
                                 open
-                                  ? "text-indigo-600"
+                                  ? "text-green-600"
                                   : "text-gray-700 hover:text-gray-800",
                                 "relative z-10 flex items-center justify-center text-sm font-medium transition-colors duration-200 ease-out"
                               )}
@@ -437,7 +437,7 @@ export default function Store() {
                               {category.name}
                               <span
                                 className={classNames(
-                                  open ? "bg-indigo-600" : "",
+                                  open ? "bg-green-600" : "",
                                   "absolute inset-x-0 bottom-0 h-0.5 transition-colors duration-200 ease-out sm:mt-5 sm:translate-y-px sm:transform"
                                 )}
                                 aria-hidden="true"
@@ -571,7 +571,7 @@ export default function Store() {
                 <span className="sr-only">Your Company</span>
                 <img
                   className="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                  src="https://tailwindui.com/img/logos/mark.svg?color=green&shade=600"
                   alt=""
                 />
               </Link>

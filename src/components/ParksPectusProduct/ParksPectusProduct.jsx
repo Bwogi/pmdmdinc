@@ -97,7 +97,7 @@ export default function ParksPectusProduct() {
                         </span>
                         <span
                           className={classNames(
-                            selected ? "ring-indigo-500" : "ring-transparent",
+                            selected ? "ring-green-500" : "ring-transparent",
                             "pointer-events-none absolute inset-0 rounded-md ring-2 ring-offset-2"
                           )}
                           aria-hidden="true"
@@ -145,7 +145,7 @@ export default function ParksPectusProduct() {
                       key={rating}
                       className={classNames(
                         product.rating > rating
-                          ? "text-indigo-500"
+                          ? "text-green-500"
                           : "text-gray-300",
                         "h-5 w-5 flex-shrink-0"
                       )}
@@ -212,7 +212,7 @@ export default function ParksPectusProduct() {
               <div className="mt-10 flex">
                 <button
                   type="submit"
-                  className="flex max-w-xs flex-1 items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
+                  className="flex max-w-xs flex-1 items-center justify-center rounded-md border border-transparent bg-green-600 px-8 py-3 text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
                 >
                   Add to bag
                 </button>
@@ -244,7 +244,7 @@ export default function ParksPectusProduct() {
                           <Disclosure.Button className="group relative flex w-full items-center justify-between py-6 text-left">
                             <span
                               className={classNames(
-                                open ? "text-indigo-600" : "text-gray-900",
+                                open ? "text-green-600" : "text-gray-900",
                                 "text-sm font-medium"
                               )}
                             >
@@ -253,7 +253,7 @@ export default function ParksPectusProduct() {
                             <span className="ml-6 flex items-center">
                               {open ? (
                                 <MinusIcon
-                                  className="block h-6 w-6 text-indigo-400 group-hover:text-indigo-500"
+                                  className="block h-6 w-6 text-green-400 group-hover:text-green-500"
                                   aria-hidden="true"
                                 />
                               ) : (

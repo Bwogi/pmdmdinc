@@ -15,7 +15,7 @@ function CTANew1() {
                 ourselves up-to date with the newest fashion to provide you the
                 best experiance
               </p>
-              <button className="hidden py-4 text-base font-medium leading-none text-white duration-300 ease-in-out transform bg-indigo-700 lg:block md:hidden px-28 hover:bg-indigo-600">
+              <button className="hidden py-4 text-base font-medium leading-none text-white duration-300 ease-in-out transform bg-green-700 lg:block md:hidden px-28 hover:bg-green-600">
                 Learn More
               </button>
             </div>
@@ -31,7 +31,7 @@ function CTANew1() {
               />
             </div>
             <div className="block w-full mt-6 lg:hidden md:block">
-              <button className="w-full py-4 text-base font-medium leading-none text-white duration-300 ease-in-out transform bg-indigo-700  hover:bg-indigo-600">
+              <button className="w-full py-4 text-base font-medium leading-none text-white duration-300 ease-in-out transform bg-green-700  hover:bg-green-600">
                 Learn More
               </button>
             </div>

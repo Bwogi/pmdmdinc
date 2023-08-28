@@ -102,7 +102,7 @@ export default function Navbar() {
                 </li>
                 <li>
                   <Link
-                    to="#"
+                    to="/about"
                     className="dark:text-white dark:hover:text-gray-300 px-2 py-1 rounded-md text-base text-right text-gray-800 focus:outline-none focus:ring-1  focus:ring-green-300  hover:underline"
                   >
                     {" "}
@@ -397,7 +397,7 @@ export default function Navbar() {
               </li>
               <li className="border-b border-gray-200 dark:border-gray-700 dark:text-gray-700 pb-4 px-1 flex items-center justify-between">
                 <Link
-                  to="#"
+                  to="/about"
                   className="dark:text-white focus:outline-none focus:ring-1 focus:ring-gray-400 text-base text-gray-800 hover:underline"
                 >
                   {" "}

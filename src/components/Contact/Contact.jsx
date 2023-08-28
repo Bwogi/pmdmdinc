@@ -287,9 +287,10 @@ export default function Contact() {
               </h2>
               <div className="mt-3">
                 <p className="text-lg text-gray-500">
-                  Please get in touch with our expert support team for all your
-                  sales support questions. The team is ready to answer all your
-                  questions.
+                  We are excited to collaborate with medical professionals,
+                  device manufacturers, and healthcare organizations to drive
+                  advancements in pediatric medical devices. For inquiries,
+                  partnerships, and more information, please reach out to us at
                 </p>
               </div>
               <div className="mt-9">

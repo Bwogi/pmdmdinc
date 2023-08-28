@@ -1,0 +1,29 @@
+.product {
+  display: flex;
+  padding: 50px 50px;
+  gap: 20px;
+  .left {
+    flex: 1;
+    display: flex;
+    gap: 5px;
+    .images {
+      display: flex;
+      gap: 5px;
+      flex-direction: column;
+      img {
+        width: 200px;
+      }
+    }
+    .mainImg {
+      img {
+        width: 700px;
+      }
+    }
+  }
+  .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

@@ -32,7 +32,7 @@ const features = [
     imageSrc: "/img/product-feature-07-detail-02.jpg",
     imageAlt: "Detail of zipper pull with tan leather and silver rivet.",
     detailsLink: "/pectus-vacuum-device",
-    orderLink: "#b",
+    orderLink: "/product/pectvac",
   },
   {
     name: "Dr. Park's Pectus System Set In-Plants",
