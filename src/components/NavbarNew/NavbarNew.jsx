@@ -14,7 +14,7 @@ export default function NavbarNew() {
               <button
                 role="img"
                 aria-label="logo"
-                className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 mr-10 flex items-center"
+                className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-700 mr-10 flex items-center"
               >
                 {/* <svg
                   width={191}
@@ -37,7 +37,7 @@ export default function NavbarNew() {
             </div>
             <div className="h-full flex items-center justify-center lg:pr-40">
               <div className="relative">
-                <div className="text-indigo-50 absolute ml-3 inset-0 m-auto lg:w-4 lg:h-4 md:w-4 md:h-4">
+                <div className="text-green-50 absolute ml-3 inset-0 m-auto lg:w-4 lg:h-4 md:w-4 md:h-4">
                   {/* <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="icon icon-tabler icon-tabler-search"
@@ -54,7 +54,7 @@ export default function NavbarNew() {
                   </svg> */}
                 </div>
                 {/* <input
-                  className="hidden bg-indigo-50 bg-opacity-10 md:block focus:outline-none focus:border-indigo-700 lg:w-96 w-72 rounded text-sm text-indigo-50 pl-8 py-2 placeholder-indigo-50"
+                  className="hidden bg-green-50 bg-opacity-10 md:block focus:outline-none focus:border-green-700 lg:w-96 w-72 rounded text-sm text-green-50 pl-8 py-2 placeholder-green-50"
                   type="text"
                   placeholder="Search here"
                 /> */}
@@ -65,7 +65,7 @@ export default function NavbarNew() {
                 <div className="h-full flex items-center">
                   <button
                     aria-label="show notifications"
-                    className="relative focus:outline-none hover:text-indigo-100 focus:text-indigo-100 text-indigo-50 mx-5 h-full flex items-center justify-center cursor-pointer"
+                    className="relative focus:outline-none hover:text-green-100 focus:text-green-100 text-green-50 mx-5 h-full flex items-center justify-center cursor-pointer"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -105,25 +105,25 @@ export default function NavbarNew() {
             </div>
             <div className="flex items-center md:hidden">
               <ul className="p-2 border-r absolute rounded top-0 left-0 right-0 shadow mt-16 md:mt-16 hidden">
-                <li className="flex md:hidden cursor-pointer text-indigo-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-indigo-100 focus:text-indigo-100 focus:outline-none">
+                <li className="flex md:hidden cursor-pointer text-green-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-green-100 focus:text-green-100 focus:outline-none">
                   <div className="flex items-center">
                     <span className="ml-2 font-bold">Dashboard</span>
                   </div>
                 </li>
-                <li className="flex md:hidden flex-col cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-100 focus:text-indigo-100 focus:outline-none  justify-center">
+                <li className="flex md:hidden flex-col cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-green-100 focus:text-green-100 focus:outline-none  justify-center">
                   <div className="flex items-center">
                     <span className="ml-2 font-bold">Products</span>
                   </div>
                 </li>
-                <li className="flex md:hidden flex-col cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-100 focus:text-indigo-100 focus:outline-none  justify-center">
+                <li className="flex md:hidden flex-col cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-green-100 focus:text-green-100 focus:outline-none  justify-center">
                   <div className="flex items-center">
                     <span className="ml-2 font-bold">Performance</span>
                   </div>
                 </li>
-                <li className="border-b border-gray-300 flex md:hidden cursor-pointer text-gray-600 text-sm leading-3 tracking-normal pt-2 pb-4 hover:text-indigo-100  items-center focus:text-indigo-700 focus:outline-none">
+                <li className="border-b border-gray-300 flex md:hidden cursor-pointer text-gray-600 text-sm leading-3 tracking-normal pt-2 pb-4 hover:text-green-100  items-center focus:text-green-700 focus:outline-none">
                   <span className="ml-2 font-bold">Deliverables</span>
                 </li>
-                <li className="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-indigo-700 flex items-center focus:text-indigo-100 focus:outline-none">
+                <li className="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-green-700 flex items-center focus:text-green-100 focus:outline-none">
                   <div className="flex items-center">
                     <div className="w-12 cursor-pointer flex text-sm border-2 border-transparent rounded focus:outline-none focus:border-white transition duration-150 ease-in-out">
                       <img
@@ -152,7 +152,7 @@ export default function NavbarNew() {
                     </div>
                   </div>
                 </li>
-                <li className="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none">
+                <li className="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-green-700 focus:text-green-700 focus:outline-none">
                   <div className="flex items-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -173,7 +173,7 @@ export default function NavbarNew() {
                     <span className="ml-2">Profile</span>
                   </div>
                 </li>
-                <li className="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-indigo-700 flex items-center focus:text-indigo-700 focus:outline-none">
+                <li className="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-green-700 flex items-center focus:text-green-700 focus:outline-none">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="icon icon-tabler icon-tabler-logout"
@@ -201,7 +201,7 @@ export default function NavbarNew() {
                 <li>
                   <a
                     href="javascript:void(0)"
-                    className="focus:outline-none font-medium cursor-pointer h-full flex items-center hover:text-indigo-100 text-sm text-indigo-50 tracking-normal"
+                    className="focus:outline-none font-medium cursor-pointer h-full flex items-center hover:text-green-100 text-sm text-green-50 tracking-normal"
                   >
                     Dashboard
                   </a>
@@ -209,7 +209,7 @@ export default function NavbarNew() {
                 <li>
                   <a
                     href="javascript:void(0)"
-                    className="focus:outline-none font-medium cursor-pointer h-full flex items-center hover:text-indigo-100 text-sm text-indigo-50 mx-6 tracking-normal"
+                    className="focus:outline-none font-medium cursor-pointer h-full flex items-center hover:text-green-100 text-sm text-green-50 mx-6 tracking-normal"
                   >
                     Transactions
                   </a>
@@ -217,7 +217,7 @@ export default function NavbarNew() {
                 <li>
                   <a
                     href="javascript:void(0)"
-                    className="focus:outline-none font-medium cursor-pointer h-full flex items-center hover:text-indigo-100 text-sm text-indigo-50 mr-6 tracking-normal"
+                    className="focus:outline-none font-medium cursor-pointer h-full flex items-center hover:text-green-100 text-sm text-green-50 mr-6 tracking-normal"
                   >
                     Stats
                   </a>
@@ -225,7 +225,7 @@ export default function NavbarNew() {
                 <li>
                   <a
                     href="javascript:void(0)"
-                    className="focus:outline-none font-medium cursor-pointer h-full flex items-center hover:text-indigo-100 text-sm text-indigo-50 mr-6 tracking-normal"
+                    className="focus:outline-none font-medium cursor-pointer h-full flex items-center hover:text-green-100 text-sm text-green-50 mr-6 tracking-normal"
                   >
                     Partners
                   </a>
@@ -233,7 +233,7 @@ export default function NavbarNew() {
                 <li>
                   <a
                     href="javascript:void(0)"
-                    className="focus:outline-none font-medium cursor-pointer h-full flex items-center hover:text-indigo-100 text-sm text-indigo-50 mr-6 tracking-normal"
+                    className="focus:outline-none font-medium cursor-pointer h-full flex items-center hover:text-green-100 text-sm text-green-50 mr-6 tracking-normal"
                   >
                     Settings
                   </a>
@@ -244,7 +244,7 @@ export default function NavbarNew() {
         </nav>
         {/* Navbar */}
         <nav className="md:hidden">
-          <div className="w-full shadow-md bg-indigo-700 fixed top-0 z-40">
+          <div className="w-full shadow-md bg-green-700 fixed top-0 z-40">
             <div className="w-full flex md:hidden">
               <div className="py-4 flex  justify-between mx-4 items-center w-full">
                 <div
@@ -275,7 +275,7 @@ export default function NavbarNew() {
                     <div className="h-full flex items-center">
                       <button
                         aria-label="show notifications"
-                        className="relative focus:outline-none focus:text-indigo-700 hover:text-indigo-700 focus:border-indigo-700 hover:border-indigo-700 h-full flex items-center justify-center text-gray-800 cursor-pointer"
+                        className="relative focus:outline-none focus:text-green-700 hover:text-green-700 focus:border-green-700 hover:border-green-700 h-full flex items-center justify-center text-gray-800 cursor-pointer"
                       >
                         <svg
                           width={24}
@@ -374,7 +374,7 @@ export default function NavbarNew() {
             }
             id="mobile-nav"
           >
-            <div className="w-full h-full shadow-lg z-40 fixed overflow-y-auto  top-0 bg-indigo-700 flex-col justify-between xl:hidden pb-4 transition duration-500 ease-in-out">
+            <div className="w-full h-full shadow-lg z-40 fixed overflow-y-auto  top-0 bg-green-700 flex-col justify-between xl:hidden pb-4 transition duration-500 ease-in-out">
               <div className="sm:px-6 px-4 h-full">
                 <div className="flex flex-col justify-between h-full w-full">
                   <div>
@@ -407,7 +407,7 @@ export default function NavbarNew() {
                           onClick={() => setsideBar(!sideBar)}
                           id="cross"
                           aria-label="close menu"
-                          className="focus:outline-none focus:ring-2 rounded-md text-indigo-50"
+                          className="focus:outline-none focus:ring-2 rounded-md text-green-50"
                           onclick="sidebarHandler(false)"
                         >
                           <svg
@@ -432,7 +432,7 @@ export default function NavbarNew() {
                     <ul className>
                       <div className="border-gray-200 border-b border-opacity-20 pb-5 md:pr-10 lg:pr-0 h-full flex items-center">
                         <div className="relative w-full">
-                          <div className="text-indigo-50 absolute ml-3 inset-0 m-auto w-4 h-4">
+                          <div className="text-green-50 absolute ml-3 inset-0 m-auto w-4 h-4">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               className="icon icon-tabler icon-tabler-search"
@@ -449,7 +449,7 @@ export default function NavbarNew() {
                             </svg>
                           </div>
                           <input
-                            className="md:hidden bg-indigo-50 bg-opacity-10 placeholder-indigo-50  focus:outline-none focus:border-indigo-700 w-80 rounded text-sm text-indigo-50 pl-12 py-2"
+                            className="md:hidden bg-green-50 bg-opacity-10 placeholder-green-50  focus:outline-none focus:border-green-700 w-80 rounded text-sm text-green-50 pl-12 py-2"
                             type="text"
                             placeholder="Search here"
                           />
@@ -461,7 +461,7 @@ export default function NavbarNew() {
                             <div className="flex items-center">
                               <p
                                 tabIndex={0}
-                                className="focus:outline-none text-indigo-50 text-sm font-medium"
+                                className="focus:outline-none text-green-50 text-sm font-medium"
                               >
                                 Dashboard
                               </p>
@@ -476,7 +476,7 @@ export default function NavbarNew() {
                               <div className="flex items-center">
                                 <p
                                   tabIndex={0}
-                                  className="focus:outline-none text-indigo-50 text-sm font-medium"
+                                  className="focus:outline-none text-green-50 text-sm font-medium"
                                 >
                                   Transactions
                                 </p>
@@ -491,7 +491,7 @@ export default function NavbarNew() {
                             <div className="flex items-center">
                               <p
                                 tabIndex={0}
-                                className="focus:outline-none text-indigo-50 text-sm font-medium"
+                                className="focus:outline-none text-green-50 text-sm font-medium"
                               >
                                 Stats
                               </p>
@@ -504,7 +504,7 @@ export default function NavbarNew() {
                           <div className="w-6 h-6 md:w-8 md:h-8 text-gray-800">
                             <p
                               tabIndex={0}
-                              className="focus:outline-none text-indigo-50 text-sm font-medium"
+                              className="focus:outline-none text-green-50 text-sm font-medium"
                             >
                               Partners
                             </p>
@@ -516,7 +516,7 @@ export default function NavbarNew() {
                           <div className="w-6 h-6 md:w-8 md:h-8 text-gray-800">
                             <p
                               tabIndex={0}
-                              className="focus:outline-none text-indigo-50 text-sm font-medium"
+                              className="focus:outline-none text-green-50 text-sm font-medium"
                             >
                               Settings
                             </p>

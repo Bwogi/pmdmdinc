@@ -41,7 +41,7 @@ export default function NewProductsFinal() {
           </h2>
           <Link
             to="/product-details"
-            className="hidden text-sm font-medium text-indigo-600 hover:text-indigo-500 md:block"
+            className="hidden text-sm font-medium text-green-600 hover:text-green-500 md:block"
           >
             Product Details
             <span aria-hidden="true"> &rarr;</span>
@@ -75,7 +75,7 @@ export default function NewProductsFinal() {
         <div className="mt-8 text-sm md:hidden">
           <Link
             to="#"
-            className="font-medium text-indigo-600 hover:text-indigo-500"
+            className="font-medium text-green-600 hover:text-green-500"
           >
             Shop the collection
             <span aria-hidden="true"> &rarr;</span>

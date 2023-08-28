@@ -34,6 +34,7 @@ import Products from "./pages/Products/Products";
 import Product1 from "./components/Product1/Product1";
 import Product2 from "./components/Product2/Product2";
 import Product3 from "./components/Product3/Product3";
+import PectVac from "./components/PectVac/PectVac";
 
 const App = () => {
   // we are not logged in yet
@@ -113,6 +114,10 @@ const App = () => {
         {
           path: "/products",
           element: <Products />,
+        },
+        {
+          path: "/products/pectvac",
+          element: <PectVac />,
         },
         {
           path: "/product/1",
