@@ -30,11 +30,13 @@ import MainNav from "./components/MainNav/MainNav";
 import ProductDetails from "./pages/ProductDetails/ProductDetails";
 import InPlants from "./pages/InPlants/InPlants";
 import PecVacDevice from "./pages/PecVacDevice/PecVacDevice";
-import Products from "./pages/Products/Products";
-import Product1 from "./components/Product1/Product1";
+// import Products from "./pages/Products/Products";
+// import Product1 from "./components/Product1/Product1";
 import Product2 from "./components/Product2/Product2";
 import Product3 from "./components/Product3/Product3";
 import PectVac from "./components/PectVac/PectVac";
+import ProductsPage from "./pages/ProductsPage/ProductsPage";
+import ProductPage from "./pages/ProductPage/ProductPage";
 
 const App = () => {
   // we are not logged in yet
@@ -113,15 +115,15 @@ const App = () => {
         },
         {
           path: "/products",
-          element: <Products />,
+          element: <ProductsPage />,
         },
         {
           path: "/products/pectvac",
           element: <PectVac />,
         },
         {
-          path: "/product/1",
-          element: <Product1 />,
+          path: "/products/:handle",
+          element: <ProductPage />,
         },
         {
           path: "/product/2",

@@ -27,7 +27,7 @@ export default function Product() {
           velit fugiat facere est nemo voluptatem eaque excepturi debitis
           provident esse repellat omnis sequi, deleniti asperiores. Cumque
           recusandae totam sequi!
-        </p>
+        </p>``
         <div className="size">
           <label
             htmlFor="location"
