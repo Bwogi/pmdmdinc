@@ -23,7 +23,7 @@ const features = [
     imageAlt:
       "White canvas laptop sleeve with gray felt interior, silver zipper, and tan leather zipper pull.",
     detailsLink: "/parks-system-set",
-    orderLink: "/parks-system-set",
+    orderLink: "https://pect-vac.myshopify.com/",
   },
   {
     name: "Pectus Vacuum Device",
@@ -32,7 +32,7 @@ const features = [
     imageSrc: "/img/product-feature-07-detail-02.jpg",
     imageAlt: "Detail of zipper pull with tan leather and silver rivet.",
     detailsLink: "/pectus-vacuum-device",
-    orderLink: "/product/pectvac",
+    orderLink: "https://pect-vac.myshopify.com/",
   },
   {
     name: "Dr. Park's Pectus System Set In-Plants",
@@ -41,7 +41,7 @@ const features = [
     imageSrc: "/img/product-feature-07-detail-03.jpg",
     imageAlt: "Detail of zipper pull with tan leather and silver rivet.",
     detailsLink: "/in-plants",
-    orderLink: "/in-plants",
+    orderLink: "https://pect-vac.myshopify.com/",
   },
 ];
 
@@ -98,7 +98,7 @@ export default function FeaturedProducts() {
                     to={feature.orderLink}
                     className="text-sm font-semibold leading-6  text-gray-900 ring-1 hover:ring-green-400 hover:bg-transparent bg-green-200 ring-green-200 px-6 py-3"
                   >
-                    Order Now <span aria-hidden="true">→</span>
+                    <span aria-hidden="true">Order Now →</span>
                   </Link>
                 </div>
               </div>

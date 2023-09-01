@@ -163,7 +163,7 @@ export default function HeroNew() {
                       Learn More
                     </Link>
                     <Link
-                      to="/products"
+                      to="https://pect-vac.myshopify.com/"
                       className="text-sm font-semibold leading-6  text-gray-900 ring-1 hover:ring-green-400 hover:bg-transparent bg-green-200 ring-green-200 px-6 py-3"
                     >
                       Our Products <span aria-hidden="true">→</span>

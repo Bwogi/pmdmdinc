@@ -27,7 +27,7 @@ const ProductsPage = () => {
               Our Products
             </h2>
             <Link
-              to="/product-details"
+              to="https://pect-vac.myshopify.com/"
               className="hidden text-sm font-semibold text-indigo-600 hover:text-indigo-500 sm:block"
             >
               Product Details

@@ -40,7 +40,7 @@ export default function NewProductsFinal() {
             Our Products
           </h2>
           <Link
-            to="/product-details"
+            to="https://pect-vac.myshopify.com/"
             className="hidden text-sm font-medium text-green-600 hover:text-green-500 md:block"
           >
             Product Details

@@ -1,11 +1,10 @@
 import React, { useEffect, useContext } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { ShopContext } from "../../context/shopContext";
 
 const ProductPage = () => {
   const { handle } = useParams();
-  const { fetchProductWithHandle, addItemCheckout, product } =
-    useContext(ShopContext);
+  const { fetchProductWithHandle, product } = useContext(ShopContext);
 
   useEffect(() => {
     fetchProductWithHandle(handle);

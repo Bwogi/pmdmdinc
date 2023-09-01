@@ -59,10 +59,10 @@ export default function MainNav() {
                   </Link>
 
                   <Link
-                    to="/products"
+                    to="https://pect-vac.myshopify.com/"
                     className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-green-200 hover:text-gray-700"
                   >
-                    Products
+                    Our Store
                   </Link>
                   {/* <Link
                     to="/store"
@@ -195,10 +195,10 @@ export default function MainNav() {
               </Disclosure.Button>
               <Disclosure.Button
                 as="Link"
-                to="#"
+                to="https://pect-vac.myshopify.com/"
                 className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 sm:pl-5 sm:pr-6"
               >
-                Products
+                Our Store
               </Disclosure.Button>
               {/* <Disclosure.Button
                 as="Link"
