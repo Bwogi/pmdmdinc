@@ -23,7 +23,7 @@ const features = [
     imageAlt:
       "White canvas laptop sleeve with gray felt interior, silver zipper, and tan leather zipper pull.",
     detailsLink: "/parks-pectus-system",
-    orderLink: "https://pect-vac.myshopify.com/",
+    orderLink: "/contact",
   },
   {
     name: "Pectus Vacuum Device",
