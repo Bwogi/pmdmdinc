@@ -1,76 +1,132 @@
-import React, { useContext, useEffect } from "react";
-import { ShopContext } from "../../context/shopContext";
-import { Link } from "react-router-dom";
+import { defer } from "@shopify/remix-oxygen";
+import { Await, useLoaderData, Link } from "@remix-run/react";
+import { Suspense } from "react";
+import { Image, Money } from "@shopify/hydrogen";
 
-const ProductsPage = () => {
-  const { fetchAllProducts, products } = useContext(ShopContext);
-
-  // fetch all products when the homepage loads
-  useEffect(() => {
-    fetchAllProducts();
-  }, [fetchAllProducts]); // we watch to fetch all products when the homepage loads for changes
-
-  // if products are not available yet, show a spinner
-  if (!products) return <div>Loading...</div>;
-
-  return (
-    <div className="mt-20 ml-20 mr-20 mx-auto">
-      {/* {products.map((product) => (
-        <Link to={`/products/${product.handle}`} key={product.id}>
-          {product.title}
-        </Link>
-      ))} */}
-      <div className="bg-white">
-        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
-          <div className="sm:flex sm:items-baseline sm:justify-between">
-            <h2 className="text-2xl font-bold tracking-tight text-gray-900">
-              Our Products
-            </h2>
-            <Link
-              to="/product-details"
-              className="hidden text-sm font-semibold text-indigo-600 hover:text-indigo-500 sm:block"
-            >
-              Product Details
-              <span aria-hidden="true"> &rarr;</span>
-            </Link>
-          </div>
-
-          <div className="mt-6 grid grid-cols-1 gap-y-10 sm:grid-cols-3 sm:gap-x-6 sm:gap-y-0 lg:gap-x-8">
-            {products.map((product) => (
-              <div key={product.id} className="group relative">
-                <div className="h-96 w-full overflow-hidden rounded-lg sm:aspect-h-3 sm:aspect-w-2 group-hover:opacity-75 sm:h-auto">
-                  <img
-                    src={product.images[0].src}
-                    alt={product.imageAlt}
-                    className="h-full w-full object-cover object-center"
-                  />
-                </div>
-                <h3 className="mt-4 text-base font-semibold text-gray-900">
-                  <Link to={`/products/${product.handle}`}>
-                    <span className="absolute inset-0" />
-                    {product.title}
-                  </Link>
-                </h3>
-                <p className="mt-1 text-sm text-gray-500">
-                  {/* {product.variants[1].price} */}
-                </p>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-6 sm:hidden">
-            <Link
-              to="/product-details"
-              className="block text-sm font-semibold text-indigo-600 hover:text-indigo-500"
-            >
-              Product Details
-              <span aria-hidden="true"> &rarr;</span>
-            </Link>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+export const meta = () => {
+  return [{ title: "Hydrogen | Home" }];
 };
 
-export default ProductsPage;
+export async function loader({ context }) {
+  const { storefront } = context;
+  const { collections } = await storefront.query(FEATURED_COLLECTION_QUERY);
+  const featuredCollection = collections.nodes[0];
+  const recommendedProducts = storefront.query(RECOMMENDED_PRODUCTS_QUERY);
+
+  return defer({ featuredCollection, recommendedProducts });
+}
+
+export default function Homepage() {
+  const data = useLoaderData();
+  return (
+    <div className="home">
+      <FeaturedCollection collection={data.featuredCollection} />
+      <RecommendedProducts products={data.recommendedProducts} />
+    </div>
+  );
+}
+
+function FeaturedCollection({ collection }) {
+  const image = collection.image;
+  return (
+    <Link
+      className="featured-collection"
+      to={`/collections/${collection.handle}`}
+    >
+      {image && (
+        <div className="featured-collection-image">
+          <Image data={image} sizes="100vw" />
+        </div>
+      )}
+      <h1>{collection.title}</h1>
+    </Link>
+  );
+}
+
+function RecommendedProducts({ products }) {
+  return (
+    <div className="recommended-products">
+      <h2>Recommended Products</h2>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Await resolve={products}>
+          {({ products }) => (
+            <div className="recommended-products-grid">
+              {products.nodes.map((product) => (
+                <Link
+                  key={product.id}
+                  className="recommended-product"
+                  to={`/products/${product.handle}`}
+                >
+                  <Image
+                    data={product.images.nodes[0]}
+                    aspectRatio="1/1"
+                    sizes="(min-width: 45em) 20vw, 50vw"
+                  />
+                  <h4>{product.title}</h4>
+                  <small>
+                    <Money data={product.priceRange.minVariantPrice} />
+                  </small>
+                </Link>
+              ))}
+            </div>
+          )}
+        </Await>
+      </Suspense>
+      <br />
+    </div>
+  );
+}
+
+const FEATURED_COLLECTION_QUERY = `#graphql
+  fragment FeaturedCollection on Collection {
+    id
+    title
+    image {
+      id
+      url
+      altText
+      width
+      height
+    }
+    handle
+  }
+  query FeaturedCollection($country: CountryCode, $language: LanguageCode)
+    @inContext(country: $country, language: $language) {
+    collections(first: 1, sortKey: UPDATED_AT, reverse: true) {
+      nodes {
+        ...FeaturedCollection
+      }
+    }
+  }
+`;
+
+const RECOMMENDED_PRODUCTS_QUERY = `#graphql
+  fragment RecommendedProduct on Product {
+    id
+    title
+    handle
+    priceRange {
+      minVariantPrice {
+        amount
+        currencyCode
+      }
+    }
+    images(first: 1) {
+      nodes {
+        id
+        url
+        altText
+        width
+        height
+      }
+    }
+  }
+  query RecommendedProducts ($country: CountryCode, $language: LanguageCode)
+    @inContext(country: $country, language: $language) {
+    products(first: 4, sortKey: UPDATED_AT, reverse: true) {
+      nodes {
+        ...RecommendedProduct
+      }
+    }
+  }
+`;
