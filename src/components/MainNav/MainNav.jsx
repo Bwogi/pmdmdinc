@@ -186,46 +186,43 @@ export default function MainNav() {
             <div className="space-y-1 pt-2 pb-3">
               {/* Current: "bg-green-50 border-green-500 text-green-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
               <Disclosure.Button
-                as="Link"
                 href="/"
                 className="block border-l-4 border-green-500 bg-green-50 py-2 pl-3 pr-4 text-base font-medium text-green-700 sm:pl-5 sm:pr-6"
               >
-                Home
+                <Link to="/">Home</Link>
               </Disclosure.Button>
               <Disclosure.Button
-                as="Link"
                 href="/about"
                 className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 sm:pl-5 sm:pr-6"
               >
-                About
+                <Link to="/about">About</Link>
               </Disclosure.Button>
               <Disclosure.Button
-                as="Link"
                 to="https://pect-vac.myshopify.com/"
                 className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 sm:pl-5 sm:pr-6"
               >
-                Retail Store
+                <Link to="https://pect-vac.myshopify.com/">Retail Store</Link>
               </Disclosure.Button>
               <Disclosure.Button
                 as="Link"
                 to="/parks-pectus-system"
                 className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 sm:pl-5 sm:pr-6"
               >
-                Park's Pectus System
+                <Link to="/parks-pectus-system">Park's Pectus System</Link>
               </Disclosure.Button>
               <Disclosure.Button
                 as="Link"
                 to="/product-list"
                 className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 sm:pl-5 sm:pr-6"
               >
-                Park's Pectus System Implants
+                <Link to="/product-list">Park's Pectus System Implants</Link>
               </Disclosure.Button>
               <Disclosure.Button
                 as="Link"
                 to="/contact"
                 className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 sm:pl-5 sm:pr-6"
               >
-                Contact
+                <Link to="/contact">Contact</Link>
               </Disclosure.Button>
             </div>
             <div className="border-t border-gray-200 pt-4 pb-3">
