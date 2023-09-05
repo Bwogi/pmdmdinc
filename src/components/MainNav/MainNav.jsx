@@ -204,15 +204,22 @@ export default function MainNav() {
                 to="https://pect-vac.myshopify.com/"
                 className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 sm:pl-5 sm:pr-6"
               >
-                Our Store
+                Retail Store
               </Disclosure.Button>
-              {/* <Disclosure.Button
+              <Disclosure.Button
                 as="Link"
-                to="/store"
+                to="/parks-pectus-system"
                 className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 sm:pl-5 sm:pr-6"
               >
-                Store
-              </Disclosure.Button> */}
+                Park's Pectus System
+              </Disclosure.Button>
+              <Disclosure.Button
+                as="Link"
+                to="/product-list"
+                className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 sm:pl-5 sm:pr-6"
+              >
+                Park's Pectus System Implants
+              </Disclosure.Button>
               <Disclosure.Button
                 as="Link"
                 to="/contact"
@@ -246,7 +253,7 @@ export default function MainNav() {
                   <BellIcon className="h-6 w-6" aria-hidden="true" />
                 </button> */}
               {/* </div> */}
-              <div className="mt-3 space-y-1">
+              {/* <div className="mt-3 space-y-1">
                 <Disclosure.Button
                   as="a"
                   href="#"
@@ -268,7 +275,7 @@ export default function MainNav() {
                 >
                   Sign out
                 </Disclosure.Button>
-              </div>
+              </div> */}
             </div>
           </Disclosure.Panel>
         </>
