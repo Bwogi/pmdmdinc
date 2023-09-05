@@ -2,9 +2,11 @@ import React from "react";
 import Featured from "../../components/Featured/Featured";
 import SurgicalTechniques from "../../components/SurgicalTechniques/SurgicalTechniques";
 import STVideos from "../../components/STVideos/STVideos";
+import CTANew1 from "../../components/CTANew1/CTANew1";
+// import Sidebar from "../../components/Sidebar/Sidebar";
 // import Products from "../../components/Products/Products";
-import CTANew from "../../components/CTANew/CTANew";
-import ProductDetails from "../ProductDetails/ProductDetails";
+// import CTANew from "../../components/CTANew/CTANew";
+// import ProductDetails from "../ProductDetails/ProductDetails";
 
 const ParkSystemSet = () => {
   return (
@@ -12,7 +14,9 @@ const ParkSystemSet = () => {
       <div>
         <Featured type="Featured" />
       </div>
-
+      {/* <div>
+        <Sidebar />
+      </div> */}
       <div>
         <SurgicalTechniques />
       </div>
@@ -26,9 +30,9 @@ const ParkSystemSet = () => {
         <Products />
       </div> */}
       <div>
-        <CTANew />
+        <CTANew1 />
       </div>
-      <ProductDetails />
+      {/* <ProductDetails /> */}
     </div>
   );
 };

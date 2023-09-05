@@ -18,7 +18,7 @@ export default function ErrorPage() {
           </button>
         </Link>
         <Link to="/contact">
-          <button className="p-4 text-base font-semibold text-center md:w-auto w-full bg-gray-100 text-green-700 border rounded-md hover:bg-gray-200">
+          <button className="p-4 text-base font-semibold text-center md:w-auto w-full bg-gray-100 text-green-700 border rounded-md hover:bg-green-200">
             Contact Support
           </button>
         </Link>

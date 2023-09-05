@@ -158,13 +158,13 @@ export default function HeroNew() {
                   <div className="mt-10 flex items-center gap-x-6">
                     <Link
                       to="/about"
-                      className="text-sm font-semibold leading-6  text-gray-900 ring-1 hover:ring-gray-400 hover:bg-transparent bg-gray-200 ring-gray-200 px-6 py-3"
+                      className="text-sm font-semibold leading-6  text-gray-900 ring-1 hover:ring-gray-400 hover:bg-transparent bg-green-200 ring-green-200 px-6 py-3"
                     >
                       Learn More
                     </Link>
                     <Link
                       to="https://pect-vac.myshopify.com/"
-                      className="text-sm font-semibold leading-6  text-gray-900 ring-1 hover:ring-green-400 hover:bg-transparent bg-green-200 ring-green-200 px-6 py-3"
+                      className="text-sm font-semibold leading-6  text-gray-900 ring-1 hover:ring-[#C39A68] hover:bg-transparent bg-[#C39A68] ring-[#C39A68] px-6 py-3"
                     >
                       Our Products <span aria-hidden="true">→</span>
                     </Link>

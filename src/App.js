@@ -19,7 +19,7 @@ import Store from "./pages/Store/Store";
 import Blog from "./pages/Blog/Blog";
 import Partners from "./pages/Partners/Partners";
 // import Contact from "./components/Contact/Contact";
-import Contact1 from "./components/Contact1/Contact1";
+// import Contact1 from "./components/Contact1/Contact1";
 import ParkSystemSet from "./pages/ParkSystemSet/ParkSystemSet";
 // import Accessories from "./pages/Accessories/Accessories";
 // import ProductsNew from "./pages/ProductsNew/ProductsNew";
@@ -28,15 +28,21 @@ import SurgicalTechniques from "./pages/SurgicalTechniques/SurgicalTechniques";
 // import NavbarNew from "./components/NavbarNew/NavbarNew";
 import MainNav from "./components/MainNav/MainNav";
 import ProductDetails from "./pages/ProductDetails/ProductDetails";
-import InPlants from "./pages/InPlants/InPlants";
+// import InPlants from "./pages/InPlants/InPlants";
 import PecVacDevice from "./pages/PecVacDevice/PecVacDevice";
 // import Products from "./pages/Products/Products";
 // import Product1 from "./components/Product1/Product1";
+// import ProductList from "./components/ProductList/ProductList";
 import Product2 from "./components/Product2/Product2";
 import Product3 from "./components/Product3/Product3";
 import PectVac from "./components/PectVac/PectVac";
 import ProductsPage from "./pages/ProductsPage/ProductsPage";
 import ProductPage from "./pages/ProductPage/ProductPage";
+// import ParksPectusSystem from "./components/ParksPectusSystem/ParksPectusSystem";
+// import ParksPectusSystemMain from "./components/ParksPectusSystemMain/ParksPectusSystemMain";
+import ProductList from "./components/ProductList/ProductList";
+import Inplants from "./components/InPlants/InPlants";
+import Contact1 from "./components/Contact1/Contact1";
 
 const App = () => {
   // we are not logged in yet
@@ -92,7 +98,10 @@ const App = () => {
           path: "/parks-system-set",
           element: <ParkSystemSet />,
         },
-
+        {
+          path: "/parks-pectus-system",
+          element: <ParkSystemSet />,
+        },
         {
           path: "/surgical-techniques",
           element: <SurgicalTechniques />,
@@ -103,7 +112,7 @@ const App = () => {
         },
         {
           path: "/in-plants",
-          element: <InPlants />,
+          element: <Inplants />,
         },
         {
           path: "/contact",
@@ -116,6 +125,10 @@ const App = () => {
         {
           path: "/products",
           element: <ProductsPage />,
+        },
+        {
+          path: "/product-list",
+          element: <ProductList />,
         },
         {
           path: "/products/pectvac",

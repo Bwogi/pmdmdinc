@@ -22,7 +22,7 @@ const features = [
     imageSrc: "/img/product-feature-07-detail-01.jpg",
     imageAlt:
       "White canvas laptop sleeve with gray felt interior, silver zipper, and tan leather zipper pull.",
-    detailsLink: "/parks-system-set",
+    detailsLink: "/parks-pectus-system",
     orderLink: "https://pect-vac.myshopify.com/",
   },
   {
@@ -90,13 +90,13 @@ export default function FeaturedProducts() {
                 <div className="mt-10 flex items-center gap-x-6">
                   <Link
                     to={feature.detailsLink}
-                    className="text-sm font-semibold leading-6  text-gray-900 ring-1 hover:ring-gray-400 hover:bg-transparent bg-gray-200 ring-gray-200 px-6 py-3"
+                    className="text-sm font-semibold leading-6  text-gray-900 ring-1 hover:ring-gray-400 hover:bg-transparent bg-green-200 ring-green-200 px-6 py-3"
                   >
                     More details
                   </Link>
                   <Link
                     to={feature.orderLink}
-                    className="text-sm font-semibold leading-6  text-gray-900 ring-1 hover:ring-green-400 hover:bg-transparent bg-green-200 ring-green-200 px-6 py-3"
+                    className="text-sm font-semibold leading-6  text-gray-900 ring-1 hover:ring-[#C39A68] hover:bg-transparent bg-[#C39A68] ring-[#C39A68] px-6 py-3"
                   >
                     <span aria-hidden="true">Order Now →</span>
                   </Link>

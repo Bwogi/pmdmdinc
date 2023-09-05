@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 // import { PlusIcon } from "@heroicons/react/20/solid";
 import { Link } from "react-router-dom";
 // import ShoppingCart from "../ShoppingCart/ShoppingCart";
@@ -62,14 +62,20 @@ export default function MainNav() {
                     to="https://pect-vac.myshopify.com/"
                     className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-green-200 hover:text-gray-700"
                   >
-                    Our Store
+                    Retail Store
                   </Link>
-                  {/* <Link
-                    to="/store"
+                  <Link
+                    to="/parks-pectus-system"
                     className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-green-200 hover:text-gray-700"
                   >
-                    Store
-                  </Link> */}
+                    Park's Pectus System
+                  </Link>
+                  <Link
+                    to="/product-list"
+                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-green-200 hover:text-gray-700"
+                  >
+                    Product List
+                  </Link>
                   <Link
                     to="/contact"
                     className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-green-200 hover:text-gray-700"
@@ -87,7 +93,7 @@ export default function MainNav() {
                   <Link to="/contact">
                     <button
                       type="button"
-                      className="text-sm font-semibold leading-6  text-gray-900 ring-1 hover:ring-green-400 hover:bg-transparent bg-green-200 ring-green-200 px-6 py-1"
+                      className="text-sm font-semibold leading-6  text-gray-900 ring-1 hover:ring-[#C39A68] bg-transparent hover:bg-[#C39A68] ring-[#C39A68] px-6 py-1"
                     >
                       {/* <PlusIcon
                       className="-ml-1 mr-2 h-5 w-5"
@@ -99,24 +105,24 @@ export default function MainNav() {
                   </Link>
                 </div>
                 <div className="hidden md:ml-4 md:flex md:flex-shrink-0 md:items-center">
-                  <button
+                  {/* <button
                     type="button"
                     className="rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
                   >
                     <span className="sr-only">View notifications</span>
                     <BellIcon className="h-6 w-6" aria-hidden="true" />
-                  </button>
+                  </button> */}
 
                   {/* Profile dropdown */}
                   <Menu as="div" className="relative ml-3">
                     <div>
                       <Menu.Button className="flex rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">
                         <span className="sr-only">Open user menu</span>
-                        <img
+                        {/* <img
                           className="h-8 w-8 rounded-full"
                           src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                           alt=""
-                        />
+                        /> */}
                       </Menu.Button>
                     </div>
                     <Transition
@@ -216,8 +222,8 @@ export default function MainNav() {
               </Disclosure.Button>
             </div>
             <div className="border-t border-gray-200 pt-4 pb-3">
-              <div className="flex items-center px-4 sm:px-6">
-                <div className="flex-shrink-0">
+              {/* <div className="flex items-center px-4 sm:px-6"> */}
+              {/* <div className="flex-shrink-0">
                   <img
                     className="h-10 w-10 rounded-full"
                     src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
@@ -231,15 +237,15 @@ export default function MainNav() {
                   <div className="text-sm font-medium text-gray-500">
                     tom@example.com
                   </div>
-                </div>
-                <button
+                </div> */}
+              {/* <button
                   type="button"
                   className="ml-auto flex-shrink-0 rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
                 >
                   <span className="sr-only">View notifications</span>
                   <BellIcon className="h-6 w-6" aria-hidden="true" />
-                </button>
-              </div>
+                </button> */}
+              {/* </div> */}
               <div className="mt-3 space-y-1">
                 <Disclosure.Button
                   as="a"

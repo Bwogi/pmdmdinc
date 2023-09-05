@@ -20,7 +20,7 @@ const PageHeading = ({ title }) => {
             <button className="mr-3 bg-transparent focus:outline-none transition duration-150 ease-in-out rounded hover:bg-gray-700 text-white px-5 py-2 text-sm border border-white">
               Back
             </button>
-            <button className="transition focus:outline-none duration-150 ease-in-out hover:bg-gray-200 bg-white rounded text-green-700 px-8 py-2 text-sm">
+            <button className="transition focus:outline-none duration-150 ease-in-out hover:bg-green-200 bg-white rounded text-green-700 px-8 py-2 text-sm">
               Edit Profile
             </button>
           </div>
@@ -51,7 +51,7 @@ export default PageHeading;
 //                     </div>
 //                     <div className="mt-6 md:mt-0">
 //                         <button className="mr-3 bg-transparent focus:outline-none transition duration-150 ease-in-out rounded text-white hover:bg-gray-700 px-5 py-2 text-sm border border-white">Back</button>
-//                         <button className="transition focus:outline-none duration-150 ease-in-out hover:bg-gray-200 bg-white rounded text-green-700 px-8 py-2 text-sm">Edit Profile</button>
+//                         <button className="transition focus:outline-none duration-150 ease-in-out hover:bg-green-200 bg-white rounded text-green-700 px-8 py-2 text-sm">Edit Profile</button>
 //                     </div>
 //                 </div>
 //             </div>

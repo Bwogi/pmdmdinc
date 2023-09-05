@@ -25,7 +25,7 @@ import HeroNew from "../../components/HeroNew/HeroNew";
 // import Hero from '../../components/Hero/Hero'
 import FeaturedProducts from "../../components/FeaturedProducts/FeaturedProducts";
 // import StoreCategories from "../../components/StoreCategories/StoreCategories";
-import ProductCategories from "../../components/ProductCategories/ProductCategories";
+// import ProductCategories from "../../components/ProductCategories/ProductCategories";
 
 const Home = () => {
   // const title3 = 'We are a distributor of Pediatric Medical Devices. We pride ourselves in distributing the best technologies available in the marketplace.  We provide the state-of-the-art chest wall deformity correction equipment and supplies.';
@@ -43,7 +43,7 @@ const Home = () => {
       {/* <div id="about">
         <NewHeader />
       </div> */}
-      <ProductCategories />
+      {/* <ProductCategories /> */}
       <FeaturedProducts />
       {/* <StoreCategories /> */}
       {/* <div>

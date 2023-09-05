@@ -36,7 +36,7 @@ export default function Featured() {
         <div>
           {/* <h1 className="text-[#C49A69]">Featured Product</h1> */}
           <h2 className="text-3xl font-bold tracking-tight text-gray-600 sm:text-4xl">
-            Dr. Park's Pectus System Set
+            Park's Pectus System
           </h2>
           <h3 className="text-2xl font-bold tracking-tight text-gray-400 sm:text-3xl">
             Technical Specifications
@@ -65,7 +65,7 @@ export default function Featured() {
             </Link>
             <a
               href="#featured-products"
-              className="text-sm font-semibold leading-6 text-gray-900 ring-1 ring-green-400 px-3.5 py-2.5"
+              className="text-sm font-semibold leading-6 text-gray-900 ring-1 ring-[#C39A68] px-3.5 py-2.5"
             >
               Order Now <span aria-hidden="true">→</span>
             </a>

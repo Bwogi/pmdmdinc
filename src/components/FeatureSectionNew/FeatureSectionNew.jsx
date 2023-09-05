@@ -90,7 +90,7 @@ export default function FeatureSectionNew() {
           <div className="mt-4 sm:mt-6">
             <Link
               to="/product-details"
-              className="inline-block rounded-md border border-green-200 hover:text-gray-700 px-8 py-3 font-medium text-white hover:bg-green-200"
+              className="inline-block rounded-md border border-green-200 hover:text-gray-700 px-8 py-3 font-medium text-white hover:bg-[#C39A68]"
             >
               Product Details
             </Link>
