@@ -41,7 +41,7 @@ const features = [
     imageSrc: "/img/product-feature-07-detail-03.jpg",
     imageAlt: "Detail of zipper pull with tan leather and silver rivet.",
     detailsLink: "/in-plants",
-    orderLink: "https://pect-vac.myshopify.com/",
+    orderLink: "/contact",
   },
 ];
 
