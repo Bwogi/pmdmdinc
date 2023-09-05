@@ -10,7 +10,7 @@ export default function CTANew() {
           {/* Start your free trial today. */}
         </h2>
         <div className=" flex items-center gap-x-6 lg:mt-0 lg:flex-shrink-0">
-          <Link to="https://pect-vac.myshopify.com/">
+          <Link to="/contact">
             <button className="border border-1 px-6 py-6 mt-5 rounded-md bg-[#384A6B] text-white">
               Order Now
             </button>

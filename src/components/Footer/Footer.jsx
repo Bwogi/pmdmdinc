@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 const navigation = {
   main: [
-    { name: "About", href: "#" },
-    { name: "Product Details", href: "/product-details" },
+    { name: "About", href: "/about" },
+    // { name: "Product Details", href: "/product-details" },
     { name: "Privacy Policy", href: "/privacy-policy" },
     { name: "Contact", href: "/contact" },
   ],
@@ -91,7 +91,7 @@ export default function Footer() {
             </div>
           ))}
         </nav>
-        <div className="mt-8 flex justify-center space-x-6">
+        {/* <div className="mt-8 flex justify-center space-x-6">
           {navigation.social.map((item) => (
             <Link
               key={item.name}
@@ -102,7 +102,7 @@ export default function Footer() {
               <item.icon className="h-6 w-6" aria-hidden="true" />
             </Link>
           ))}
-        </div>
+        </div> */}
         <p className="mt-8 text-center text-base text-gray-400">
           &copy; 2023 Pediatric Medical Device Marketing and Distribution LLC.
           All rights reserved.

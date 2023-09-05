@@ -405,7 +405,7 @@ export default function About() {
             </p>
           </div>
         </div> */}
-        <div className="px-20 mr-20 flex flex-col gap-5 text-gray-600">
+        {/* <div className="px-20 mr-20 flex flex-col gap-5 text-gray-600">
           <h2 className="font-bold">Contact Us</h2>
           <p>
             We are excited to collaborate with medical professionals, device
@@ -424,11 +424,11 @@ export default function About() {
           </p>
           <p>Sincerely,</p>
           <p>Pediatric Medical Device Marketing and Distribution LLC</p>
-        </div>
+        </div> */}
 
         {/* Content section */}
-        <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
-          {/* <div className="mx-auto flex max-w-2xl flex-col items-end justify-between gap-16 lg:mx-0 lg:max-w-none lg:flex-row">
+        {/* <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8"> */}
+        {/* <div className="mx-auto flex max-w-2xl flex-col items-end justify-between gap-16 lg:mx-0 lg:max-w-none lg:flex-row">
             <div className="w-full lg:max-w-lg lg:flex-auto">
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                 Why Pediatric Medical Device Marketing and Distribution LLC?
@@ -493,16 +493,16 @@ export default function About() {
               </div>
             </div>
           </div> */}
-        </div>
+        {/* </div> */}
       </main>
 
       {/* Footer */}
-      <footer className="mt-32 sm:mt-40" aria-labelledby="footer-heading">
-        <h2 id="footer-heading" className="sr-only">
+      {/* <footer className="mt-32 sm:mt-40" aria-labelledby="footer-heading"> */}
+      {/* <h2 id="footer-heading" className="sr-only">
           Footer
-        </h2>
-        <div className="mx-auto max-w-7xl px-6 pb-8 lg:px-8">
-          <div className="border-t border-gray-900/10 pt-20 xl:grid xl:grid-cols-3 xl:gap-8">
+        </h2> */}
+      {/* <div className="mx-auto max-w-7xl px-6 pb-8 lg:px-8"> */}
+      {/* <div className="border-t border-gray-900/10 pt-20 xl:grid xl:grid-cols-3 xl:gap-8">
             <div className="grid grid-cols-2 gap-8 xl:col-span-2">
               <div className="md:grid md:grid-cols-2 md:gap-8">
                 <div>
@@ -608,8 +608,8 @@ export default function About() {
                 </div>
               </form>
             </div>
-          </div>
-          <div className="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 md:flex md:items-center md:justify-between lg:mt-24">
+          </div> */}
+      {/* <div className="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 md:flex md:items-center md:justify-between lg:mt-24">
             <div className="flex space-x-6 md:order-2">
               {footerNavigation.social.map((item) => (
                 <Link
@@ -626,9 +626,9 @@ export default function About() {
               &copy; 2023 Pediatric Medical Device Marketing and Distribution
               LLC. All rights reserved.
             </p>
-          </div>
-        </div>
-      </footer>
+          </div> */}
+      {/* </div> */}
+      {/* </footer> */}
     </div>
   );
 }

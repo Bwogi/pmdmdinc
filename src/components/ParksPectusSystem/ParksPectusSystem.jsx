@@ -35,7 +35,7 @@ import { Link } from "react-router-dom";
 const navigation = [
   { name: "Pectus System", href: "#", icon: ChartPieIcon, current: true },
   {
-    name: "Product List",
+    name: "Park's Pectus System in Plants",
     href: "/in-plants",
     icon: DocumentDuplicateIcon,
     current: false,

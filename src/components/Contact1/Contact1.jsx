@@ -2,6 +2,7 @@ import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
 // import { Link } from 'react-router-dom'
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import ContactNoneRetail from "../ContactNoneRetail/ContactNoneRetail";
 
 export default function Contact1() {
   const form = useRef();
@@ -29,6 +30,7 @@ export default function Contact1() {
 
   return (
     <>
+      <ContactNoneRetail />
       <div className="relative bg-white mt-20">
         <div className="absolute inset-0">
           <div className="absolute inset-y-0 left-0 w-1/2 bg-gray-50" />

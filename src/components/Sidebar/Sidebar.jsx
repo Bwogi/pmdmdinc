@@ -134,7 +134,7 @@ export default function Sidebar() {
                                   aria-hidden="true"
                                 />
                                 <span className="ml-2">
-                                  Product List(In Plants)
+                                  Park's Pectus System in Plants
                                 </span>
                               </Link>
                             </div>

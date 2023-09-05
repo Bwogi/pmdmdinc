@@ -12,7 +12,7 @@ const Accessories = () => {
 
       <div className=" mb-20 mt-20">
         <div className="flex justify-center flex-col text-center">
-          {/* <h1 className="text-green-800">Product List</h1> */}
+          {/* <h1 className="text-green-800">Park's Pectus System in Plants</h1> */}
           <div className="sm:flex-auto text-center">
             <h1 className="text-4xl font-bold  text-gray-600 text-center">
               Dr. Park's Pectus System Set In-Plants{" "}

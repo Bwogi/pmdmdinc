@@ -74,7 +74,7 @@ export default function MainNav() {
                     to="/product-list"
                     className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-green-200 hover:text-gray-700"
                   >
-                    Product List
+                    Park's Pectus System Implants
                   </Link>
                   <Link
                     to="/contact"
@@ -90,7 +90,7 @@ export default function MainNav() {
               </div>
               <div className="flex items-center">
                 <div className="flex-shrink-0">
-                  <Link to="/contact">
+                  <a href="tel:+12096845576">
                     <button
                       type="button"
                       className="text-sm font-semibold leading-6  text-gray-900 ring-1 hover:ring-[#C39A68] bg-transparent hover:bg-[#C39A68] ring-[#C39A68] px-6 py-1"
@@ -102,7 +102,7 @@ export default function MainNav() {
                       {/* <ShoppingCart /> */}
                       <span>Call Us</span>
                     </button>
-                  </Link>
+                  </a>
                 </div>
                 <div className="hidden md:ml-4 md:flex md:flex-shrink-0 md:items-center">
                   {/* <button

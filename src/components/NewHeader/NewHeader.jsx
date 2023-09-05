@@ -13,7 +13,7 @@ const navigation = [
   { name: "Surgical Techniques", href: "#techniques" },
   // { name: 'Product Catalogue', href: '#catalogue' },
   // { name: 'Blog', href: '#blog' },
-  { name: "Product List", href: "#product-list" },
+  { name: "Park's Pectus System in Plants", href: "#product-list" },
   { name: "Contact", href: "#contact" },
 ];
 

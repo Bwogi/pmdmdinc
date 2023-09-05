@@ -2,10 +2,10 @@ import React from "react";
 import Featured from "../../components/Featured/Featured";
 import SurgicalTechniques from "../../components/SurgicalTechniques/SurgicalTechniques";
 import STVideos from "../../components/STVideos/STVideos";
-import CTANew1 from "../../components/CTANew1/CTANew1";
+// import CTANew1 from "../../components/CTANew1/CTANew1";
 // import Sidebar from "../../components/Sidebar/Sidebar";
 // import Products from "../../components/Products/Products";
-// import CTANew from "../../components/CTANew/CTANew";
+import CTANew from "../../components/CTANew/CTANew";
 // import ProductDetails from "../ProductDetails/ProductDetails";
 
 const ParkSystemSet = () => {
@@ -30,7 +30,7 @@ const ParkSystemSet = () => {
         <Products />
       </div> */}
       <div>
-        <CTANew1 />
+        <CTANew />
       </div>
       {/* <ProductDetails /> */}
     </div>
