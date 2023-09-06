@@ -6,6 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 import SwiperCore, { Navigation } from "swiper";
+import { Link } from "react-router-dom";
 
 SwiperCore.use([Navigation]);
 
@@ -63,13 +64,13 @@ export default function Index() {
             See how this state-of-the-art Pectus system is used in chest wall
             deformity correction.{" "}
           </p>
-          <a href="#contact">
+          <Link to="/contact">
             <button className="w-full md:w-auto text-center mt-6 bg-[#384A6B] hover:-translate-y-1 ease-in-out transition duration-300 rounded">
               <p className="text-base py-4 px-6 font-medium leading-none text-white">
                 Place your order here
               </p>
             </button>
-          </a>
+          </Link>
         </div>
         <div className="mainDiv pl-4 md:pl-6 ">
           <div className="h-5 mt-6 mb-4 md:mt-0 lg:mb-0 flex justify-end items-end space-x-6 ">
