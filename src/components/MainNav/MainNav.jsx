@@ -53,7 +53,7 @@ export default function MainNav() {
                   </Link>
                   <Link
                     to="/about"
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-green-200 hover:text-gray-700"
+                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-[#C39A68] hover:text-gray-700"
                   >
                     About
                   </Link>
@@ -66,25 +66,25 @@ export default function MainNav() {
                   </Link> */}
                   <Link
                     to="/parks-pectus-system"
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-green-200 hover:text-gray-700"
+                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-[#C39A68] hover:text-gray-700"
                   >
                     Park's Pectus System
                   </Link>
                   <Link
                     to="/product-list"
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-green-200 hover:text-gray-700"
+                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-[#C39A68] hover:text-gray-700"
                   >
                     Park's System Implants & Instruments
                   </Link>
                   <Link
                     to="/contact"
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-green-200 hover:text-gray-700"
+                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-[#C39A68] hover:text-gray-700"
                   >
                     Contact
                   </Link>
                   <Link
                     to="#"
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-green-200 hover:text-gray-700"
+                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-[#C39A68] hover:text-gray-700"
                   ></Link>
                 </div>
               </div>
