@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const posts = [
   {
     id: 1,
-    title: "Dr. Park's Pectus System Set details",
+    title: "Dr. Park's Pectus System details",
     href: "/parks-system-set",
     description:
       "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
@@ -18,25 +18,25 @@ const posts = [
         "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     },
   },
+  // {
+  //   id: 1,
+  //   title: "Pectus Vacuum Device Details",
+  //   href: "#",
+  //   description:
+  //     "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+  //   imageUrl: "/img/PectusVacuumDetails.png",
+  //   date: "See details...",
+  //   datetime: "2020-03-16",
+  //   author: {
+  //     name: "Michael Foster",
+  //     imageUrl:
+  //       "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+  //   },
+  // },
   {
     id: 1,
-    title: "Pectus Vacuum Device Details",
-    href: "#",
-    description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    imageUrl: "/img/PectusVacuumDetails.png",
-    date: "See details...",
-    datetime: "2020-03-16",
-    author: {
-      name: "Michael Foster",
-      imageUrl:
-        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    },
-  },
-  {
-    id: 1,
-    title: "Dr. Park's Pectus Set In-plants",
-    href: "/in-plants",
+    title: "Dr. Park's Pectus Set Implants",
+    href: "/implants",
     description:
       "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
     imageUrl: "/img/ParksSystemInPlants.png",

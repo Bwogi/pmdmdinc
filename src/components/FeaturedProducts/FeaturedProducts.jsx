@@ -25,15 +25,15 @@ const features = [
     detailsLink: "/parks-pectus-system",
     orderLink: "/contact",
   },
-  {
-    name: "Pectus Vacuum Device",
-    description:
-      "A pectus vacuum device, also known as a vacuum bell or a chest wall suction cup, is a medical device used in the treatment of pectus excavatum, a congenital chest wall deformity where the breastbone (sternum) and ribs grow abnormally, causing a sunken or caved-in appearance of the chest. This condition can sometimes lead to breathing difficulties and cosmetic concerns.",
-    imageSrc: "/img/product-feature-07-detail-02.jpg",
-    imageAlt: "Detail of zipper pull with tan leather and silver rivet.",
-    detailsLink: "/pectus-vacuum-device",
-    orderLink: "https://pect-vac.myshopify.com/",
-  },
+  // {
+  //   name: "Pectus Vacuum Device",
+  //   description:
+  //     "A pectus vacuum device, also known as a vacuum bell or a chest wall suction cup, is a medical device used in the treatment of pectus excavatum, a congenital chest wall deformity where the breastbone (sternum) and ribs grow abnormally, causing a sunken or caved-in appearance of the chest. This condition can sometimes lead to breathing difficulties and cosmetic concerns.",
+  //   imageSrc: "/img/product-feature-07-detail-02.jpg",
+  //   imageAlt: "Detail of zipper pull with tan leather and silver rivet.",
+  //   detailsLink: "/pectus-vacuum-device",
+  //   orderLink: "https://pect-vac.myshopify.com/",
+  // },
   {
     name: "Park's Pectus System Implants",
     description:

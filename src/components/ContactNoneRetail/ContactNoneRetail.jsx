@@ -55,7 +55,7 @@ export default function ContactNonRetail() {
           </div>
           <div className="mt-12 sm:mt-16 md:mt-0">
             <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl sm:tracking-tight">
-              Park's Pectus System Implant Orders
+              Park's System Implant & Instrument Orders
             </h2>
             <div className="mt-3">
               <p className="text-lg text-gray-500">
@@ -70,7 +70,7 @@ export default function ContactNonRetail() {
                 needs, we encourage you to compile a list of{" "}
                 <Link to="/product-list">
                   <span className="font-bold">
-                    Park's Pectus System Set implants
+                    Park's System Implants & Instruments
                   </span>
                 </Link>{" "}
                 that you are interested in, tailored to your specific

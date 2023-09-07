@@ -111,7 +111,7 @@ const App = () => {
           element: <PrivacyPolicy />,
         },
         {
-          path: "/in-plants",
+          path: "/implants",
           element: <Inplants />,
         },
         {

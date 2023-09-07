@@ -197,11 +197,11 @@ export default function About() {
               <div className="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
                 <p className="text-lg leading-8 text-gray-600">
                   We are a pioneering company dedicated to enhancing the lives
-                  of children through the provision of innovative, safe, and
-                  effective medical devices. Our unwavering commitment to
-                  improving pediatric healthcare drives our mission to connect
-                  medical advancements with the young patients who need them the
-                  most.
+                  of children and adults through the provision of innovative,
+                  safe, and effective medical devices. Our unwavering commitment
+                  to improving pediatric healthcare drives our mission to
+                  connect medical advancements with the patients who need them
+                  the most.
                 </p>
                 <div className="lg:col-end-1 mt-20 lg:w-full lg:max-w-lg lg:pb-8">
                   <h2 className="text-base font-semibold leading-7 text-green-600">
@@ -216,8 +216,8 @@ export default function About() {
                     marketing, and distribution.
                   </p>
                   <p className="mt-6 text-base leading-7 text-gray-600">
-                    Our collective passion for improving pediatric care fuels
-                    our efforts to identify, curate, and deliver groundbreaking
+                    Our collective passion for improving health care fuels our
+                    efforts to identify, curate, and deliver groundbreaking
                     medical solutions that address a wide range of health
                     challenges faced by children.
                   </p>
