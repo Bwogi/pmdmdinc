@@ -5,10 +5,14 @@ import { Link } from "react-router-dom";
 export default function ContactNonRetail() {
   return (
     <div className="bg-white">
-      <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+      <div className="mx-auto max-w-7xl px-6 py-[50px] lg:px-8">
+        <div className="text-center">
+          <h1 className="py-10 text-5xl text-gray-600 font-bold">Contact Us</h1>
+          <hr className="mb-10 border" />
+        </div>
         <div className="mx-auto max-w-lg md:grid md:max-w-none md:grid-cols-2 md:gap-8">
           <div>
-            <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl sm:tracking-tight">
+            <h2 className="text-2xl font-bold text-gray-600 sm:text-3xl sm:tracking-tight">
               Park's Pectus System Orders
             </h2>
             <div className="mt-3">
@@ -54,7 +58,7 @@ export default function ContactNonRetail() {
             </div> */}
           </div>
           <div className="mt-12 sm:mt-16 md:mt-0">
-            <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl sm:tracking-tight">
+            <h2 className="text-2xl font-bold text-gray-600 sm:text-3xl sm:tracking-tight">
               Park's System Implant & Instrument Orders
             </h2>
             <div className="mt-3">
