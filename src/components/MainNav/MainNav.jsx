@@ -90,7 +90,7 @@ export default function MainNav() {
               </div>
               <div className="flex items-center">
                 <div className="flex-shrink-0">
-                  <a href="tel:+12096845576">
+                  <a href="tel:+19259008762">
                     <button
                       type="button"
                       className="text-sm font-semibold leading-6  text-gray-900 ring-1 hover:ring-[#C39A68] bg-transparent hover:bg-[#C39A68] ring-[#C39A68] px-6 py-1"
