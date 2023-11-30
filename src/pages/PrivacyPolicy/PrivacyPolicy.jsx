@@ -121,7 +121,7 @@ const PrivacyPolicy = () => {
       <p>
         If you have any questions, concerns, or requests regarding this Privacy
         Policy or our data practices, please contact us at:
-        email:info@pmdmdllc.com, tel: +1 (209) 684-5576.
+        email:info@pmdmdllc.com, tel: +1 (925) 900-8762.
       </p>
 
       <p>Last Updated: August 2023</p>

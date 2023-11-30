@@ -64,7 +64,7 @@ export default function Contact1() {
                       className="h-6 w-6 flex-shrink-0 text-gray-400"
                       aria-hidden="true"
                     />
-                    <span className="ml-3">+1 (209) 684-5576</span>
+                    <span className="ml-3">+1 (925) 900-8762</span>
                   </dd>
                 </div>
                 <div className="mt-3">
